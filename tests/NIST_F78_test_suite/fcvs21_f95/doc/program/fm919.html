@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="A Fortran 77 test suite">
+    
+    <meta name="author" content="NIST" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>FM919 &ndash; NIST-Fortran78</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">NIST-Fortran78 </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            
+    <li><a href="../lists/blockdata.html">Block Data Units</a></li>
+    
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+               
+        
+            <li><a href="../lists/programs.html">Programs</a></li>
+        
+            </ul>
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/blockdata.html">Block Data Units</a></li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/programs.html">Programs</a></li>
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>FM919
+    <small>Program</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.2% of total for programs.">112 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/FM919.f"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+     <li><a href='../sourcefile/fm919.f.html'>FM919.f</a></li>
+    
+  
+     <li class="active">FM919</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-avb%7E10">AVB</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-b10vk%7E4">B10VK</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-bvb%7E9">BVB</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-c10vk%7E4">C10VK</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-cseq%7E4">CSEQ</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-e11vk%7E4">E11VK</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-f10vk%7E2">F10VK</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-h10vk">H10VK</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-remrks%7E52">REMRKS</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zcompl%7E52">ZCOMPL</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zdate%7E52">ZDATE</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zname%7E52">ZNAME</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zprog%7E52">ZPROG</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zproj%7E52">ZPROJ</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-ztape%7E52">ZTAPE</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-ztaped%7E52">ZTAPED</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zvers%7E52">ZVERS</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zversd%7E52">ZVERSD</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    
+  
+
+    <p><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>00010919
+<strong><em>*  FORTRAN 77                                                      00020919
+</em></strong><em>   FM919                                                          00030919
+<strong><em>*                       INQF1 - (438)                              00040919
+</em></strong></em>                                                                  00050919
+<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>00060919
+<strong><em>*  GENERAL PURPOSE                                         ANS REF 00070919
+</em></strong><em>    TEST INQUIRE BY FILE ON SEQUENTIAL, FORMATTED FILES   12.10.3 00080919
+<strong><em>*                                                                  00090919
+</em></strong></em>    THE TESTS IN THIS UNIT ARE ONLY PERFORMED ON A                00100919
+<strong><em>*    FILE THAT IS CONNECTED FOR SEQUENTIAL, FORMATTED ACCESS       00110919
+</em></strong><em>    (ANS REF. 12.2.4.1 AND 12.9.5.2)                              00120919
+<strong><em>*    THIS TEST PERFORMS AN EXPLICIT OPEN, AND PERFORMS             00130919
+</em></strong></em>    A CLOSE WITH STATUS='DELETE' AT THE END OF THE SEGMENT.       00140919
+<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>00150919
+BB<strong> <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><em> BBCCOMNT <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>*00160919
+</strong></em>                                                                   00170919
+<strong><em>            1978 FORTRAN COMPILER VALIDATION SYSTEM                00180919
+</em></strong>                          VERSION 2.1                              00190919
+<strong><em>                                                                   00200919
+</em></strong>                                                                   00210919
+<strong><em>           SUGGESTIONS AND COMMENTS SHOULD BE FORWARDED TO         00220919
+</em></strong>          NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY           00230919
+<strong><em>               SOFTWARE STANDARDS VALIDATION GROUP                 00240919
+</em></strong>                      BUILDING 225  RM A266                        00250919
+<strong><em>                     GAITHERSBURG, MD  20899                       00260919
+</em></strong>                                                                   00270919
+<strong><em>                                                                   00280919
+</em></strong>                                                                   00290919
+BE</strong> <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><em> BBCCOMNT <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>*00300919
+</strong><strong>                                                                  00310919
+<strong><em> THE FOLLOWING 9 COMMENT LINES (CZ01, CZ02, ...) CAN BE REPLACED   00540919
+</em></strong> FOR IDENTIFYING THE TEST ENVIRONMENT                              00550919
+<strong><em>                                                                   00560919
+Z01  ZVERS  = 'VERSION OF THE COMPILER VALIDATION SYSTEM'              00570919
+Z02  ZVERSD = 'CREATION DATE/TIME OF THE COMPILER VALIDATION SYSTEM'   00580919
+Z03  ZPROG  = 'PROGRAM NAME'                                           00590919
+Z04  ZDATE  = 'DATE OF TEST'                                           00600919
+Z05  ZCOMPL = 'COMPILER IDENTIFICATION'                                00610919
+Z06  ZPROJ  = 'PROJECT NUMBER/IDENTIFICATION'                          00620919
+Z07  ZNAME  = 'NAME OF USER'                                           00630919
+Z08  ZTAPE  = 'TAPE OWNER/ID'                                          00640919
+Z09  ZTAPED = 'DATE TAPE COPIED'                                       00650919
+                                                                       00660919
+</em></strong><em>                                                                  00910919
+<strong><em>*    THE FOLLOWING STATEMENT MUST BE CHANGED IF                    00920919
+</em></strong></em>    THE UNIT GIVEN IS NOT CAPABLE OF BEING OPENED AS A            00930919
+<strong><em>*    SEQUENTIAL, FORMATTED FILE.                                   00940919
+</em></strong><em>                                                                  00950919
+<strong><em>*                                                                  00990919
+</em></strong></em>  THE FOLLOWING STATEMENT MUST BE CHANGED IF THE NAME             01000919
+<strong><em>*  GIVEN IS NOT A VALID FILE SPECIFIER FOR A SEQUENTIAL,           01010919
+</em></strong><em>  FORMATTED FILE.                                                 01020919
+<strong><em>*                                                                  01030919
+</em></strong></em>                                                                  01040919
+<strong><em>*  THE FOLLOWING STATEMENT MUST BE CHANGED IF THE NAME             01050919
+</em></strong><em>  GIVEN IS NOT A VALID FILE SPECIFIER FOR A SEQUENTIAL,           01060919
+<strong><em>*  FORMATTED FILE.                                                 01070919
+</em></strong></em>                                                                  01080919
+     CSEQ CONTAINS THE FILE NAME FOR UNIT I09.                         01090919
+<strong><em>*                                                                  01150919
+</em></strong>                                                                   01210919
+<strong><em> WRITE REPORT TITLE                                                01220919
+</em></strong>                                                                   01230919
+<strong><em>*                                                                  01310919
+</em></strong> WRITE DETAIL REPORT HEADERS                                       01370919
+<strong><em>                                                                   01380919
+</em></strong><em>                                                                  01450919
+<strong><em>*    OPEN FILE                                                     01460919
+</em></strong></em>                                                                  01490919
+T001<em>  TEST 1 -  FIRST INQUIRE (AFTER OPEN)                            01500919
+<strong><em>*                                                                  01900919
+</em></strong></em>                                                                  01920919
+BB</strong> <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong></em> BBCSUM0  <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>*01930919
+</strong><em> WRITE OUT TEST SUMMARY                                            01940919
+<strong><em>                                                                   01950919
+</em></strong> WRITE OUT REPORT FOOTINGS                                         02070919
+<strong><em>                                                                   02080919
+</em></strong> FORMATS FOR TEST DETAIL LINES                                     02140919
+<strong><em>                                                                   02150919
+</em></strong> FORMAT STATEMENTS FOR PAGE HEADERS                                02350919
+<strong><em>                                                                   02360919
+</em></strong>                                                                   02490919
+<strong><em> FORMAT STATEMENTS FOR REPORT FOOTINGS                             02500919
+</em></strong>                                                                   02510919
+<strong><em>                                                                   02560919
+</em></strong> FORMAT STATEMENTS FOR RUN SUMMARY                                 02570919
+<strong><em>                                                                   02580919
+</em></strong></em>                                                                  02650919
+****    END OF TEST SEGMENT 438                                       02660919</p>
+    
+    <br>
+
+     <section class="visible-xs visible-sm hidden-md">
+       
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-avb%7E10">AVB</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-b10vk%7E4">B10VK</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-bvb%7E9">BVB</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-c10vk%7E4">C10VK</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-cseq%7E4">CSEQ</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-e11vk%7E4">E11VK</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-f10vk%7E2">F10VK</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-h10vk">H10VK</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-remrks%7E52">REMRKS</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zcompl%7E52">ZCOMPL</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zdate%7E52">ZDATE</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zname%7E52">ZNAME</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zprog%7E52">ZPROG</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zproj%7E52">ZPROJ</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-ztape%7E52">ZTAPE</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-ztaped%7E52">ZTAPED</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zvers%7E52">ZVERS</a>
+      
+      <a class="list-group-item" href="../program/fm919.html#variable-zversd%7E52">ZVERSD</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </section>
+     <br class="visible-xs visible-sm hidden-md">
+
+     
+
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-avb%7E10"></span>logical</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>AVB</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-b10vk%7E4"></span>character(len=10)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>B10VK</strong></td><td></td><td></td><td><p>**** BELOW CHARACTER STATEMENT ESTABLISHES THE FILE NAME VARIABLES.   00340919
+X19   REPLACED BY FEXEC X-19  CONTROL CARD.  X-19  IS FOR REPLACING    00350919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-bvb%7E9"></span>logical</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>BVB</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-c10vk%7E4"></span>character(len=10)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>C10VK</strong></td><td></td><td></td><td><p>**** BELOW CHARACTER STATEMENT ESTABLISHES THE FILE NAME VARIABLES.   00340919
+X19   REPLACED BY FEXEC X-19  CONTROL CARD.  X-19  IS FOR REPLACING    00350919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-cseq%7E4"></span>character(len=15)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>CSEQ</strong></td><td></td><td></td><td><p><strong><em> SPECIFICATION STATEMENTS                                          00400919
+</em></strong>                                                                   00410919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-e11vk%7E4"></span>character(len=10)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>E11VK</strong>*11</td><td></td><td></td><td><p>**** BELOW CHARACTER STATEMENT ESTABLISHES THE FILE NAME VARIABLES.   00340919
+X19   REPLACED BY FEXEC X-19  CONTROL CARD.  X-19  IS FOR REPLACING    00350919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-f10vk%7E2"></span>character(len=10)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>F10VK</strong></td><td></td><td></td><td><p>**** BELOW CHARACTER STATEMENT ESTABLISHES THE FILE NAME VARIABLES.   00340919
+X19   REPLACED BY FEXEC X-19  CONTROL CARD.  X-19  IS FOR REPLACING    00350919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-h10vk"></span>character(len=10)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>H10VK</strong></td><td></td><td></td><td><p>**** BELOW CHARACTER STATEMENT ESTABLISHES THE FILE NAME VARIABLES.   00340919
+X19   REPLACED BY FEXEC X-19  CONTROL CARD.  X-19  IS FOR REPLACING    00350919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-remrks%7E52"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>REMRKS</strong>*31</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00460919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zcompl%7E52"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZCOMPL</strong>*20</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00460919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zdate%7E52"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZDATE</strong>*17</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00460919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zname%7E52"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZNAME</strong>*20</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00460919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zprog%7E52"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZPROG</strong>*5</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00460919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zproj%7E52"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZPROJ</strong>*13</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00460919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ztape%7E52"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZTAPE</strong>*10</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00460919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ztaped%7E52"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZTAPED</strong>*13</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00460919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zvers%7E52"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZVERS</strong>*13</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00460919</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zversd%7E52"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZVERSD</strong>*17</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00460919</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    
+    
+    
+    
+    </div>
+  </div>
+
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2018 
+                                          </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+            
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> NIST-Fortran78 was developed by NIST</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>

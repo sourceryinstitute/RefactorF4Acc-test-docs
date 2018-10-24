@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="A Fortran 77 test suite">
+    
+    <meta name="author" content="NIST" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>FM259 &ndash; NIST-Fortran78</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">NIST-Fortran78 </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            
+    <li><a href="../lists/blockdata.html">Block Data Units</a></li>
+    
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+               
+        
+            <li><a href="../lists/programs.html">Programs</a></li>
+        
+            </ul>
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/blockdata.html">Block Data Units</a></li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/programs.html">Programs</a></li>
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>FM259
+    <small>Program</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.2% of total for programs.">145 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/FM259.f"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+     <li><a href='../sourcefile/fm259.f.html'>FM259.f</a></li>
+    
+  
+     <li class="active">FM259</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-remrks%7E47">REMRKS</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zcompl%7E47">ZCOMPL</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zdate%7E47">ZDATE</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zname%7E47">ZNAME</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zprog%7E47">ZPROG</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zproj%7E47">ZPROJ</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-ztape%7E47">ZTAPE</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-ztaped%7E47">ZTAPED</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zvers%7E47">ZVERS</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zversd%7E47">ZVERSD</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    
+  
+
+    <p><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>00010259
+<strong><em>*  FORTRAN 77                                                      00020259
+</em></strong><em>   FM259                                                          00030259
+<strong><em>*                       BLKIF2 - (301)                             00040259
+</em></strong></em>                                                                  00050259
+<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>00060259
+<strong><em>*  GENERAL PURPOSE                                      SUBSET REF 00070259
+</em></strong><em>    TEST BLOCK IF STATEMENTS                          11.1 - 11.3 00080259
+<strong><em>*          WITH GOTO, COMPUTED GOTO, ASSIGN GOTO, DO   11.6 - 11.1000090259
+</em></strong>                                                                   00100259
+BB<strong> <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><em> BBCCOMNT <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>*00110259
+</strong></em>                                                                   00120259
+<strong><em>            1978 FORTRAN COMPILER VALIDATION SYSTEM                00130259
+</em></strong>                          VERSION 2.1                              00140259
+<strong><em>                                                                   00150259
+</em></strong>                                                                   00160259
+<strong><em>           SUGGESTIONS AND COMMENTS SHOULD BE FORWARDED TO         00170259
+</em></strong>          NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY           00180259
+<strong><em>               SOFTWARE STANDARDS VALIDATION GROUP                 00190259
+</em></strong>                      BUILDING 225  RM A266                        00200259
+<strong><em>                     GAITHERSBURG, MD  20899                       00210259
+</em></strong>                                                                   00220259
+<strong><em>                                                                   00230259
+</em></strong>                                                                   00240259
+BE</strong> <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong></em> BBCCOMNT <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>*00250259
+BB</strong> <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><em> BBCINITA <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>*00260259
+</strong></em> SPECIFICATION STATEMENTS                                          00270259
+<strong><em>                                                                   00280259
+</em></strong> THE FOLLOWING 9 COMMENT LINES (CZ01, CZ02, ...) CAN BE REPLACED   00410259
+<strong><em> FOR IDENTIFYING THE TEST ENVIRONMENT                              00420259
+</em></strong>                                                                   00430259
+Z01  ZVERS  = 'VERSION OF THE COMPILER VALIDATION SYSTEM'              00440259
+Z02  ZVERSD = 'CREATION DATE/TIME OF THE COMPILER VALIDATION SYSTEM'   00450259
+Z03  ZPROG  = 'PROGRAM NAME'                                           00460259
+Z04  ZDATE  = 'DATE OF TEST'                                           00470259
+Z05  ZCOMPL = 'COMPILER IDENTIFICATION'                                00480259
+Z06  ZPROJ  = 'PROJECT NUMBER/IDENTIFICATION'                          00490259
+Z07  ZNAME  = 'NAME OF USER'                                           00500259
+Z08  ZTAPE  = 'TAPE OWNER/ID'                                          00510259
+Z09  ZTAPED = 'DATE TAPE COPIED'                                       00520259
+                                                                       00530259
+<strong><em>                                                                   00820259
+</em></strong> WRITE REPORT TITLE                                                00830259
+<strong><em>                                                                   00840259
+</em></strong><em>                                                                  00920259
+<strong><em>*    HEADER FOR SEGMENT 301                                        00930259
+</em></strong> WRITE DETAIL REPORT HEADERS                                       00990259
+<strong><em>                                                                   01000259
+</em></strong></em>                                                                  01070259
+<strong><em>*                                                                  01770259
+BB</em>* </strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>* BBCSUM0  </strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*01780259
+</em></strong> WRITE OUT TEST SUMMARY                                            01790259
+<strong><em>                                                                   01800259
+</em></strong> WRITE OUT REPORT FOOTINGS                                         01920259
+<strong><em>                                                                   01930259
+</em></strong> FORMATS FOR TEST DETAIL LINES                                     01990259
+<strong><em>                                                                   02000259
+</em></strong> FORMAT STATEMENTS FOR PAGE HEADERS                                02200259
+<strong><em>                                                                   02210259
+</em></strong>                                                                   02340259
+<strong><em> FORMAT STATEMENTS FOR REPORT FOOTINGS                             02350259
+</em></strong>                                                                   02360259
+<strong><em>                                                                   02410259
+</em></strong> FORMAT STATEMENTS FOR RUN SUMMARY                                 02420259
+<strong><em>                                                                   02430259
+</em></strong><em>                                                                  02500259
+</em>***    END OF TEST SEGMENT 301                                       02560259</p>
+    
+    <br>
+
+     <section class="visible-xs visible-sm hidden-md">
+       
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-remrks%7E47">REMRKS</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zcompl%7E47">ZCOMPL</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zdate%7E47">ZDATE</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zname%7E47">ZNAME</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zprog%7E47">ZPROG</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zproj%7E47">ZPROJ</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-ztape%7E47">ZTAPE</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-ztaped%7E47">ZTAPED</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zvers%7E47">ZVERS</a>
+      
+      <a class="list-group-item" href="../program/fm259.html#variable-zversd%7E47">ZVERSD</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </section>
+     <br class="visible-xs visible-sm hidden-md">
+
+     
+
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-remrks%7E47"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>REMRKS</strong>*31</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00330259</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zcompl%7E47"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZCOMPL</strong>*20</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00330259</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zdate%7E47"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZDATE</strong>*17</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00330259</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zname%7E47"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZNAME</strong>*20</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00330259</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zprog%7E47"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZPROG</strong>*5</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00330259</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zproj%7E47"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZPROJ</strong>*13</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00330259</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ztape%7E47"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZTAPE</strong>*10</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00330259</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ztaped%7E47"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZTAPED</strong>*13</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00330259</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zvers%7E47"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZVERS</strong>*13</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00330259</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zversd%7E47"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZVERSD</strong>*17</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00330259</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    
+    
+    
+    
+    </div>
+  </div>
+
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2018 
+                                          </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+            
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> NIST-Fortran78 was developed by NIST</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>

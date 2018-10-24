@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="A Fortran 77 test suite refactored by RefactorF4Acc">
+    
+    <meta name="author" content="NIST (refactored by RefactorF4Acc)" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>fm823 &ndash; Refactored NIST-Fortran78</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Refactored NIST-Fortran78 </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+               
+        
+            <li><a href="../lists/programs.html">Programs</a></li>
+        
+            </ul>
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/programs.html">Programs</a></li>
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>fm823
+    <small>Program</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.3% of total for programs.">251 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/FM823.f95"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+     <li><a href='../sourcefile/fm823.f95.html'>FM823.f95</a></li>
+    
+  
+     <li class="active">fm823</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-avd%7E14">avd</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-bvd%7E11">bvd</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-cvd%7E7">cvd</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-dvcorr%7E18">dvcorr</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-i01%7E104">i01</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-i02%7E104">i02</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-iczero%7E104">iczero</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivdele%7E104">ivdele</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivfail%7E104">ivfail</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivinsp%7E60">ivinsp</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivpass%7E104">ivpass</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivtnum%7E104">ivtnum</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivtotl%7E60">ivtotl</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivtotn%7E60">ivtotn</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-nuvi%7E53">nuvi</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-remrks%7E60">remrks</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zcompl%7E60">zcompl</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zdate%7E60">zdate</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zname%7E60">zname</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zprog%7E60">zprog</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zproj%7E60">zproj</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ztape%7E60">ztape</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ztaped%7E60">ztaped</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zvers%7E60">zvers</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zversd%7E60">zversd</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../program/fm823.html#src">fm823</a>
+  </div>
+</div>
+
+
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    
+  
+
+    
+    
+    <br>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Calls</h3>
+      </div>
+      <div class="panel-body">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: program~~fm823~~CallsGraph Pages: 1 -->
+<svg id="programfm823CallsGraph" width="152pt" height="74pt"
+ viewBox="0.00 0.00 152.00 74.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="program~~fm823~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 70)">
+<title>program~~fm823~~CallsGraph</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-70 148,-70 148,4 -4,4"/>
+<!-- program~fm823 -->
+<g id="program~~fm823~~CallsGraph_node1" class="node">
+<title>program~fm823</title>
+<polygon fill="none" stroke="#000000" points="54,-45 0,-45 0,-21 54,-21 54,-45"/>
+<text text-anchor="middle" x="27" y="-30.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#000000">fm823</text>
+</g>
+<!-- dasin -->
+<g id="program~~fm823~~CallsGraph_node2" class="node">
+<title>dasin</title>
+<polygon fill="#777777" stroke="#777777" points="144,-66 90,-66 90,-42 144,-42 144,-66"/>
+<text text-anchor="middle" x="117" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">dasin</text>
+</g>
+<!-- program~fm823&#45;&gt;dasin -->
+<g id="program~~fm823~~CallsGraph_edge1" class="edge">
+<title>program~fm823&#45;&gt;dasin</title>
+<path fill="none" stroke="#000000" d="M54.003,-39.3007C62.1158,-41.1937 71.1631,-43.3047 79.8131,-45.323"/>
+<polygon fill="#000000" stroke="#000000" points="79.1713,-48.7672 89.705,-47.6312 80.7619,-41.9504 79.1713,-48.7672"/>
+</g>
+<!-- dacos -->
+<g id="program~~fm823~~CallsGraph_node3" class="node">
+<title>dacos</title>
+<polygon fill="#777777" stroke="#777777" points="144,-24 90,-24 90,0 144,0 144,-24"/>
+<text text-anchor="middle" x="117" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">dacos</text>
+</g>
+<!-- program~fm823&#45;&gt;dacos -->
+<g id="program~~fm823~~CallsGraph_edge2" class="edge">
+<title>program~fm823&#45;&gt;dacos</title>
+<path fill="none" stroke="#000000" d="M54.003,-26.6993C62.1158,-24.8063 71.1631,-22.6953 79.8131,-20.677"/>
+<polygon fill="#000000" stroke="#000000" points="80.7619,-24.0496 89.705,-18.3688 79.1713,-17.2328 80.7619,-24.0496"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="560pt" height="32pt"
+ viewBox="0.00 0.00 559.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-28 555.5,-28 555.5,4 -4,4"/>
+<!-- Subroutine -->
+<g id="node1" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="64,-24 0,-24 0,0 64,0 64,-24"/>
+<text text-anchor="middle" x="32" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node2" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="136,-24 82,-24 82,0 136,0 136,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Function</text>
+</g>
+<!-- Interface -->
+<g id="node3" class="node">
+<title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="209.5,-24 154.5,-24 154.5,0 209.5,0 209.5,-24"/>
+<text text-anchor="middle" x="182" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node4" class="node">
+<title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="364,-24 228,-24 228,0 364,0 364,-24"/>
+<text text-anchor="middle" x="296" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="436,-24 382,-24 382,0 436,0 436,-24"/>
+<text text-anchor="middle" x="409" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="#000000" points="551.5,-24 454.5,-24 454.5,0 551.5,0 551.5,-24"/>
+<text text-anchor="middle" x="503" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#000000">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a procedure to one which it calls. Dashed 
+    arrows point from an interface to procedures which implement that interface.
+    This could include the module procedures in a generic interface or the
+    implementation in a submodule of an interface in a parent module.
+    </p>
+    </div></div></div></div>
+      </div>
+    </div>
+     
+    <br>
+
+     <section class="visible-xs visible-sm hidden-md">
+       
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-avd%7E14">avd</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-bvd%7E11">bvd</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-cvd%7E7">cvd</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-dvcorr%7E18">dvcorr</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-i01%7E104">i01</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-i02%7E104">i02</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-iczero%7E104">iczero</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivdele%7E104">ivdele</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivfail%7E104">ivfail</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivinsp%7E60">ivinsp</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivpass%7E104">ivpass</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivtnum%7E104">ivtnum</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivtotl%7E60">ivtotl</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ivtotn%7E60">ivtotn</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-nuvi%7E53">nuvi</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-remrks%7E60">remrks</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zcompl%7E60">zcompl</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zdate%7E60">zdate</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zname%7E60">zname</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zprog%7E60">zprog</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zproj%7E60">zproj</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ztape%7E60">ztape</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-ztaped%7E60">ztaped</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zvers%7E60">zvers</a>
+      
+      <a class="list-group-item" href="../program/fm823.html#variable-zversd%7E60">zversd</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../program/fm823.html#src">fm823</a>
+  </div>
+</div>
+
+
+
+     </section>
+     <br class="visible-xs visible-sm hidden-md">
+
+     
+
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-avd%7E14"></span>double precision</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>avd</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-bvd%7E11"></span>double precision</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>bvd</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-cvd%7E7"></span>double precision</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>cvd</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-dvcorr%7E18"></span>double precision</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>dvcorr</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i01%7E104"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>i01</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i02%7E104"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>i02</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iczero%7E104"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>iczero</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivdele%7E104"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivdele</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivfail%7E104"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivfail</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivinsp%7E60"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivinsp</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivpass%7E104"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivpass</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivtnum%7E104"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivtnum</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivtotl%7E60"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivtotl</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivtotn%7E60"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivtotn</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-nuvi%7E53"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>nuvi</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-remrks%7E60"></span>character(len=31)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>remrks</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zcompl%7E60"></span>character(len=20)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zcompl</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zdate%7E60"></span>character(len=17)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zdate</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zname%7E60"></span>character(len=20)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zname</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zprog%7E60"></span>character(len=5)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zprog</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zproj%7E60"></span>character(len=13)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zproj</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ztape%7E60"></span>character(len=10)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ztape</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ztaped%7E60"></span>character(len=13)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ztaped</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zvers%7E60"></span>character(len=13)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zvers</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zversd%7E60"></span>character(len=17)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zversd</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    
+    
+    
+    <section>
+    <h2 id="src">Source Code</h2>
+    <div class="highlight"><pre><span></span>      <span class="k">program </span><span class="n">fm823</span>
+<span class="c">! ***********************************************************************</span>
+<span class="c">! *****  FORTRAN 77                                                      </span>
+<span class="c">! *****   FM823                                                          </span>
+<span class="c">! *****                       YDASIN - (194)                             </span>
+<span class="c">! *****                                                                  </span>
+<span class="c">! ***********************************************************************</span>
+<span class="c">! *****  GENERAL PURPOSE                                         ANS REF </span>
+<span class="c">! *****    TEST INTRINSIC FUNCTION DASIN, DACOS                   15.3   </span>
+<span class="c">! *****                                                          TABLE 5 </span>
+<span class="c">! *****                                                                  </span>
+<span class="c">! BB** ********************** BBCCOMNT **********************************</span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! ****            1978 FORTRAN COMPILER VALIDATION SYSTEM                </span>
+<span class="c">! ****                          VERSION 2.1                              </span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! ****           SUGGESTIONS AND COMMENTS SHOULD BE FORWARDED TO         </span>
+<span class="c">! ****          NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY           </span>
+<span class="c">! ****               SOFTWARE STANDARDS VALIDATION GROUP                 </span>
+<span class="c">! ****                      BUILDING 225  RM A266                        </span>
+<span class="c">! ****                     GAITHERSBURG, MD  20899                       </span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! BE** ********************** BBCCOMNT **********************************</span>
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****    S P E C I F I C A T I O N S SEGMENT 194                       </span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivpass</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivfail</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivdele</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivinsp</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivtotl</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivtotn</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">iczero</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i01</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i02</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">nuvi</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivtnum</span>
+        <span class="kt">double precision</span> <span class="kd">::</span> <span class="n">avd</span>
+        <span class="kt">double precision</span> <span class="kd">::</span> <span class="n">bvd</span>
+        <span class="kt">double precision</span> <span class="kd">::</span> <span class="n">cvd</span>
+        <span class="kt">double precision</span> <span class="kd">::</span> <span class="n">dvcorr</span>
+<span class="c">! *****                                                                  </span>
+<span class="c">! BB** ********************** BBCINITA **********************************</span>
+<span class="c">! **** SPECIFICATION STATEMENTS                                          </span>
+<span class="c">! ****                                                                   </span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zvers</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zversd</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zdate</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zprog</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zcompl</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zname</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> <span class="kd">::</span> <span class="n">ztape</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zproj</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">31</span><span class="p">)</span> <span class="kd">::</span> <span class="n">remrks</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span> <span class="kd">::</span> <span class="n">ztaped</span>
+<span class="c">! **** INITIALIZE SECTION                                                </span>
+<span class="c">! BE** ********************** BBCINITA **********************************</span>
+<span class="c">! BB** ********************** BBCINITB **********************************</span>
+      <span class="k">data </span><span class="n">zvers</span><span class="p">,</span><span class="n">zversd</span><span class="p">,</span><span class="n">zdate</span> <span class="o">/</span> <span class="s1">&#39;VERSION 2.1  &#39;</span><span class="p">,</span><span class="s1">&#39;93/10/21*21.02.00&#39;</span><span class="p">,</span><span class="s1">&#39;*NO DATE*TIME&#39;</span> <span class="o">/</span> 
+      <span class="k">data </span><span class="n">zcompl</span><span class="p">,</span><span class="n">zname</span><span class="p">,</span><span class="n">ztape</span> <span class="o">/</span> <span class="s1">&#39;*NONE SPECIFIED*&#39;</span><span class="p">,</span><span class="s1">&#39;*NO COMPANY NAME*&#39;</span><span class="p">,</span><span class="s1">&#39;*NO TAPE*&#39;</span> <span class="o">/</span> 
+      <span class="k">data </span><span class="n">zproj</span><span class="p">,</span><span class="n">ztaped</span><span class="p">,</span><span class="n">zprog</span> <span class="o">/</span> <span class="s1">&#39;*NO PROJECT*&#39;</span><span class="p">,</span><span class="s1">&#39;*NO TAPE DATE&#39;</span><span class="p">,</span><span class="s1">&#39;XXXXX&#39;</span> <span class="o">/</span> 
+      <span class="k">data </span><span class="n">remrks</span> <span class="o">/</span> <span class="s1">&#39;                               &#39;</span> <span class="o">/</span> 
+<span class="c">! **** THE FOLLOWING 9 COMMENT LINES (CZ01, CZ02, ...) CAN BE REPLACED   </span>
+<span class="c">! **** FOR IDENTIFYING THE TEST ENVIRONMENT                              </span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! Z01  ZVERS  = &#39;VERSION OF THE COMPILER VALIDATION SYSTEM&#39;              </span>
+<span class="c">! Z02  ZVERSD = &#39;CREATION DATE/TIME OF THE COMPILER VALIDATION SYSTEM&#39;   </span>
+<span class="c">! Z03  ZPROG  = &#39;PROGRAM NAME&#39;                                           </span>
+<span class="c">! Z04  ZDATE  = &#39;DATE OF TEST&#39;                                           </span>
+<span class="c">! Z05  ZCOMPL = &#39;COMPILER IDENTIFICATION&#39;                                </span>
+<span class="c">! Z06  ZPROJ  = &#39;PROJECT NUMBER/IDENTIFICATION&#39;                          </span>
+<span class="c">! Z07  ZNAME  = &#39;NAME OF USER&#39;                                           </span>
+<span class="c">! Z08  ZTAPE  = &#39;TAPE OWNER/ID&#39;                                          </span>
+<span class="c">! Z09  ZTAPED = &#39;DATE TAPE COPIED&#39;                                       </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivpass</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivfail</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivdele</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivinsp</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivtotl</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivtotn</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">iczero</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+<span class="c">!                                                                        </span>
+<span class="c">!      I01 CONTAINS THE LOGICAL UNIT NUMBER FOR THE CARD READER.         </span>
+      <span class="n">i01</span> <span class="o">=</span> <span class="mi">05</span>                                                          
+<span class="c">!      I02 CONTAINS THE LOGICAL UNIT NUMBER FOR THE PRINTER.             </span>
+      <span class="n">i02</span> <span class="o">=</span> <span class="mi">06</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">! X010   REPLACED BY FEXEC X-010 CONTROL CARD (CARD-READER UNIT NUMBER). </span>
+<span class="c">!      THE CX010 CARD IS FOR OVERRIDING THE PROGRAM DEFAULT I01 = 5      </span>
+<span class="c">! X011   REPLACED BY FEXEC X-011 CONTROL CARD.  CX011 IS FOR SYSTEMS     </span>
+<span class="c">!      REQUIRING ADDITIONAL STATEMENTS FOR FILES ASSOCIATED WITH CX010.  </span>
+<span class="c">!                                                                        </span>
+<span class="c">! X020   REPLACED BY FEXEC X-020 CONTROL CARD (PRINTER UNIT NUMBER).     </span>
+<span class="c">!      THE CX020 CARD IS FOR OVERRIDING THE PROGRAM DEFAULT I02= 6       </span>
+<span class="c">! X021   REPLACED BY FEXEC X-021 CONTROL CARD.  CX021 IS FOR SYSTEMS     </span>
+<span class="c">!      REQUIRING ADDITIONAL STATEMENTS FOR FILES ASSOCIATED WITH CX020.  </span>
+<span class="c">!                                                                        </span>
+<span class="c">! BE** ********************** BBCINITB **********************************</span>
+      <span class="n">nuvi</span> <span class="o">=</span> <span class="n">i02</span>                                                        
+      <span class="n">ivtotl</span> <span class="o">=</span> <span class="mi">12</span>                                                       
+      <span class="n">zprog</span> <span class="o">=</span> <span class="s1">&#39;FM823&#39;</span>                                                   
+<span class="c">! BB** ********************** BBCHED0A **********************************</span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! **** WRITE REPORT TITLE                                                </span>
+<span class="c">! ****                                                                   </span>
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90002</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90006</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90007</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90008</span><span class="p">)</span>  <span class="n">zvers</span><span class="p">,</span> <span class="n">zversd</span>                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90009</span><span class="p">)</span>  <span class="n">zprog</span><span class="p">,</span> <span class="n">zprog</span>                                  
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90010</span><span class="p">)</span>  <span class="n">zdate</span><span class="p">,</span> <span class="n">zcompl</span>                                 
+<span class="c">! BE** ********************** BBCHED0A **********************************</span>
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****    HEADER FOR SEGMENT 194                                        </span>
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span><span class="mi">19400</span><span class="p">)</span>                                               
+<span class="mi">19400</span> <span class="k">format</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="o">/</span> <span class="s2">&quot;  YDASIN - (194) INTRINSIC FUNCTIONS&quot;</span> <span class="o">//</span>                  <span class="s2">&quot;  DASIN, DACOS (DOUBLE PRECISION ARCSINE, ARCCOSINE)&quot;</span> <span class="o">//</span>         <span class="s2">&quot;  ANS REF. - 15.3&quot;</span> <span class="p">)</span>                                    
+<span class="c">! BB** ********************** BBCHED0B **********************************</span>
+<span class="c">! **** WRITE DETAIL REPORT HEADERS                                       </span>
+<span class="c">! ****                                                                   </span>
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90013</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90014</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90015</span><span class="p">)</span> <span class="n">ivtotl</span>                                          
+<span class="c">! BE** ********************** BBCHED0B **********************************</span>
+<span class="c">! *****                                                                  </span>
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span><span class="mi">19401</span><span class="p">)</span>                                               
+<span class="mi">19401</span> <span class="k">format</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">,</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;TEST OF DASIN&quot;</span> <span class="p">)</span>                                 
+<span class="c">! *****                                                                  </span>
+<span class="c">! T001*  TEST 1                  -1.0D0 FOR PRINCIPAL VALUE AT ENDPOINTS </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">1</span>                                                   
+        <span class="n">bvd</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0d0</span>                                                    
+        <span class="n">avd</span> <span class="o">=</span> <span class="nb">dasin</span><span class="p">(</span><span class="n">bvd</span><span class="p">)</span>                                                
+           <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">+</span>  <span class="mf">0.1570796328d+01</span><span class="p">)</span> <span class="mi">20010</span><span class="p">,</span> <span class="mi">10010</span><span class="p">,</span> <span class="mi">40010</span>             
+<span class="mi">40010</span> <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">+</span>  <span class="mf">0.1570796326d+01</span><span class="p">)</span> <span class="mi">10010</span><span class="p">,</span> <span class="mi">10010</span><span class="p">,</span> <span class="mi">20010</span>             
+<span class="mi">10010</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">goto </span><span class="mi">0011</span>                                                   
+<span class="mi">20010</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="n">dvcorr</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.5707963267948966192d+00</span>                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">avd</span><span class="p">,</span> <span class="n">dvcorr</span>                      
+ <span class="mi">0011</span>      <span class="k">continue</span>                                                     
+<span class="c">! T002*  TEST 2                  +1.0D0 FOR PRINCIPAL VALUE AT ENDPOINTS </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">2</span>                                                   
+        <span class="n">avd</span> <span class="o">=</span> <span class="nb">dasin</span><span class="p">(</span><span class="mf">1.0d0</span><span class="p">)</span>                                              
+           <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.1570796326d+01</span><span class="p">)</span> <span class="mi">20020</span><span class="p">,</span> <span class="mi">10020</span><span class="p">,</span> <span class="mi">40020</span>             
+<span class="mi">40020</span> <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.1570796328d+01</span><span class="p">)</span> <span class="mi">10020</span><span class="p">,</span> <span class="mi">10020</span><span class="p">,</span> <span class="mi">20020</span>             
+<span class="mi">10020</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">goto </span><span class="mi">0021</span>                                                   
+<span class="mi">20020</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="n">dvcorr</span> <span class="o">=</span>  <span class="mf">1.5707963267948966192d+00</span>                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">avd</span><span class="p">,</span> <span class="n">dvcorr</span>                      
+ <span class="mi">0021</span>      <span class="k">continue</span>                                                     
+<span class="c">! T003*  TEST 3                                  THE VALUE -DSQRT(0.5D0) </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">3</span>                                                   
+        <span class="n">bvd</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="nb">dsqrt</span><span class="p">(</span><span class="mf">2.0d0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2.0d0</span><span class="p">)</span>                                   
+        <span class="n">avd</span> <span class="o">=</span> <span class="nb">dasin</span><span class="p">(</span><span class="n">bvd</span><span class="p">)</span>                                                
+           <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">+</span>  <span class="mf">0.7853981638d+00</span><span class="p">)</span> <span class="mi">20030</span><span class="p">,</span> <span class="mi">10030</span><span class="p">,</span> <span class="mi">40030</span>             
+<span class="mi">40030</span> <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">+</span>  <span class="mf">0.7853981630d+00</span><span class="p">)</span> <span class="mi">10030</span><span class="p">,</span> <span class="mi">10030</span><span class="p">,</span> <span class="mi">20030</span>             
+<span class="mi">10030</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">goto </span><span class="mi">0031</span>                                                   
+<span class="mi">20030</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="n">dvcorr</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.78539816339744830962d+00</span>                         
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">avd</span><span class="p">,</span> <span class="n">dvcorr</span>                      
+ <span class="mi">0031</span>      <span class="k">continue</span>                                                     
+<span class="c">! T004*  TEST 4                                          THE VALUE 0.5D0 </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">4</span>                                                   
+        <span class="n">avd</span> <span class="o">=</span> <span class="nb">dasin</span><span class="p">(</span><span class="mf">1.0d0</span> <span class="o">/</span> <span class="mf">2.0d0</span><span class="p">)</span>                                      
+           <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.5235987753d+00</span><span class="p">)</span> <span class="mi">20040</span><span class="p">,</span> <span class="mi">10040</span><span class="p">,</span> <span class="mi">40040</span>             
+<span class="mi">40040</span> <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.5235987759d+00</span><span class="p">)</span> <span class="mi">10040</span><span class="p">,</span> <span class="mi">10040</span><span class="p">,</span> <span class="mi">20040</span>             
+<span class="mi">10040</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">goto </span><span class="mi">0041</span>                                                   
+<span class="mi">20040</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="n">dvcorr</span> <span class="o">=</span>  <span class="mf">0.52359877559829887308d+00</span>                         
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">avd</span><span class="p">,</span> <span class="n">dvcorr</span>                      
+ <span class="mi">0041</span>      <span class="k">continue</span>                                                     
+<span class="c">! T005*  TEST 5                             AN ARGUMENT OF LOW MAGNITUDE </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">5</span>                                                   
+        <span class="n">avd</span> <span class="o">=</span> <span class="nb">dasin</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0d-13</span><span class="p">)</span>                                           
+           <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">+</span>  <span class="mf">0.1000000001d-12</span><span class="p">)</span> <span class="mi">20050</span><span class="p">,</span> <span class="mi">10050</span><span class="p">,</span> <span class="mi">40050</span>             
+<span class="mi">40050</span> <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">+</span>  <span class="mf">0.9999999995d-13</span><span class="p">)</span> <span class="mi">10050</span><span class="p">,</span> <span class="mi">10050</span><span class="p">,</span> <span class="mi">20050</span>             
+<span class="mi">10050</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">goto </span><span class="mi">0051</span>                                                   
+<span class="mi">20050</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="n">dvcorr</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0000000000000000000d-13</span>                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">avd</span><span class="p">,</span> <span class="n">dvcorr</span>                      
+ <span class="mi">0051</span>      <span class="k">continue</span>                                                     
+<span class="c">! *****                                                                  </span>
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span><span class="mi">19407</span><span class="p">)</span>                                               
+<span class="mi">19407</span> <span class="k">format</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">,</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;TEST OF DACOS&quot;</span> <span class="p">)</span>                                 
+<span class="c">! *****                                                                  </span>
+<span class="c">! T006*  TEST 6                  -1.0D0 FOR PRINCIPAL VALUE AT ENDPOINTS </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">6</span>                                                   
+        <span class="n">bvd</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0d0</span>                                                    
+        <span class="n">avd</span> <span class="o">=</span> <span class="nb">dacos</span><span class="p">(</span><span class="n">bvd</span><span class="p">)</span>                                                
+           <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.3141592652d+01</span><span class="p">)</span> <span class="mi">20060</span><span class="p">,</span> <span class="mi">10060</span><span class="p">,</span> <span class="mi">40060</span>             
+<span class="mi">40060</span> <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.3141592655d+01</span><span class="p">)</span> <span class="mi">10060</span><span class="p">,</span> <span class="mi">10060</span><span class="p">,</span> <span class="mi">20060</span>             
+<span class="mi">10060</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">goto </span><span class="mi">0061</span>                                                   
+<span class="mi">20060</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="n">dvcorr</span> <span class="o">=</span>  <span class="mf">3.1415926535897932384d+00</span>                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">avd</span><span class="p">,</span> <span class="n">dvcorr</span>                      
+ <span class="mi">0061</span>      <span class="k">continue</span>                                                     
+<span class="c">! T007*  TEST 7              +1.0D0 TO TEST PRINCIPAL VALUE AT ENDPOINTS </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">7</span>                                                   
+        <span class="n">avd</span> <span class="o">=</span> <span class="nb">dacos</span><span class="p">(</span><span class="mf">1.0d0</span><span class="p">)</span>                                              
+           <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">+</span>  <span class="mf">0.5000000000d-09</span><span class="p">)</span> <span class="mi">20070</span><span class="p">,</span> <span class="mi">10070</span><span class="p">,</span> <span class="mi">40070</span>             
+<span class="mi">40070</span> <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.5000000000d-09</span><span class="p">)</span> <span class="mi">10070</span><span class="p">,</span> <span class="mi">10070</span><span class="p">,</span> <span class="mi">20070</span>             
+<span class="mi">10070</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">goto </span><span class="mi">0071</span>                                                   
+<span class="mi">20070</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="n">dvcorr</span> <span class="o">=</span>  <span class="mf">0.00000000000000000000d+00</span>                         
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">avd</span><span class="p">,</span> <span class="n">dvcorr</span>                      
+ <span class="mi">0071</span>      <span class="k">continue</span>                                                     
+<span class="c">! T008*  TEST 8                                  THE VALUE -DSQRT(0.5D0) </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">8</span>                                                   
+        <span class="n">bvd</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="nb">dsqrt</span><span class="p">(</span><span class="mf">2.0d0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2.0d0</span><span class="p">)</span>                                   
+        <span class="n">avd</span> <span class="o">=</span> <span class="nb">dacos</span><span class="p">(</span><span class="n">bvd</span><span class="p">)</span>                                                
+           <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.2356194489d+01</span><span class="p">)</span> <span class="mi">20080</span><span class="p">,</span> <span class="mi">10080</span><span class="p">,</span> <span class="mi">40080</span>             
+<span class="mi">40080</span> <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.2356194492d+01</span><span class="p">)</span> <span class="mi">10080</span><span class="p">,</span> <span class="mi">10080</span><span class="p">,</span> <span class="mi">20080</span>             
+<span class="mi">10080</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">goto </span><span class="mi">0081</span>                                                   
+<span class="mi">20080</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="n">dvcorr</span> <span class="o">=</span>  <span class="mf">2.3561944901923449288d+00</span>                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">avd</span><span class="p">,</span> <span class="n">dvcorr</span>                      
+ <span class="mi">0081</span>      <span class="k">continue</span>                                                     
+<span class="c">! T009*  TEST 9                                          THE VALUE 0.5D0 </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">9</span>                                                   
+        <span class="n">avd</span> <span class="o">=</span> <span class="nb">dacos</span><span class="p">(</span><span class="mf">1.0d0</span> <span class="o">/</span> <span class="mf">2.0d0</span><span class="p">)</span>                                      
+           <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.1047197550d+01</span><span class="p">)</span> <span class="mi">20090</span><span class="p">,</span> <span class="mi">10090</span><span class="p">,</span> <span class="mi">40090</span>             
+<span class="mi">40090</span> <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.1047197552d+01</span><span class="p">)</span> <span class="mi">10090</span><span class="p">,</span> <span class="mi">10090</span><span class="p">,</span> <span class="mi">20090</span>             
+<span class="mi">10090</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">goto </span><span class="mi">0091</span>                                                   
+<span class="mi">20090</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="n">dvcorr</span> <span class="o">=</span>  <span class="mf">1.0471975511965977461d+00</span>                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">avd</span><span class="p">,</span> <span class="n">dvcorr</span>                      
+ <span class="mi">0091</span>      <span class="k">continue</span>                                                     
+<span class="c">! T010*  TEST 10                            AN ARGUMENT OF LOW MAGNITUDE </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">10</span>                                                  
+        <span class="n">avd</span> <span class="o">=</span> <span class="nb">dacos</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0d-33</span><span class="p">)</span>                                           
+           <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.1570796326d+01</span><span class="p">)</span> <span class="mi">20100</span><span class="p">,</span> <span class="mi">10100</span><span class="p">,</span> <span class="mi">40100</span>             
+<span class="mi">40100</span> <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.1570796328d+01</span><span class="p">)</span> <span class="mi">10100</span><span class="p">,</span> <span class="mi">10100</span><span class="p">,</span> <span class="mi">20100</span>             
+<span class="mi">10100</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">goto </span><span class="mi">0101</span>                                                   
+<span class="mi">20100</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="n">dvcorr</span> <span class="o">=</span>  <span class="mf">1.5707963267948966192d+00</span>                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">avd</span><span class="p">,</span> <span class="n">dvcorr</span>                      
+ <span class="mi">0101</span>      <span class="k">continue</span>                                                     
+<span class="c">! T011*  TEST 11    COMPARISON OF DASIN AND DACOS FOR RIGHT RELATIONSHIP </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">11</span>                                                  
+        <span class="n">bvd</span> <span class="o">=</span> <span class="nb">dasin</span><span class="p">(</span><span class="nb">dsqrt</span><span class="p">(</span><span class="mf">3.0d0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">3.0d0</span><span class="p">)</span>                               
+        <span class="n">cvd</span> <span class="o">=</span> <span class="nb">dacos</span><span class="p">(</span><span class="nb">dsqrt</span><span class="p">(</span><span class="mf">3.0d0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">3.0d0</span><span class="p">)</span>                               
+        <span class="n">avd</span> <span class="o">=</span> <span class="p">(</span><span class="n">bvd</span> <span class="o">+</span> <span class="n">cvd</span><span class="p">)</span> <span class="o">*</span> <span class="mf">2.0d0</span>                                       
+           <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.3141592652d+01</span><span class="p">)</span> <span class="mi">20110</span><span class="p">,</span> <span class="mi">10110</span><span class="p">,</span> <span class="mi">40110</span>             
+<span class="mi">40110</span> <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.3141592655d+01</span><span class="p">)</span> <span class="mi">10110</span><span class="p">,</span> <span class="mi">10110</span><span class="p">,</span> <span class="mi">20110</span>             
+<span class="mi">10110</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">goto </span><span class="mi">0111</span>                                                   
+<span class="mi">20110</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="n">dvcorr</span> <span class="o">=</span>  <span class="mf">3.1415926535897932384d+00</span>                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">avd</span><span class="p">,</span> <span class="n">dvcorr</span>                      
+ <span class="mi">0111</span>      <span class="k">continue</span>                                                     
+<span class="c">! T012*  TEST 12      COMPARISON OF DASIN AND DACOS TO TEST RELATIONSHIP </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">12</span>                                                  
+        <span class="n">avd</span> <span class="o">=</span> <span class="p">(</span><span class="nb">dasin</span><span class="p">(</span><span class="o">+</span><span class="mf">0.25d0</span><span class="p">)</span> <span class="o">+</span> <span class="nb">dacos</span><span class="p">(</span><span class="o">+</span><span class="mf">0.25d0</span><span class="p">))</span> <span class="o">*</span> <span class="mf">2.0d0</span>                 
+           <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.3141592652d+01</span><span class="p">)</span> <span class="mi">20120</span><span class="p">,</span> <span class="mi">10120</span><span class="p">,</span> <span class="mi">40120</span>             
+<span class="mi">40120</span> <span class="k">if</span> <span class="p">(</span><span class="n">avd</span> <span class="o">-</span>  <span class="mf">0.3141592655d+01</span><span class="p">)</span> <span class="mi">10120</span><span class="p">,</span> <span class="mi">10120</span><span class="p">,</span> <span class="mi">20120</span>             
+<span class="mi">10120</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">goto </span><span class="mi">0121</span>                                                   
+<span class="mi">20120</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="n">dvcorr</span> <span class="o">=</span>  <span class="mf">3.1415926535897932384d+00</span>                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">avd</span><span class="p">,</span> <span class="n">dvcorr</span>                      
+ <span class="mi">0121</span>      <span class="k">continue</span>                                                     
+<span class="c">! *****                                                                  </span>
+<span class="c">! BB** ********************** BBCSUM0  **********************************</span>
+<span class="c">! **** WRITE OUT TEST SUMMARY                                            </span>
+<span class="c">! ****                                                                   </span>
+      <span class="n">ivtotn</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="n">ivinsp</span>                        
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90004</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90014</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90004</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90020</span><span class="p">)</span> <span class="n">ivpass</span>                                         
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90022</span><span class="p">)</span> <span class="n">ivfail</span>                                         
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90024</span><span class="p">)</span> <span class="n">ivdele</span>                                         
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90026</span><span class="p">)</span> <span class="n">ivinsp</span>                                         
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90028</span><span class="p">)</span> <span class="n">ivtotn</span><span class="p">,</span> <span class="n">ivtotl</span>                                 
+<span class="c">! BE** ********************** BBCSUM0  **********************************</span>
+<span class="c">! BB** ********************** BBCFOOT0 **********************************</span>
+<span class="c">! **** WRITE OUT REPORT FOOTINGS                                         </span>
+<span class="c">! ****                                                                   </span>
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90016</span><span class="p">)</span> <span class="n">zprog</span><span class="p">,</span> <span class="n">zprog</span>                                    
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90018</span><span class="p">)</span> <span class="n">zproj</span><span class="p">,</span> <span class="n">zname</span><span class="p">,</span> <span class="n">ztape</span><span class="p">,</span> <span class="n">ztaped</span>                     
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90019</span><span class="p">)</span>                                                 
+<span class="c">! BE** ********************** BBCFOOT0 **********************************</span>
+<span class="c">! BB** ********************** BBCFMT0A **********************************</span>
+<span class="c">! **** FORMATS FOR TEST DETAIL LINES                                     </span>
+<span class="c">! ****                                                                   </span>
+<span class="mi">80000</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;DELETED&quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                           
+<span class="mi">80002</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; PASS  &quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                           
+<span class="mi">80004</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;INSPECT&quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                           
+<span class="mi">80008</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                           
+<span class="mi">80010</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">15</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="n">i6</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">15</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">i6</span><span class="p">)</span>                                    
+<span class="mi">80012</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">)</span>                              
+<span class="mi">80018</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="n">a21</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">a21</span><span class="p">)</span>                                  
+<span class="mi">80020</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="n">a21</span><span class="p">,</span><span class="mi">1</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                         
+<span class="mi">80022</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">a21</span><span class="p">,</span><span class="mi">1</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                         
+<span class="mi">80024</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="n">i6</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                         
+<span class="mi">80026</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">i6</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                         
+<span class="mi">80028</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                      
+<span class="mi">80030</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                      
+<span class="mi">80050</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                                              
+<span class="c">! BE** ********************** BBCFMT0A **********************************</span>
+<span class="c">! BB** ********************** BBCFMAT1 **********************************</span>
+<span class="c">! **** FORMATS FOR TEST DETAIL LINES - FULL LANGUAGE                     </span>
+<span class="c">! ****                                                                   </span>
+<span class="mi">80031</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="n">d17</span><span class="p">.</span><span class="mi">10</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">d17</span><span class="p">.</span><span class="mi">10</span><span class="p">)</span>                            
+<span class="mi">80033</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="n">d17</span><span class="p">.</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                     
+<span class="mi">80035</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">d17</span><span class="p">.</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                     
+<span class="mi">80037</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">,</span><span class="mi">6</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>    
+<span class="mi">80039</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">,</span><span class="mi">6</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>    
+<span class="mi">80041</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">,</span><span class="mi">6</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>    
+<span class="mi">80043</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">,</span><span class="mi">6</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>    
+<span class="mi">80045</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span>                  <span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">)</span>                                         
+<span class="c">! BE** ********************** BBCFMAT1 **********************************</span>
+<span class="c">! BB** ********************** BBCFMT0B **********************************</span>
+<span class="c">! **** FORMAT STATEMENTS FOR PAGE HEADERS                                </span>
+<span class="c">! ****                                                                   </span>
+<span class="mi">90002</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>                                                      
+<span class="mi">90004</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>                                                      
+<span class="mi">90006</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">20</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY&quot;</span> <span class="p">)</span>
+<span class="mi">90007</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">19</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FORTRAN COMPILER VALIDATION SYSTEM&quot;</span> <span class="p">)</span>            
+<span class="mi">90008</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="n">a13</span><span class="p">,</span><span class="n">a17</span><span class="p">)</span>                                          
+<span class="mi">90009</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; *&quot;</span><span class="p">,</span><span class="n">a5</span><span class="p">,</span><span class="s2">&quot;BEGIN*&quot;</span><span class="p">,</span><span class="mi">12</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;TEST RESULTS - &quot;</span> <span class="p">,</span><span class="n">a5</span><span class="p">,</span><span class="o">/</span><span class="p">)</span>       
+<span class="mi">90010</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;TEST DATE*TIME= &quot;</span> <span class="p">,</span><span class="n">a17</span><span class="p">,</span><span class="s2">&quot;  -  COMPILER= &quot;</span> <span class="p">,</span><span class="n">a20</span><span class="p">)</span>    
+<span class="mi">90013</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot; TEST   &quot;</span><span class="p">,</span><span class="s2">&quot;PASS/FAIL &quot;</span> <span class="p">,</span><span class="mi">6</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;DISPLAYED RESULTS&quot;</span> <span class="p">,</span>            <span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;REMARKS&quot;</span><span class="p">,</span><span class="mi">24</span><span class="n">x</span><span class="p">)</span>                                          
+<span class="mi">90014</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot;----------------------------------------------&quot;</span> <span class="p">,</span>            <span class="s2">&quot;---------------------------------&quot;</span> <span class="p">)</span>                     
+<span class="mi">90015</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;THIS PROGRAM HAS &quot;</span> <span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="s2">&quot; TESTS&quot;</span><span class="p">,</span><span class="o">/</span><span class="p">)</span>               
+<span class="c">! ****                                                                   </span>
+<span class="c">! **** FORMAT STATEMENTS FOR REPORT FOOTINGS                             </span>
+<span class="c">! ****                                                                   </span>
+<span class="mi">90016</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; *&quot;</span><span class="p">,</span><span class="n">a5</span><span class="p">,</span><span class="s2">&quot;END*&quot;</span><span class="p">,</span><span class="mi">14</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;END OF TEST - &quot;</span> <span class="p">,</span><span class="n">a5</span><span class="p">,</span><span class="o">/</span><span class="p">)</span>          
+<span class="mi">90018</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="n">a13</span><span class="p">,</span><span class="mi">13</span><span class="n">x</span><span class="p">,</span><span class="n">a20</span><span class="p">,</span><span class="s2">&quot;   *   &quot;</span><span class="p">,</span><span class="n">a10</span><span class="p">,</span><span class="s2">&quot;/&quot;</span><span class="p">,</span>                                <span class="n">a13</span><span class="p">)</span>                                                      
+<span class="mi">90019</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot;FOR OFFICIAL USE ONLY     &quot;</span> <span class="p">,</span><span class="mi">35</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COPYRIGHT  1982&quot;</span> <span class="p">)</span> 
+<span class="c">! ****                                                                   </span>
+<span class="c">! **** FORMAT STATEMENTS FOR RUN SUMMARY                                 </span>
+<span class="c">! ****                                                                   </span>
+<span class="mi">90020</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS PASSED&quot;</span> <span class="p">)</span>                              
+<span class="mi">90022</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS FAILED&quot;</span> <span class="p">)</span>                              
+<span class="mi">90024</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS DELETED&quot;</span> <span class="p">)</span>                             
+<span class="mi">90026</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS REQUIRE INSPECTION&quot;</span> <span class="p">)</span>                  
+<span class="mi">90028</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; OF &quot;</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="s2">&quot; TESTS EXECUTED&quot;</span> <span class="p">)</span>                  
+<span class="c">! BE** ********************** BBCFMT0B **********************************</span>
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****    END OF TEST SEGMENT 194                                       </span>
+      <span class="k">stop                                                              </span>
+<span class="k">      end program </span><span class="n">fm823</span>
+</pre></div>
+
+    </section>
+    
+    
+    </div>
+  </div>
+
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2018 
+                                          </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+            
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> Refactored NIST-Fortran78 was developed by NIST (refactored by RefactorF4Acc)</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>

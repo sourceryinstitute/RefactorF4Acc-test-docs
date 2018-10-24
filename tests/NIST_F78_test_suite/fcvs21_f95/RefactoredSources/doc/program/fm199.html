@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="A Fortran 77 test suite refactored by RefactorF4Acc">
+    
+    <meta name="author" content="NIST (refactored by RefactorF4Acc)" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>fm199 &ndash; Refactored NIST-Fortran78</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Refactored NIST-Fortran78 </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+               
+        
+            <li><a href="../lists/programs.html">Programs</a></li>
+        
+            </ul>
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/programs.html">Programs</a></li>
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>fm199
+    <small>Program</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.4% of total for programs.">280 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/FM199.f95"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+     <li><a href='../sourcefile/fm199.f95.html'>FM199.f95</a></li>
+    
+  
+     <li class="active">fm199</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-i01%7E107">i01</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-i02%7E107">i02</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-iczero%7E107">iczero</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivcomp%7E57">ivcomp</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivcorr%7E63">ivcorr</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivdele%7E107">ivdele</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivfail%7E107">ivfail</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivon01%7E39">ivon01</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivon02%7E25">ivon02</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivpass%7E107">ivpass</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivtnum%7E107">ivtnum</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-xvtn01">xvtn01</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../program/fm199.html#src">fm199</a>
+  </div>
+</div>
+
+
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    
+  
+
+    
+    
+    
+
+     <section class="visible-xs visible-sm hidden-md">
+       
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-i01%7E107">i01</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-i02%7E107">i02</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-iczero%7E107">iczero</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivcomp%7E57">ivcomp</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivcorr%7E63">ivcorr</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivdele%7E107">ivdele</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivfail%7E107">ivfail</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivon01%7E39">ivon01</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivon02%7E25">ivon02</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivpass%7E107">ivpass</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-ivtnum%7E107">ivtnum</a>
+      
+      <a class="list-group-item" href="../program/fm199.html#variable-xvtn01">xvtn01</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../program/fm199.html#src">fm199</a>
+  </div>
+</div>
+
+
+
+     </section>
+     <br class="visible-xs visible-sm hidden-md">
+
+     
+
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i01%7E107"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>i01</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i02%7E107"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>i02</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iczero%7E107"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>iczero</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivcomp%7E57"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivcomp</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivcorr%7E63"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivcorr</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivdele%7E107"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivdele</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivfail%7E107"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivfail</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivon01%7E39"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivon01</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivon02%7E25"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivon02</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivpass%7E107"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivpass</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivtnum%7E107"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivtnum</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-xvtn01"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>xvtn01</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    
+    
+    
+    <section>
+    <h2 id="src">Source Code</h2>
+    <div class="highlight"><pre><span></span>      <span class="k">program </span><span class="n">fm199</span>
+<span class="c">!     WV: SANE VERSION OF FM200, removed spaces in tests 9 and 11        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         THIS ROUTINE IS THE FIRST AUDIT PROGRAM TO CONTAIN A PROGRAM   </span>
+<span class="c">!      STATEMENT.  THE FOLLOWING FEATURES FROM CHAPTER 3., CHARACTERS,   </span>
+<span class="c">!      LINES AND EXECUTION SEQUENCE ARE TESTED.                          </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         (1)  ASTERISK (*) IN COLUMN 1 TO DESIGNATE A COMMENT LINE.     </span>
+<span class="c">!         (2)  USE OF NON-FORTRAN CHARACTERS WITHIN A COMMENT LINE.      </span>
+<span class="c">!         (3)  STATEMENT LABELS ON NONEXECUTABLE STATEMENTS.             </span>
+<span class="c">!         (4)  DIGIT 0 IN COLUMN 6 OF AN INITIAL LINE.                   </span>
+<span class="c">!         (5)  CONTINUATION LINES - MAXIMUM OF NINE CONTINUATION LINES   </span>
+<span class="c">!              (660 CHARACTERS).                                         </span>
+<span class="c">!         (6)  BLANK CHARACTERS WITHIN STATEMENTS.                       </span>
+<span class="c">!         (7)  BLANK COMMENT LINE, BLANK CHARACTERS IN COLUMNS 1-72.     </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      THE BASIC FEATURES OF SUBSET FORTRAN WHICH ARE TESTED BY THIS     </span>
+<span class="c">!      PROGRAM ARE USED THROUGHOUT THE REST OF THE SUBSET ROUTINES.      </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      REFERENCES                                                        </span>
+<span class="c">!         AMERICAN NATIONAL STANDARD PROGRAMMING LANGUAGE FORTRAN,       </span>
+<span class="c">!               X3.9-1978                                                </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         SECTION 3.1.6, BLANK CHARACTER                                 </span>
+<span class="c">!         SECTION 3.2.1, COMMENT LINE                                    </span>
+<span class="c">!         SECTION 3.2.2, INITIAL LINE                                    </span>
+<span class="c">!         SECTION 3.2.3, CONTINUATION LINE                               </span>
+<span class="c">!         SECTION 3.3, STATEMENTS                                        </span>
+<span class="c">!         SECTION 3.4, STATEMENT LABEL                                   </span>
+<span class="c">!         SECTION 14.1, PROGRAM STATEMENT                                </span>
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      ******************************************************************</span>
+<span class="c">!          A COMPILER VALIDATION SYSTEM FOR THE FORTRAN LANGUAGE         </span>
+<span class="c">!      BASED ON SPECIFICATIONS AS DEFINED IN AMERICAN STANDARD FORTRAN   </span>
+<span class="c">!      X3.9-1978, HAS BEEN DEVELOPED BY THE DEPARTMENT OF THE NAVY.  THE </span>
+<span class="c">!      FORTRAN COMPILER VALIDATION SYSTEM (FCVS) CONSISTS OF AUDIT       </span>
+<span class="c">!      ROUTINES, THEIR RELATED DATA, AND AN EXECUTIVE SYSTEM.  EACH AUDIT</span>
+<span class="c">!      ROUTINE IS A FORTRAN PROGRAM OR SUBPROGRAM WHICH INCLUDES TESTS   </span>
+<span class="c">!      OF SPECIFIC LANGUAGE ELEMENTS AND SUPPORTING PROCEDURES INDICATING</span>
+<span class="c">!      THE RESULT OF EXECUTING THESE TESTS.                              </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      THIS PARTICULAR PROGRAM OR SUBPROGRAM CONTAINS ONLY FEATURES      </span>
+<span class="c">!      FOUND IN THE SUBSET LEVEL OF THE STANDARD.                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!            SUGGESTIONS AND COMMENTS SHOULD BE FORWARDED TO             </span>
+<span class="c">!               NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY           </span>
+<span class="c">!                    SOFTWARE STANDARDS VALIDATION GROUP                 </span>
+<span class="c">!                           BUILDING 225  RM A266                        </span>
+<span class="c">!                          GAITHERSBURG, MD  20899                       </span>
+<span class="c">!      ******************************************************************</span>
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i01</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i02</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivpass</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivfail</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivdele</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">iczero</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivtnum</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivcomp</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivcorr</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivon02</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivon01</span>
+   <span class="kt">integer</span> <span class="kd">::</span> <span class="n">xvtn01</span>
+   <span class="mi">22</span> <span class="k">data </span><span class="n">ivon02</span> <span class="o">/</span> <span class="mi">5</span> <span class="o">/</span> 
+<span class="c">!         THE PRECEDING STATEMENTS ARE NONEXECUTABLE STATEMENTS WHICH    </span>
+<span class="c">!      CONTAIN STATEMENT LABELS.  THEY ARE REFERENCED IN TESTS 1 AND 2.  </span>
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      INITIALIZATION SECTION.                                           </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      INITIALIZE CONSTANTS                                              </span>
+<span class="c">!      ********************                                              </span>
+<span class="c">!      I01 CONTAINS THE LOGICAL UNIT NUMBER FOR THE CARD READER          </span>
+      <span class="n">i01</span> <span class="o">=</span> <span class="mi">5</span>                                                           
+<span class="c">!      I02 CONTAINS THE LOGICAL UNIT NUMBER FOR THE PRINTER              </span>
+      <span class="n">i02</span> <span class="o">=</span> <span class="mi">6</span>                                                           
+<span class="c">!      SYSTEM ENVIRONMENT SECTION                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">! X010     THIS CARD IS REPLACED BY CONTENTS OF FEXEC X-010 CONTROL CARD.</span>
+<span class="c">!      THE CX010 CARD IS FOR OVERRIDING THE PROGRAM DEFAULT I01 = 5      </span>
+<span class="c">!      (UNIT NUMBER FOR CARD READER).                                    </span>
+<span class="c">! X011      THIS CARD IS REPLACED BY CONTENTS OF FEXEC X-011 CONTROL CARD</span>
+<span class="c">!      THE CX011 CARD IS FOR SYSTEMS WHICH REQUIRE ADDITIONAL            </span>
+<span class="c">!      FORTRAN STATEMENTS FOR FILES ASSOCIATED WITH CX010 ABOVE.         </span>
+<span class="c">!                                                                        </span>
+<span class="c">! X020     THIS CARD IS PEPLACED BY CONTENTS OF FEXEC X-020 CONTROL CARD.</span>
+<span class="c">!      THE CX020 CARD IS FOR OVERRIDING THE PROGRAM DEFAULT I02 = 6      </span>
+<span class="c">!      (UNIT NUMBER FOR PRINTER).                                        </span>
+<span class="c">! X021     THIS CARD IS PEPLACED BY CONTENTS OF FEXEC X-021 CONTROL CARD.</span>
+<span class="c">!      THE CX021 CARD IS FOR SYSTEMS WHICH REQUIRE ADDITIONAL            </span>
+<span class="c">!      FORTRAN STATEMENTS FOR FILES ASSOCIATED WITH CX020 ABOVE.         </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivpass</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivfail</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivdele</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">iczero</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+<span class="c">!                                                                        </span>
+<span class="c">!      WRITE OUT PAGE HEADERS                                            </span>
+<span class="c">!                                                                        </span>
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90006</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90008</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90010</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90016</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90001</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90012</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90014</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         TEST 1 AND TEST 2 REFERENCE VARIABLES DEFINED IN NONEXECUTABLE </span>
+<span class="c">!      STATEMENTS WHICH CONTAIN STATEMENT LABELS.  THE NONEXECUTABLE     </span>
+<span class="c">!      STATEMENTS WHICH APPEAR AT THE BEGINNING OF THE PROGRAM ARE       </span>
+<span class="c">!             12 INTEGER XVTN01                                          </span>
+<span class="c">!             22 DATA IVON02/5/                                          </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      REFERENCE   X3.9-1977, SECTION 3.4, STATEMENT LABELS              </span>
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 001  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         TEST 001 ASSIGNS AN INTEGER VALUE TO XVTN01 WHICH WAS SPECIFIED</span>
+<span class="c">!      AS TYPE INTEGER IN AN INTEGER STATEMENT CONTAINING A STATEMENT    </span>
+<span class="c">!      LABEL.                                                            </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>   <span class="mi">1</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30010</span><span class="p">,</span> <span class="mi">0010</span><span class="p">,</span> <span class="mi">30010</span>                                    
+ <span class="mi">0010</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+       <span class="n">xvtn01</span> <span class="o">=</span> <span class="mi">1</span>                                                       
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">xvtn01</span>                                                   
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">1</span>                                                        
+<span class="mi">40010</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="mi">20010</span><span class="p">,</span> <span class="mi">10010</span><span class="p">,</span> <span class="mi">20010</span>                               
+<span class="mi">30010</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10010</span><span class="p">,</span> <span class="mi">0021</span><span class="p">,</span> <span class="mi">20010</span>                                    
+<span class="mi">10010</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0021</span>                                                        
+<span class="mi">20010</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0021</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 002  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         TEST 002 CHECKS THE VALUE WHICH WAS ASSIGNED TO IVON02 BY A    </span>
+<span class="c">!      DATA STATEMENT WITH A STATEMENT LABEL.                            </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>   <span class="mi">2</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30020</span><span class="p">,</span> <span class="mi">0020</span><span class="p">,</span> <span class="mi">30020</span>                                    
+ <span class="mi">0020</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">ivon02</span>                                                   
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">5</span>                                                        
+<span class="mi">40020</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">5</span><span class="p">)</span> <span class="mi">20020</span><span class="p">,</span> <span class="mi">10020</span><span class="p">,</span> <span class="mi">20020</span>                               
+<span class="mi">30020</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10020</span><span class="p">,</span> <span class="mi">0031</span><span class="p">,</span> <span class="mi">20020</span>                                    
+<span class="mi">10020</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0031</span>                                                        
+<span class="mi">20020</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0031</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!         TEST 3 THROUGH TEST 5 USE AN ASTERISK (*) IN COLUMN 1 TO       </span>
+<span class="c">!      DENOTE A COMMENT LINE.                                            </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      REFERENCE   X3.9-1977, SECTION 3.2.1, COMMENT LINE                </span>
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 003  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         GO TO STATEMENT IN ASTERISK COMMENT LINE.                      </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>   <span class="mi">3</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30030</span><span class="p">,</span> <span class="mi">0030</span><span class="p">,</span> <span class="mi">30030</span>                                    
+ <span class="mi">0030</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">1</span>                                                        
+<span class="c">!           GO TO 20030                                                  </span>
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+<span class="mi">40030</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span><span class="p">)</span> <span class="mi">20030</span><span class="p">,</span> <span class="mi">10030</span><span class="p">,</span> <span class="mi">20030</span>                                   
+<span class="mi">30030</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10030</span><span class="p">,</span> <span class="mi">0041</span><span class="p">,</span> <span class="mi">20030</span>                                    
+<span class="mi">10030</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0041</span>                                                        
+<span class="mi">20030</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0041</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 004  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         SEVERAL * COMMENT LINES INTERMIXED WITH EXECUTABLE STATEMENTS. </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>   <span class="mi">4</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30040</span><span class="p">,</span> <span class="mi">0040</span><span class="p">,</span> <span class="mi">30040</span>                                    
+ <span class="mi">0040</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+<span class="c">!      THE * COMMENT LINE IS THE SAME AS A C COMMENT LINE.               </span>
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">1</span>                                                        
+<span class="c">!      THE * COMMENT LINES HAVE NO EFFECT ON THE PROGRAM EXECUTION.      </span>
+<span class="c">!      THEIR USE IS STRICTLY FOR DOCUMENTATION PURPOSES.                 </span>
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">2</span>                                                        
+<span class="c">!      IVCOMP = 3                                                        </span>
+<span class="c">!   40 ANY STATEMENT LABELS ON COMMENT LINES ARE IGNORED.                </span>
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">2</span>                                                        
+<span class="mi">40040</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span> <span class="mi">20040</span><span class="p">,</span> <span class="mi">10040</span><span class="p">,</span> <span class="mi">20040</span>                               
+<span class="mi">30040</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10040</span><span class="p">,</span> <span class="mi">0051</span><span class="p">,</span> <span class="mi">20040</span>                                    
+<span class="mi">10040</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0051</span>                                                        
+<span class="mi">20040</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0051</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 005  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         NONFORTRAN CHARACTERS WITHIN C AND * COMMENT LINES.            </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>   <span class="mi">5</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30050</span><span class="p">,</span> <span class="mi">0050</span><span class="p">,</span> <span class="mi">30050</span>                                    
+ <span class="mi">0050</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">1</span>                                                        
+<span class="c">!           &lt;&gt;%?   NONFORTRAN CHARACTER                                  </span>
+<span class="c">!           &lt;&gt;%?   NONFORTRAN CHARACTER                                  </span>
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+<span class="mi">40050</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span><span class="p">)</span> <span class="mi">20050</span><span class="p">,</span> <span class="mi">10050</span><span class="p">,</span> <span class="mi">20050</span>                                   
+<span class="mi">30050</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10050</span><span class="p">,</span> <span class="mi">0061</span><span class="p">,</span> <span class="mi">20050</span>                                    
+<span class="mi">10050</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0061</span>                                                        
+<span class="mi">20050</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0061</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 006  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         LINES CONTAINING ONLY BLANK CHARACTERS IN COLUMNS 1 THROUGH    </span>
+<span class="c">!      72 ARE COMMENT LINES.                                             </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      REFERENCE   X3.9-1977, SECTION 3.2.1, COMMENT LINE                </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>   <span class="mi">6</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30060</span><span class="p">,</span> <span class="mi">0060</span><span class="p">,</span> <span class="mi">30060</span>                                    
+ <span class="mi">0060</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">3</span>                                                        
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">9</span>                                                        
+<span class="c">!         ASTERISK COMMENT LINE FOLLOWED BY BLANK COMMENT LINE.          </span>
+<span class="c">!         ASTERISK COMMENT LINE.                                         </span>
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">3</span>                                                        
+<span class="mi">40060</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">3</span><span class="p">)</span> <span class="mi">20060</span><span class="p">,</span> <span class="mi">10060</span><span class="p">,</span> <span class="mi">20060</span>                               
+<span class="mi">30060</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10060</span><span class="p">,</span> <span class="mi">0071</span><span class="p">,</span> <span class="mi">20060</span>                                    
+<span class="mi">10060</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0071</span>                                                        
+<span class="mi">20060</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0071</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!         TEST 7 AND TEST 8 CONTAIN THE DIGIT 0 IN COLUMN 6 OF INITIAL   </span>
+<span class="c">!      LINES.                                                            </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      REFERENCE   X3.9-1977, SECTION 3.2.2, INITIAL LINE                </span>
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 007  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         TEST 007 USES THE DIGIT 0 IN COLUMN 6 OF TWO SUCCESSIVE        </span>
+<span class="c">!      INITIAL LINES.                                                    </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>   <span class="mi">7</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30070</span><span class="p">,</span> <span class="mi">0070</span><span class="p">,</span> <span class="mi">30070</span>                                    
+ <span class="mi">0070</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivon01</span> <span class="o">=</span> <span class="mi">5</span>                                                        
+      <span class="n">ivon02</span> <span class="o">=</span> <span class="mi">6</span>                                                        
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">ivon01</span> <span class="o">+</span> <span class="n">ivon02</span>                                          
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">11</span>                                                       
+<span class="mi">40070</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">11</span><span class="p">)</span> <span class="mi">20070</span><span class="p">,</span> <span class="mi">10070</span><span class="p">,</span> <span class="mi">20070</span>                              
+<span class="mi">30070</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10070</span><span class="p">,</span> <span class="mi">0081</span><span class="p">,</span> <span class="mi">20070</span>                                    
+<span class="mi">10070</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0081</span>                                                        
+<span class="mi">20070</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0081</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 008  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         TEST 008 MIXES STATEMENTS WITH DIGIT 0 IN COLUMN 6 OF INITIAL  </span>
+<span class="c">!      LINE AND COMMENT LINES WITH * IN COLUMN 1.                        </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>   <span class="mi">8</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30080</span><span class="p">,</span> <span class="mi">0080</span><span class="p">,</span> <span class="mi">30080</span>                                    
+ <span class="mi">0080</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+<span class="c">!         FIRST INITIAL LINE FOLLOWS.                                    </span>
+      <span class="n">ivon01</span> <span class="o">=</span> <span class="mi">5</span>                                                        
+<span class="c">!         TWO SUCCESSIVE COMMENT LINES,                                  </span>
+<span class="c">!         FOLLOWED BY TWO INITIAL LINES.                                 </span>
+      <span class="n">ivon02</span><span class="o">=</span><span class="mi">4</span>                                                          
+      <span class="n">ivcomp</span><span class="o">=</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon02</span>                                              
+<span class="c">!           FALL THROUGH TO VERIFICATION CODE                            </span>
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">9</span>                                                        
+<span class="mi">40080</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">9</span><span class="p">)</span> <span class="mi">20080</span><span class="p">,</span> <span class="mi">10080</span><span class="p">,</span> <span class="mi">20080</span>                               
+<span class="mi">30080</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10080</span><span class="p">,</span> <span class="mi">0091</span><span class="p">,</span> <span class="mi">20080</span>                                    
+<span class="mi">10080</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0091</span>                                                        
+<span class="mi">20080</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0091</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!         TEST 9 THROUGH TEST 13 VERIFY THAT CONTINUATION LINES ARE      </span>
+<span class="c">!      PERMITTED.                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      REFERENCE   X3.9-1977, SECTION 3.2.3, CONTINUATION LINE           </span>
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 009  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         STATEMENT WITH TWO CONTINUATION LINES.                         </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>   <span class="mi">9</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30090</span><span class="p">,</span> <span class="mi">0090</span><span class="p">,</span> <span class="mi">30090</span>                                    
+ <span class="mi">0090</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivon01</span>                                                            <span class="o">=</span> <span class="mi">2</span>                                                        
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">ivon01</span>                                                   
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">2</span>                                                        
+<span class="mi">40090</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span> <span class="mi">20090</span><span class="p">,</span> <span class="mi">10090</span><span class="p">,</span> <span class="mi">20090</span>                               
+<span class="mi">30090</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10090</span><span class="p">,</span> <span class="mi">0101</span><span class="p">,</span> <span class="mi">20090</span>                                    
+<span class="mi">10090</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0101</span>                                                        
+<span class="mi">20090</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0101</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 010  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         STATEMENT WITH NINE CONTINUATION LINES.                        </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>  <span class="mi">10</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30100</span><span class="p">,</span> <span class="mi">0100</span><span class="p">,</span> <span class="mi">30100</span>                                    
+ <span class="mi">0100</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivon01</span> <span class="o">=</span>                                                                   <span class="mi">1</span>                                                        <span class="o">+</span><span class="mi">1</span>                                                        <span class="o">+</span><span class="mi">1</span>                                                  <span class="o">+</span><span class="mi">1</span>                                                            <span class="o">+</span><span class="mi">1</span>                                                          <span class="o">+</span><span class="mi">1</span>                                                          <span class="o">+</span><span class="mi">1</span>                              <span class="o">+</span><span class="mi">1</span>          <span class="o">+</span><span class="mi">1</span>                                                                
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">ivon01</span>                                                   
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">9</span>                                                        
+<span class="mi">40100</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">9</span><span class="p">)</span> <span class="mi">20100</span><span class="p">,</span> <span class="mi">10100</span><span class="p">,</span> <span class="mi">20100</span>                               
+<span class="mi">30100</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10100</span><span class="p">,</span> <span class="mi">0111</span><span class="p">,</span> <span class="mi">20100</span>                                    
+<span class="mi">10100</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0111</span>                                                        
+<span class="mi">20100</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0111</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 011  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         TEST 011 CONTAINS THE MAXIMUM NUMBER OF CONTINUATION LINES     </span>
+<span class="c">!      PERMITTED IN THE SUBSET LANGUAGE AND EACH OF THE 660 CHARACTERS   </span>
+<span class="c">!      IN THE STATEMENT ARE NONBLANK.                                    </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>  <span class="mi">11</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30110</span><span class="p">,</span> <span class="mi">0110</span><span class="p">,</span> <span class="mi">30110</span>                                    
+ <span class="mi">0110</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">1</span>                                                        
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivcomp</span><span class="o">=</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="n">ivon01</span><span class="o">+</span><span class="mi">12</span>
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">105</span>                                                      
+<span class="mi">40110</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">105</span><span class="p">)</span> <span class="mi">20110</span><span class="p">,</span> <span class="mi">10110</span><span class="p">,</span> <span class="mi">20110</span>                             
+<span class="mi">30110</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10110</span><span class="p">,</span> <span class="mi">0121</span><span class="p">,</span> <span class="mi">20110</span>                                    
+<span class="mi">10110</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0121</span>                                                        
+<span class="mi">20110</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0121</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 012  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         TEST 012 SPLITS A STATEMENT ACROSS 8 CONTINUATION LINES.       </span>
+<span class="c">!      THERE IS A STATEMENT LABEL IN COLUMNS 1-5 AND 0 IN COLUMN 6       </span>
+<span class="c">!      OF THE INITIAL LINE.                                              </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>  <span class="mi">12</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30120</span><span class="p">,</span> <span class="mi">0120</span><span class="p">,</span> <span class="mi">30120</span>                                    
+ <span class="mi">0120</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="k">goto </span><span class="mi">0122</span>                                                        
+ <span class="mi">0122</span>    <span class="n">ivon01</span>                                                         <span class="o">=</span>                                                                  <span class="mi">89</span>                                                      
+<span class="c">!     8           9                                                      </span>
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">ivon01</span>                                                   
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">89</span>                                                       
+<span class="mi">40120</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">89</span><span class="p">)</span> <span class="mi">20120</span><span class="p">,</span> <span class="mi">10120</span><span class="p">,</span> <span class="mi">20120</span>                              
+<span class="mi">30120</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10120</span><span class="p">,</span> <span class="mi">0131</span><span class="p">,</span> <span class="mi">20120</span>                                    
+<span class="mi">10120</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0131</span>                                                        
+<span class="mi">20120</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0131</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!      ****  FCVS PROGRAM 200  -  TEST 013  ****                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         TEST 013 CONSISTS OF AN INITIAL LINE WHICH CONTAINS ONLY A     </span>
+<span class="c">!      STATEMENT LABEL AND A CONTINUATION LINE WHICH CONTAINS THE        </span>
+<span class="c">!      EXECUTABLE STATEMENT.                                             </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivtnum</span> <span class="o">=</span>  <span class="mi">13</span>                                                      
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">30130</span><span class="p">,</span> <span class="mi">0130</span><span class="p">,</span> <span class="mi">30130</span>                                    
+ <span class="mi">0130</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+ <span class="mi">0132</span>                                                                   <span class="n">ivcomp</span> <span class="o">=</span> <span class="mi">4</span>                                                        
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">4</span>                                                        
+<span class="mi">40130</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">4</span><span class="p">)</span> <span class="mi">20130</span><span class="p">,</span> <span class="mi">10130</span><span class="p">,</span> <span class="mi">20130</span>                               
+<span class="mi">30130</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80000</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">10130</span><span class="p">,</span> <span class="mi">0141</span><span class="p">,</span> <span class="mi">20130</span>                                    
+<span class="mi">10130</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80002</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">0141</span>                                                        
+<span class="mi">20130</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80010</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+ <span class="mi">0141</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      WRITE OUT TEST SUMMARY                                            </span>
+<span class="c">!                                                                        </span>
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90014</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90000</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90020</span><span class="p">)</span> <span class="n">ivfail</span>                                          
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90022</span><span class="p">)</span> <span class="n">ivpass</span>                                          
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90024</span><span class="p">)</span> <span class="n">ivdele</span>                                          
+      <span class="k">stop                                                              </span>
+<span class="mi">90001</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">24</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FM199&quot;</span><span class="p">)</span>                                          
+<span class="mi">90000</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">20</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;END OF PROGRAM FM199&quot;</span> <span class="p">)</span>                          
+<span class="c">!                                                                        </span>
+<span class="c">!      FORMATS FOR TEST DETAIL LINES                                     </span>
+<span class="c">!                                                                        </span>
+<span class="mi">80000</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">6</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;DELETED&quot;</span><span class="p">)</span>                                   
+<span class="mi">80002</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;PASS&quot;</span><span class="p">)</span>                                      
+<span class="mi">80010</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FAIL&quot;</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="n">i6</span><span class="p">,</span><span class="mi">9</span><span class="n">x</span><span class="p">,</span><span class="n">i6</span><span class="p">)</span>                         
+<span class="mi">80012</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FAIL&quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="n">x</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">)</span>                    
+<span class="mi">80018</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FAIL&quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">a14</span><span class="p">,</span><span class="mi">1</span><span class="n">x</span><span class="p">,</span><span class="n">a14</span><span class="p">)</span>                        
+<span class="c">!                                                                        </span>
+<span class="c">!      FORMAT STATEMENTS FOR PAGE HEADERS                                </span>
+<span class="c">!                                                                        </span>
+<span class="mi">90002</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>                                                      
+<span class="mi">90004</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>                                                      
+<span class="mi">90006</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FORTRAN COMPILER VALIDATION SYSTEM&quot;</span> <span class="p">)</span>            
+<span class="mi">90008</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;VERSION 2.1&quot;</span> <span class="p">)</span>                                   
+<span class="mi">90010</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FOR OFFICIAL USE ONLY - COPYRIGHT 1978&quot;</span> <span class="p">)</span>         
+<span class="mi">90012</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;TEST&quot;</span><span class="p">,</span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;PASS/FAIL&quot;</span><span class="p">,</span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED&quot;</span><span class="p">,</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT&quot;</span><span class="p">)</span>  
+<span class="mi">90014</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;----------------------------------------------&quot;</span> <span class="p">)</span> 
+<span class="mi">90016</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">18</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;SUBSET LEVEL TEST&quot;</span> <span class="p">)</span>                             
+<span class="c">!                                                                        </span>
+<span class="c">!      FORMAT STATEMENTS FOR RUN SUMMARY                                 </span>
+<span class="c">!                                                                        </span>
+<span class="mi">90020</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">19</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS FAILED&quot;</span> <span class="p">)</span>                              
+<span class="mi">90022</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">19</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS PASSED&quot;</span> <span class="p">)</span>                              
+<span class="mi">90024</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">19</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS DELETED&quot;</span> <span class="p">)</span>                             
+      <span class="k">end program </span><span class="n">fm199</span>
+</pre></div>
+
+    </section>
+    
+    
+    </div>
+  </div>
+
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2018 
+                                          </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+            
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> Refactored NIST-Fortran78 was developed by NIST (refactored by RefactorF4Acc)</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>

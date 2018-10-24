@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="A Fortran 77 test suite">
+    
+    <meta name="author" content="NIST" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>FM831.f &ndash; NIST-Fortran78</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">NIST-Fortran78 </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            
+    <li><a href="../lists/blockdata.html">Block Data Units</a></li>
+    
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+               
+        
+            <li><a href="../lists/programs.html">Programs</a></li>
+        
+            </ul>
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/blockdata.html">Block Data Units</a></li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/programs.html">Programs</a></li>
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>FM831.f
+    <small>Source File</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.3% of total for source files.">236 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/FM831.f"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+  
+     <li class="active">FM831.f</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#progs-0">Programs</a></h3></div>
+  <div id="progs-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm831.html">FM831</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../sourcefile/fm831.f.html#src">FM831.f</a>
+  </div>
+</div>
+
+
+
+</div>
+
+    </div>
+    <div class="col-md-9" id='text'>
+      
+      <br>
+    
+      
+      
+
+    <section class="visible-xs visible-sm hidden-md">
+      
+<h3>Contents</h3>
+ 
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#progs-1">Programs</a></h3></div>
+  <div id="progs-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm831.html">FM831</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../sourcefile/fm831.f.html#src">FM831.f</a>
+  </div>
+</div>
+
+
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+    <section>
+      <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="hl"><pre><span></span><a name="ln-1"></a><span class="nl">     </span> <span class="k">PROGRAM </span><span class="n">FM831</span>
+<a name="ln-2"></a>
+<a name="ln-3"></a><span class="c">C***********************************************************************00010831</span>
+<a name="ln-4"></a><span class="c">C*****  FORTRAN 77                                                      00020831</span>
+<a name="ln-5"></a><span class="c">C*****   FM831                                                          00030831</span>
+<a name="ln-6"></a><span class="c">C*****                       YGEN3 - (208)                              00040831</span>
+<a name="ln-7"></a><span class="c">C*****                                                                  00050831</span>
+<a name="ln-8"></a><span class="c">C***********************************************************************00060831</span>
+<a name="ln-9"></a><span class="c">C*****  GENERAL PURPOSE                                         ANS REF 00070831</span>
+<a name="ln-10"></a><span class="c">C*****      TEST GENERIC FUNCTIONS                               15.3   00080831</span>
+<a name="ln-11"></a><span class="c">C*****       ABS, MOD, SIGN, SIN, COS, TAN, SINH, COSH, TANH    TABLE 5 00090831</span>
+<a name="ln-12"></a><span class="c">C*****                                                                  00100831</span>
+<a name="ln-13"></a><span class="c">CBB** ********************** BBCCOMNT **********************************00110831</span>
+<a name="ln-14"></a><span class="c">C****                                                                   00120831</span>
+<a name="ln-15"></a><span class="c">C****            1978 FORTRAN COMPILER VALIDATION SYSTEM                00130831</span>
+<a name="ln-16"></a><span class="c">C****                          VERSION 2.1                              00140831</span>
+<a name="ln-17"></a><span class="c">C****                                                                   00150831</span>
+<a name="ln-18"></a><span class="c">C****                                                                   00160831</span>
+<a name="ln-19"></a><span class="c">C****           SUGGESTIONS AND COMMENTS SHOULD BE FORWARDED TO         00170831</span>
+<a name="ln-20"></a><span class="c">C****          NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY           00180831</span>
+<a name="ln-21"></a><span class="c">C****               SOFTWARE STANDARDS VALIDATION GROUP                 00190831</span>
+<a name="ln-22"></a><span class="c">C****                      BUILDING 225  RM A266                        00200831</span>
+<a name="ln-23"></a><span class="c">C****                     GAITHERSBURG, MD  20899                       00210831</span>
+<a name="ln-24"></a><span class="c">C****                                                                   00220831</span>
+<a name="ln-25"></a><span class="c">C****                                                                   00230831</span>
+<a name="ln-26"></a><span class="c">C****                                                                   00240831</span>
+<a name="ln-27"></a><span class="c">CBE** ********************** BBCCOMNT **********************************00250831</span>
+<a name="ln-28"></a><span class="c">C*****                                                                  00260831</span>
+<a name="ln-29"></a><span class="c">C*****  S P E C I F I C A T I O N S  SEGMENT 208                        00270831</span>
+<a name="ln-30"></a><span class="nl">     </span>   <span class="kt">DOUBLE PRECISION </span><span class="n">AVD</span><span class="p">,</span> <span class="n">CVD</span><span class="p">,</span> <span class="n">DVD</span><span class="p">,</span> <span class="n">DVCORR</span>                          <span class="c">00280831</span>
+<a name="ln-31"></a><span class="nl">     </span>   <span class="kt">COMPLEX </span><span class="n">AVC</span><span class="p">,</span> <span class="n">CVC</span><span class="p">,</span> <span class="n">ZVCORR</span>                                        <span class="c">00290831</span>
+<a name="ln-32"></a><span class="nl">     </span>   <span class="kt">REAL </span><span class="n">R2E</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>                                                     <span class="c">00300831</span>
+<a name="ln-33"></a><span class="nl">     </span>   <span class="k">EQUIVALENCE</span> <span class="p">(</span><span class="n">AVC</span><span class="p">,</span> <span class="n">R2E</span><span class="p">)</span>                                          <span class="c">00310831</span>
+<a name="ln-34"></a><span class="c">C*****                                                                  00320831</span>
+<a name="ln-35"></a><span class="c">CBB** ********************** BBCINITA **********************************00330831</span>
+<a name="ln-36"></a><span class="c">C**** SPECIFICATION STATEMENTS                                          00340831</span>
+<a name="ln-37"></a><span class="c">C****                                                                   00350831</span>
+<a name="ln-38"></a><span class="nl">     </span> <span class="kt">CHARACTER </span><span class="n">ZVERS</span><span class="o">*</span><span class="mi">13</span><span class="p">,</span> <span class="n">ZVERSD</span><span class="o">*</span><span class="mi">17</span><span class="p">,</span> <span class="n">ZDATE</span><span class="o">*</span><span class="mi">17</span><span class="p">,</span> <span class="n">ZPROG</span><span class="o">*</span><span class="mi">5</span><span class="p">,</span> <span class="n">ZCOMPL</span><span class="o">*</span><span class="mi">20</span><span class="p">,</span>      <span class="c">00360831</span>
+<a name="ln-39"></a><span class="nl">     </span><span class="gs">1</span>          <span class="n">ZNAME</span><span class="o">*</span><span class="mi">20</span><span class="p">,</span> <span class="n">ZTAPE</span><span class="o">*</span><span class="mi">10</span><span class="p">,</span> <span class="n">ZPROJ</span><span class="o">*</span><span class="mi">13</span><span class="p">,</span> <span class="n">REMRKS</span><span class="o">*</span><span class="mi">31</span><span class="p">,</span> <span class="n">ZTAPED</span><span class="o">*</span><span class="mi">13</span>      <span class="c">00370831</span>
+<a name="ln-40"></a><span class="c">CBE** ********************** BBCINITA **********************************00380831</span>
+<a name="ln-41"></a><span class="c">CBB** ********************** BBCINITB **********************************00390831</span>
+<a name="ln-42"></a><span class="c">C**** INITIALIZE SECTION                                                00400831</span>
+<a name="ln-43"></a><span class="nl">     </span> <span class="k">DATA  </span><span class="n">ZVERS</span><span class="p">,</span>                  <span class="n">ZVERSD</span><span class="p">,</span>             <span class="n">ZDATE</span>           <span class="c">00410831</span>
+<a name="ln-44"></a><span class="nl">     </span><span class="gs">1</span>      <span class="o">/</span><span class="s1">&#39;VERSION 2.1  &#39;</span><span class="p">,</span>  <span class="s1">&#39;93/10/21*21.02.00&#39;</span><span class="p">,</span>  <span class="s1">&#39;*NO DATE*TIME&#39;</span><span class="o">/</span>   <span class="c">00420831</span>
+<a name="ln-45"></a><span class="nl">     </span> <span class="k">DATA       </span><span class="n">ZCOMPL</span><span class="p">,</span>             <span class="n">ZNAME</span><span class="p">,</span>             <span class="n">ZTAPE</span>           <span class="c">00430831</span>
+<a name="ln-46"></a><span class="nl">     </span><span class="gs">1</span>      <span class="o">/</span><span class="s1">&#39;*NONE SPECIFIED*&#39;</span><span class="p">,</span> <span class="s1">&#39;*NO COMPANY NAME*&#39;</span><span class="p">,</span> <span class="s1">&#39;*NO TAPE*&#39;</span><span class="o">/</span>      <span class="c">00440831</span>
+<a name="ln-47"></a><span class="nl">     </span> <span class="k">DATA       </span><span class="n">ZPROJ</span><span class="p">,</span>           <span class="n">ZTAPED</span><span class="p">,</span>         <span class="n">ZPROG</span>                 <span class="c">00450831</span>
+<a name="ln-48"></a><span class="nl">     </span><span class="gs">1</span>      <span class="o">/</span><span class="s1">&#39;*NO PROJECT*&#39;</span><span class="p">,</span>   <span class="s1">&#39;*NO TAPE DATE&#39;</span><span class="p">,</span>  <span class="s1">&#39;XXXXX&#39;</span><span class="o">/</span>               <span class="c">00460831</span>
+<a name="ln-49"></a><span class="nl">     </span> <span class="k">DATA   </span><span class="n">REMRKS</span> <span class="o">/</span><span class="s1">&#39;                               &#39;</span><span class="o">/</span>                 <span class="c">00470831</span>
+<a name="ln-50"></a><span class="c">C**** THE FOLLOWING 9 COMMENT LINES (CZ01, CZ02, ...) CAN BE REPLACED   00480831</span>
+<a name="ln-51"></a><span class="c">C**** FOR IDENTIFYING THE TEST ENVIRONMENT                              00490831</span>
+<a name="ln-52"></a><span class="c">C****                                                                   00500831</span>
+<a name="ln-53"></a><span class="c">CZ01  ZVERS  = &#39;VERSION OF THE COMPILER VALIDATION SYSTEM&#39;              00510831</span>
+<a name="ln-54"></a><span class="c">CZ02  ZVERSD = &#39;CREATION DATE/TIME OF THE COMPILER VALIDATION SYSTEM&#39;   00520831</span>
+<a name="ln-55"></a><span class="c">CZ03  ZPROG  = &#39;PROGRAM NAME&#39;                                           00530831</span>
+<a name="ln-56"></a><span class="c">CZ04  ZDATE  = &#39;DATE OF TEST&#39;                                           00540831</span>
+<a name="ln-57"></a><span class="c">CZ05  ZCOMPL = &#39;COMPILER IDENTIFICATION&#39;                                00550831</span>
+<a name="ln-58"></a><span class="c">CZ06  ZPROJ  = &#39;PROJECT NUMBER/IDENTIFICATION&#39;                          00560831</span>
+<a name="ln-59"></a><span class="c">CZ07  ZNAME  = &#39;NAME OF USER&#39;                                           00570831</span>
+<a name="ln-60"></a><span class="c">CZ08  ZTAPE  = &#39;TAPE OWNER/ID&#39;                                          00580831</span>
+<a name="ln-61"></a><span class="c">CZ09  ZTAPED = &#39;DATE TAPE COPIED&#39;                                       00590831</span>
+<a name="ln-62"></a><span class="c">C                                                                       00600831</span>
+<a name="ln-63"></a><span class="nl">     </span> <span class="n">IVPASS</span> <span class="o">=</span> <span class="mi">0</span>                                                        <span class="c">00610831</span>
+<a name="ln-64"></a><span class="nl">     </span> <span class="n">IVFAIL</span> <span class="o">=</span> <span class="mi">0</span>                                                        <span class="c">00620831</span>
+<a name="ln-65"></a><span class="nl">     </span> <span class="n">IVDELE</span> <span class="o">=</span> <span class="mi">0</span>                                                        <span class="c">00630831</span>
+<a name="ln-66"></a><span class="nl">     </span> <span class="n">IVINSP</span> <span class="o">=</span> <span class="mi">0</span>                                                        <span class="c">00640831</span>
+<a name="ln-67"></a><span class="nl">     </span> <span class="n">IVTOTL</span> <span class="o">=</span> <span class="mi">0</span>                                                        <span class="c">00650831</span>
+<a name="ln-68"></a><span class="nl">     </span> <span class="n">IVTOTN</span> <span class="o">=</span> <span class="mi">0</span>                                                        <span class="c">00660831</span>
+<a name="ln-69"></a><span class="nl">     </span> <span class="n">ICZERO</span> <span class="o">=</span> <span class="mi">0</span>                                                        <span class="c">00670831</span>
+<a name="ln-70"></a><span class="c">C                                                                       00680831</span>
+<a name="ln-71"></a><span class="c">C     I01 CONTAINS THE LOGICAL UNIT NUMBER FOR THE CARD READER.         00690831</span>
+<a name="ln-72"></a><span class="nl">     </span> <span class="n">I01</span> <span class="o">=</span> <span class="mi">05</span>                                                          <span class="c">00700831</span>
+<a name="ln-73"></a><span class="c">C     I02 CONTAINS THE LOGICAL UNIT NUMBER FOR THE PRINTER.             00710831</span>
+<a name="ln-74"></a><span class="nl">     </span> <span class="n">I02</span> <span class="o">=</span> <span class="mi">06</span>                                                          <span class="c">00720831</span>
+<a name="ln-75"></a><span class="c">C                                                                       00730831</span>
+<a name="ln-76"></a><span class="c">CX010   REPLACED BY FEXEC X-010 CONTROL CARD (CARD-READER UNIT NUMBER). 00740831</span>
+<a name="ln-77"></a><span class="c">C     THE CX010 CARD IS FOR OVERRIDING THE PROGRAM DEFAULT I01 = 5      00750831</span>
+<a name="ln-78"></a><span class="c">CX011   REPLACED BY FEXEC X-011 CONTROL CARD.  CX011 IS FOR SYSTEMS     00760831</span>
+<a name="ln-79"></a><span class="c">C     REQUIRING ADDITIONAL STATEMENTS FOR FILES ASSOCIATED WITH CX010.  00770831</span>
+<a name="ln-80"></a><span class="c">C                                                                       00780831</span>
+<a name="ln-81"></a><span class="c">CX020   REPLACED BY FEXEC X-020 CONTROL CARD (PRINTER UNIT NUMBER).     00790831</span>
+<a name="ln-82"></a><span class="c">C     THE CX020 CARD IS FOR OVERRIDING THE PROGRAM DEFAULT I02= 6       00800831</span>
+<a name="ln-83"></a><span class="c">CX021   REPLACED BY FEXEC X-021 CONTROL CARD.  CX021 IS FOR SYSTEMS     00810831</span>
+<a name="ln-84"></a><span class="c">C     REQUIRING ADDITIONAL STATEMENTS FOR FILES ASSOCIATED WITH CX020.  00820831</span>
+<a name="ln-85"></a><span class="c">C                                                                       00830831</span>
+<a name="ln-86"></a><span class="c">CBE** ********************** BBCINITB **********************************00840831</span>
+<a name="ln-87"></a><span class="nl">     </span> <span class="n">NUVI</span> <span class="o">=</span> <span class="n">I02</span>                                                        <span class="c">00850831</span>
+<a name="ln-88"></a><span class="nl">     </span> <span class="n">IVTOTL</span> <span class="o">=</span> <span class="mi">12</span>                                                       <span class="c">00860831</span>
+<a name="ln-89"></a><span class="nl">     </span> <span class="n">ZPROG</span> <span class="o">=</span> <span class="s1">&#39;FM831&#39;</span>                                                   <span class="c">00870831</span>
+<a name="ln-90"></a><span class="c">CBB** ********************** BBCHED0A **********************************00880831</span>
+<a name="ln-91"></a><span class="c">C****                                                                   00890831</span>
+<a name="ln-92"></a><span class="c">C**** WRITE REPORT TITLE                                                00900831</span>
+<a name="ln-93"></a><span class="c">C****                                                                   00910831</span>
+<a name="ln-94"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90002</span><span class="p">)</span>                                                <span class="c">00920831</span>
+<a name="ln-95"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90006</span><span class="p">)</span>                                                <span class="c">00930831</span>
+<a name="ln-96"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90007</span><span class="p">)</span>                                                <span class="c">00940831</span>
+<a name="ln-97"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90008</span><span class="p">)</span>  <span class="n">ZVERS</span><span class="p">,</span> <span class="n">ZVERSD</span>                                 <span class="c">00950831</span>
+<a name="ln-98"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90009</span><span class="p">)</span>  <span class="n">ZPROG</span><span class="p">,</span> <span class="n">ZPROG</span>                                  <span class="c">00960831</span>
+<a name="ln-99"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90010</span><span class="p">)</span>  <span class="n">ZDATE</span><span class="p">,</span> <span class="n">ZCOMPL</span>                                 <span class="c">00970831</span>
+<a name="ln-100"></a><span class="c">CBE** ********************** BBCHED0A **********************************00980831</span>
+<a name="ln-101"></a><span class="c">C*****                                                                  00990831</span>
+<a name="ln-102"></a><span class="c">C*****    HEADER FOR SEGMENT 208                                        01000831</span>
+<a name="ln-103"></a><span class="nl">     </span>   <span class="k">WRITE</span><span class="p">(</span><span class="n">NUVI</span><span class="p">,</span><span class="mi">20800</span><span class="p">)</span>                                               <span class="c">01010831</span>
+<a name="ln-104"></a><span class="nl">20800</span>   <span class="k">FORMAT</span><span class="p">(</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="o">/</span>  <span class="s2">&quot; YGEN3 - (208) GENERIC FUNCTIONS --&quot;</span> <span class="o">//</span>        <span class="c">01020831</span>
+<a name="ln-105"></a><span class="nl">     </span><span class="gs">1</span>          <span class="s2">&quot;  ABS, MOD, SIGN, SIN, COS, TAN, SINH, COSH, TANH&quot;</span> <span class="o">//</span>  <span class="c">01030831</span>
+<a name="ln-106"></a><span class="nl">     </span><span class="gs">2</span>          <span class="s2">&quot;  ANS REF. - 15.3&quot;</span> <span class="p">)</span>                                   <span class="c">01040831</span>
+<a name="ln-107"></a><span class="c">CBB** ********************** BBCHED0B **********************************01050831</span>
+<a name="ln-108"></a><span class="c">C**** WRITE DETAIL REPORT HEADERS                                       01060831</span>
+<a name="ln-109"></a><span class="c">C****                                                                   01070831</span>
+<a name="ln-110"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 <span class="c">01080831</span>
+<a name="ln-111"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 <span class="c">01090831</span>
+<a name="ln-112"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span><span class="mi">90013</span><span class="p">)</span>                                                 <span class="c">01100831</span>
+<a name="ln-113"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span><span class="mi">90014</span><span class="p">)</span>                                                 <span class="c">01110831</span>
+<a name="ln-114"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span><span class="mi">90015</span><span class="p">)</span> <span class="n">IVTOTL</span>                                          <span class="c">01120831</span>
+<a name="ln-115"></a><span class="c">CBE** ********************** BBCHED0B **********************************01130831</span>
+<a name="ln-116"></a><span class="c">C*****                                                                  01140831</span>
+<a name="ln-117"></a><span class="c">CT001*  TEST 1                       TEST OF ABS AND SIGN WITH INTEGERS 01150831</span>
+<a name="ln-118"></a><span class="nl">     </span>      <span class="n">IVTNUM</span> <span class="o">=</span> <span class="mi">1</span>                                                   <span class="c">01160831</span>
+<a name="ln-119"></a><span class="nl">     </span>   <span class="n">LVI</span> <span class="o">=</span> <span class="nb">ABS</span><span class="p">(</span><span class="o">-</span><span class="mi">25</span><span class="p">)</span> <span class="o">-</span> <span class="nb">SIGN</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">15</span><span class="p">)</span>                                   <span class="c">01170831</span>
+<a name="ln-120"></a><span class="nl">     </span>      <span class="k">IF</span> <span class="p">(</span><span class="n">LVI</span> <span class="o">-</span> <span class="mi">27</span><span class="p">)</span> <span class="mi">20010</span><span class="p">,</span> <span class="mi">10010</span><span class="p">,</span> <span class="mi">20010</span>                            <span class="c">01180831</span>
+<a name="ln-121"></a><span class="nl">10010</span>      <span class="n">IVPASS</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01190831</span>
+<a name="ln-122"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">IVTNUM</span>                                   <span class="c">01200831</span>
+<a name="ln-123"></a><span class="nl">     </span>      <span class="n">GO</span> <span class="n">TO</span> <span class="mi">0011</span>                                                   <span class="c">01210831</span>
+<a name="ln-124"></a><span class="nl">20010</span>      <span class="n">IVFAIL</span> <span class="o">=</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01220831</span>
+<a name="ln-125"></a><span class="nl">     </span>      <span class="n">IVCORR</span> <span class="o">=</span> <span class="mi">27</span>                                                  <span class="c">01230831</span>
+<a name="ln-126"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80010</span><span class="p">)</span> <span class="n">IVTNUM</span><span class="p">,</span> <span class="n">LVI</span><span class="p">,</span> <span class="n">IVCORR</span>                      <span class="c">01240831</span>
+<a name="ln-127"></a><span class="nl"> 0011</span>      <span class="k">CONTINUE</span>                                                     <span class="c">01250831</span>
+<a name="ln-128"></a><span class="c">CT002*  TEST 2                     TEST OF MOD, SIGN AND ABS WITH REALS 01260831</span>
+<a name="ln-129"></a><span class="nl">     </span>      <span class="n">IVTNUM</span> <span class="o">=</span> <span class="mi">2</span>                                                   <span class="c">01270831</span>
+<a name="ln-130"></a><span class="nl">     </span>   <span class="n">AVS</span> <span class="o">=</span> <span class="nb">MOD</span><span class="p">(</span><span class="mi">2</span><span class="mf">4.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span> <span class="o">+</span> <span class="nb">SIGN</span><span class="p">(</span><span class="o">-</span><span class="mf">1.50</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.125</span><span class="p">)</span> <span class="o">-</span> <span class="nb">ABS</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="mf">3.5</span><span class="p">)</span>         <span class="c">01280831</span>
+<a name="ln-131"></a><span class="nl">     </span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVS</span> <span class="o">+</span>  <span class="mf">0.63004E+02</span><span class="p">)</span> <span class="mi">20020</span><span class="p">,</span> <span class="mi">10020</span><span class="p">,</span> <span class="mi">40020</span>                  <span class="c">01290831</span>
+<a name="ln-132"></a><span class="nl">40020</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVS</span> <span class="o">+</span>  <span class="mf">0.62996E+02</span><span class="p">)</span> <span class="mi">10020</span><span class="p">,</span> <span class="mi">10020</span><span class="p">,</span> <span class="mi">20020</span>                  <span class="c">01300831</span>
+<a name="ln-133"></a><span class="nl">10020</span>      <span class="n">IVPASS</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01310831</span>
+<a name="ln-134"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">IVTNUM</span>                                   <span class="c">01320831</span>
+<a name="ln-135"></a><span class="nl">     </span>      <span class="n">GO</span> <span class="n">TO</span> <span class="mi">0021</span>                                                   <span class="c">01330831</span>
+<a name="ln-136"></a><span class="nl">20020</span>      <span class="n">IVFAIL</span> <span class="o">=</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01340831</span>
+<a name="ln-137"></a><span class="nl">     </span>      <span class="n">RVCORR</span> <span class="o">=</span> <span class="o">-</span><span class="mi">6</span><span class="mf">3.0</span>                                               <span class="c">01350831</span>
+<a name="ln-138"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80012</span><span class="p">)</span> <span class="n">IVTNUM</span><span class="p">,</span> <span class="n">AVS</span><span class="p">,</span> <span class="n">RVCORR</span>                      <span class="c">01360831</span>
+<a name="ln-139"></a><span class="nl"> 0021</span>      <span class="k">CONTINUE</span>                                                     <span class="c">01370831</span>
+<a name="ln-140"></a><span class="c">CT003*  TEST 3                     TEST OF SIN AND COS WITH DOUBLE PREC 01380831</span>
+<a name="ln-141"></a><span class="nl">     </span>      <span class="n">IVTNUM</span> <span class="o">=</span> <span class="mi">3</span>                                                   <span class="c">01390831</span>
+<a name="ln-142"></a><span class="nl">     </span>   <span class="n">CVD</span> <span class="o">=</span> <span class="mf">1.125D0</span>                                                   <span class="c">01400831</span>
+<a name="ln-143"></a><span class="nl">     </span>   <span class="n">AVD</span> <span class="o">=</span> <span class="p">(</span><span class="nb">SIN</span><span class="p">(</span><span class="n">CVD</span><span class="p">))</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="nb">COS</span><span class="p">(</span><span class="n">CVD</span><span class="p">))</span> <span class="o">**</span> <span class="mi">2</span>                         <span class="c">01410831</span>
+<a name="ln-144"></a><span class="nl">     </span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVD</span> <span class="o">-</span>  <span class="mf">0.9999999995D+00</span><span class="p">)</span> <span class="mi">20030</span><span class="p">,</span> <span class="mi">10030</span><span class="p">,</span> <span class="mi">40030</span>             <span class="c">01420831</span>
+<a name="ln-145"></a><span class="nl">40030</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVD</span> <span class="o">-</span>  <span class="mf">0.1000000001D+01</span><span class="p">)</span> <span class="mi">10030</span><span class="p">,</span> <span class="mi">10030</span><span class="p">,</span> <span class="mi">20030</span>             <span class="c">01430831</span>
+<a name="ln-146"></a><span class="nl">10030</span>      <span class="n">IVPASS</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01440831</span>
+<a name="ln-147"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">IVTNUM</span>                                   <span class="c">01450831</span>
+<a name="ln-148"></a><span class="nl">     </span>      <span class="n">GO</span> <span class="n">TO</span> <span class="mi">0031</span>                                                   <span class="c">01460831</span>
+<a name="ln-149"></a><span class="nl">20030</span>      <span class="n">IVFAIL</span> <span class="o">=</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01470831</span>
+<a name="ln-150"></a><span class="nl">     </span>      <span class="n">DVCORR</span> <span class="o">=</span> <span class="mf">1.0D0</span>                                               <span class="c">01480831</span>
+<a name="ln-151"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">IVTNUM</span><span class="p">,</span> <span class="n">AVD</span><span class="p">,</span> <span class="n">DVCORR</span>                      <span class="c">01490831</span>
+<a name="ln-152"></a><span class="nl"> 0031</span>      <span class="k">CONTINUE</span>                                                     <span class="c">01500831</span>
+<a name="ln-153"></a><span class="c">CT004*  TEST 4                     TEST OF TAN AND MOD WITH DOUBLE PREC 01510831</span>
+<a name="ln-154"></a><span class="nl">     </span>      <span class="n">IVTNUM</span> <span class="o">=</span> <span class="mi">4</span>                                                   <span class="c">01520831</span>
+<a name="ln-155"></a><span class="nl">     </span>   <span class="n">AVD</span> <span class="o">=</span> <span class="nb">TAN</span><span class="p">(</span><span class="mf">3.5D0</span><span class="p">)</span> <span class="o">*</span> <span class="nb">MOD</span><span class="p">(</span><span class="mi">3</span><span class="mf">2.5D0</span><span class="p">,</span> <span class="mf">5.0D0</span><span class="p">)</span>                           <span class="c">01530831</span>
+<a name="ln-156"></a><span class="nl">     </span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVD</span> <span class="o">-</span>  <span class="mf">0.9364640999D+00</span><span class="p">)</span> <span class="mi">20040</span><span class="p">,</span> <span class="mi">10040</span><span class="p">,</span> <span class="mi">40040</span>             <span class="c">01540831</span>
+<a name="ln-157"></a><span class="nl">40040</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVD</span> <span class="o">-</span>  <span class="mf">0.9364641009D+00</span><span class="p">)</span> <span class="mi">10040</span><span class="p">,</span> <span class="mi">10040</span><span class="p">,</span> <span class="mi">20040</span>             <span class="c">01550831</span>
+<a name="ln-158"></a><span class="nl">10040</span>      <span class="n">IVPASS</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01560831</span>
+<a name="ln-159"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">IVTNUM</span>                                   <span class="c">01570831</span>
+<a name="ln-160"></a><span class="nl">     </span>      <span class="n">GO</span> <span class="n">TO</span> <span class="mi">0041</span>                                                   <span class="c">01580831</span>
+<a name="ln-161"></a><span class="nl">20040</span>      <span class="n">IVFAIL</span> <span class="o">=</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01590831</span>
+<a name="ln-162"></a><span class="nl">     </span>      <span class="n">DVCORR</span> <span class="o">=</span> <span class="mf">0.9364641003965D0</span>                                   <span class="c">01600831</span>
+<a name="ln-163"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">IVTNUM</span><span class="p">,</span> <span class="n">AVD</span><span class="p">,</span> <span class="n">DVCORR</span>                      <span class="c">01610831</span>
+<a name="ln-164"></a><span class="nl"> 0041</span>      <span class="k">CONTINUE</span>                                                     <span class="c">01620831</span>
+<a name="ln-165"></a><span class="c">CT005*  TEST 5                   TEST OF SINH AND COSH WITH DOUBLE PREC 01630831</span>
+<a name="ln-166"></a><span class="nl">     </span>      <span class="n">IVTNUM</span> <span class="o">=</span> <span class="mi">5</span>                                                   <span class="c">01640831</span>
+<a name="ln-167"></a><span class="nl">     </span>   <span class="n">CVD</span> <span class="o">=</span> <span class="mf">3.25D0</span>                                                    <span class="c">01650831</span>
+<a name="ln-168"></a><span class="nl">     </span>   <span class="n">AVD</span> <span class="o">=</span> <span class="p">(</span><span class="nb">SINH</span><span class="p">(</span><span class="n">CVD</span><span class="p">))</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">-</span> <span class="p">(</span><span class="nb">COSH</span><span class="p">(</span><span class="n">CVD</span><span class="p">))</span> <span class="o">**</span> <span class="mi">2</span>                       <span class="c">01660831</span>
+<a name="ln-169"></a><span class="nl">     </span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVD</span> <span class="o">+</span>  <span class="mf">0.1000000001D+01</span><span class="p">)</span> <span class="mi">20050</span><span class="p">,</span> <span class="mi">10050</span><span class="p">,</span> <span class="mi">40050</span>             <span class="c">01670831</span>
+<a name="ln-170"></a><span class="nl">40050</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVD</span> <span class="o">+</span>  <span class="mf">0.9999999995D+00</span><span class="p">)</span> <span class="mi">10050</span><span class="p">,</span> <span class="mi">10050</span><span class="p">,</span> <span class="mi">20050</span>             <span class="c">01680831</span>
+<a name="ln-171"></a><span class="nl">10050</span>      <span class="n">IVPASS</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01690831</span>
+<a name="ln-172"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">IVTNUM</span>                                   <span class="c">01700831</span>
+<a name="ln-173"></a><span class="nl">     </span>      <span class="n">GO</span> <span class="n">TO</span> <span class="mi">0051</span>                                                   <span class="c">01710831</span>
+<a name="ln-174"></a><span class="nl">20050</span>      <span class="n">IVFAIL</span> <span class="o">=</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01720831</span>
+<a name="ln-175"></a><span class="nl">     </span>      <span class="n">DVCORR</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0D0</span>                                              <span class="c">01730831</span>
+<a name="ln-176"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">IVTNUM</span><span class="p">,</span> <span class="n">AVD</span><span class="p">,</span> <span class="n">DVCORR</span>                      <span class="c">01740831</span>
+<a name="ln-177"></a><span class="nl"> 0051</span>      <span class="k">CONTINUE</span>                                                     <span class="c">01750831</span>
+<a name="ln-178"></a><span class="c">CT006*  TEST 6                            TEST OF TANH WITH DOUBLE PREC 01760831</span>
+<a name="ln-179"></a><span class="nl">     </span>      <span class="n">IVTNUM</span> <span class="o">=</span> <span class="mi">6</span>                                                   <span class="c">01770831</span>
+<a name="ln-180"></a><span class="nl">     </span>   <span class="n">AVD</span> <span class="o">=</span> <span class="nb">TANH</span><span class="p">(</span><span class="mf">0.5D0</span><span class="p">)</span> <span class="o">*</span> <span class="nb">TANH</span><span class="p">(</span><span class="mf">0.75D0</span><span class="p">)</span>                                <span class="c">01780831</span>
+<a name="ln-181"></a><span class="nl">     </span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVD</span> <span class="o">-</span>  <span class="mf">0.2935132281D+00</span><span class="p">)</span> <span class="mi">20060</span><span class="p">,</span> <span class="mi">10060</span><span class="p">,</span> <span class="mi">40060</span>             <span class="c">01790831</span>
+<a name="ln-182"></a><span class="nl">40060</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVD</span> <span class="o">-</span>  <span class="mf">0.2935132285D+00</span><span class="p">)</span> <span class="mi">10060</span><span class="p">,</span> <span class="mi">10060</span><span class="p">,</span> <span class="mi">20060</span>             <span class="c">01800831</span>
+<a name="ln-183"></a><span class="nl">10060</span>      <span class="n">IVPASS</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01810831</span>
+<a name="ln-184"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">IVTNUM</span>                                   <span class="c">01820831</span>
+<a name="ln-185"></a><span class="nl">     </span>      <span class="n">GO</span> <span class="n">TO</span> <span class="mi">0061</span>                                                   <span class="c">01830831</span>
+<a name="ln-186"></a><span class="nl">20060</span>      <span class="n">IVFAIL</span> <span class="o">=</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01840831</span>
+<a name="ln-187"></a><span class="nl">     </span>      <span class="n">DVCORR</span> <span class="o">=</span> <span class="mf">0.29351322831389D0</span>                                  <span class="c">01850831</span>
+<a name="ln-188"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">IVTNUM</span><span class="p">,</span> <span class="n">AVD</span><span class="p">,</span> <span class="n">DVCORR</span>                      <span class="c">01860831</span>
+<a name="ln-189"></a><span class="nl"> 0061</span>      <span class="k">CONTINUE</span>                                                     <span class="c">01870831</span>
+<a name="ln-190"></a><span class="c">CT007*  TEST 7                     TEST OF ABS AND SIN WITH DOUBLE PREC 01880831</span>
+<a name="ln-191"></a><span class="nl">     </span>      <span class="n">IVTNUM</span> <span class="o">=</span> <span class="mi">7</span>                                                   <span class="c">01890831</span>
+<a name="ln-192"></a><span class="nl">     </span>   <span class="n">AVD</span> <span class="o">=</span> <span class="nb">ABS</span><span class="p">(</span><span class="mf">4.57812500D0</span><span class="p">)</span> <span class="o">*</span> <span class="nb">SIN</span><span class="p">(</span><span class="mf">1.125D0</span><span class="p">)</span>                          <span class="c">01900831</span>
+<a name="ln-193"></a><span class="nl">     </span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVD</span> <span class="o">-</span>  <span class="mf">0.4130693827D+01</span><span class="p">)</span> <span class="mi">20070</span><span class="p">,</span> <span class="mi">10070</span><span class="p">,</span> <span class="mi">40070</span>             <span class="c">01910831</span>
+<a name="ln-194"></a><span class="nl">40070</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVD</span> <span class="o">-</span>  <span class="mf">0.4130693832D+01</span><span class="p">)</span> <span class="mi">10070</span><span class="p">,</span> <span class="mi">10070</span><span class="p">,</span> <span class="mi">20070</span>             <span class="c">01920831</span>
+<a name="ln-195"></a><span class="nl">10070</span>      <span class="n">IVPASS</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01930831</span>
+<a name="ln-196"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">IVTNUM</span>                                   <span class="c">01940831</span>
+<a name="ln-197"></a><span class="nl">     </span>      <span class="n">GO</span> <span class="n">TO</span> <span class="mi">0071</span>                                                   <span class="c">01950831</span>
+<a name="ln-198"></a><span class="nl">20070</span>      <span class="n">IVFAIL</span> <span class="o">=</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">01960831</span>
+<a name="ln-199"></a><span class="nl">     </span>      <span class="n">DVCORR</span> <span class="o">=</span> <span class="mf">4.130693829235D0</span>                                    <span class="c">01970831</span>
+<a name="ln-200"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">IVTNUM</span><span class="p">,</span> <span class="n">AVD</span><span class="p">,</span> <span class="n">DVCORR</span>                      <span class="c">01980831</span>
+<a name="ln-201"></a><span class="nl"> 0071</span>      <span class="k">CONTINUE</span>                                                     <span class="c">01990831</span>
+<a name="ln-202"></a><span class="c">CT008*  TEST 8                     TEST OF ABS, MOD AND SIGN            02000831</span>
+<a name="ln-203"></a><span class="c">C*****                               WITH INTEGER, REAL AND DOUBLE PREC 02010831</span>
+<a name="ln-204"></a><span class="nl">     </span>      <span class="n">IVTNUM</span> <span class="o">=</span> <span class="mi">8</span>                                                   <span class="c">02020831</span>
+<a name="ln-205"></a><span class="nl">     </span>   <span class="n">LVI</span> <span class="o">=</span> <span class="o">-</span><span class="mi">25</span>                                                       <span class="c">02030831</span>
+<a name="ln-206"></a><span class="nl">     </span>   <span class="n">AVS</span> <span class="o">=</span> <span class="mi">3</span><span class="mf">2.750</span>                                                    <span class="c">02040831</span>
+<a name="ln-207"></a><span class="nl">     </span>   <span class="n">BVS</span> <span class="o">=</span> <span class="mf">1.375</span>                                                     <span class="c">02050831</span>
+<a name="ln-208"></a><span class="nl">     </span>   <span class="n">CVD</span> <span class="o">=</span> <span class="mf">0.75D0</span>                                                    <span class="c">02060831</span>
+<a name="ln-209"></a><span class="nl">     </span>   <span class="n">DVD</span> <span class="o">=</span> <span class="mf">1.125D0</span>                                                   <span class="c">02070831</span>
+<a name="ln-210"></a><span class="nl">     </span>   <span class="n">AVD</span> <span class="o">=</span> <span class="nb">ABS</span><span class="p">(</span><span class="n">LVI</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="nb">MOD</span><span class="p">(</span><span class="n">AVS</span><span class="p">,</span> <span class="n">BVS</span><span class="p">)</span> <span class="o">*</span> <span class="nb">SIGN</span><span class="p">(</span><span class="n">CVD</span><span class="p">,</span> <span class="n">DVD</span><span class="p">))</span>               <span class="c">02080831</span>
+<a name="ln-211"></a><span class="nl">     </span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVD</span> <span class="o">-</span>  <span class="mf">0.2415624998D+02</span><span class="p">)</span> <span class="mi">20080</span><span class="p">,</span> <span class="mi">10080</span><span class="p">,</span> <span class="mi">40080</span>             <span class="c">02090831</span>
+<a name="ln-212"></a><span class="nl">40080</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVD</span> <span class="o">-</span>  <span class="mf">0.2415625002D+02</span><span class="p">)</span> <span class="mi">10080</span><span class="p">,</span> <span class="mi">10080</span><span class="p">,</span> <span class="mi">20080</span>             <span class="c">02100831</span>
+<a name="ln-213"></a><span class="nl">10080</span>      <span class="n">IVPASS</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">02110831</span>
+<a name="ln-214"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">IVTNUM</span>                                   <span class="c">02120831</span>
+<a name="ln-215"></a><span class="nl">     </span>      <span class="n">GO</span> <span class="n">TO</span> <span class="mi">0081</span>                                                   <span class="c">02130831</span>
+<a name="ln-216"></a><span class="nl">20080</span>      <span class="n">IVFAIL</span> <span class="o">=</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">02140831</span>
+<a name="ln-217"></a><span class="nl">     </span>      <span class="n">DVCORR</span> <span class="o">=</span> <span class="mi">2</span><span class="mf">4.15625D0</span>                                          <span class="c">02150831</span>
+<a name="ln-218"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80031</span><span class="p">)</span> <span class="n">IVTNUM</span><span class="p">,</span> <span class="n">AVD</span><span class="p">,</span> <span class="n">DVCORR</span>                      <span class="c">02160831</span>
+<a name="ln-219"></a><span class="nl"> 0081</span>      <span class="k">CONTINUE</span>                                                     <span class="c">02170831</span>
+<a name="ln-220"></a><span class="c">CT009*  TEST 9                                 TEST OF ABS WITH COMPLEX 02180831</span>
+<a name="ln-221"></a><span class="nl">     </span>      <span class="n">IVTNUM</span> <span class="o">=</span> <span class="mi">9</span>                                                   <span class="c">02190831</span>
+<a name="ln-222"></a><span class="nl">     </span>   <span class="n">AVS</span> <span class="o">=</span> <span class="nb">ABS</span><span class="p">((</span><span class="o">-</span><span class="mf">2.125</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">))</span>                                        <span class="c">02200831</span>
+<a name="ln-223"></a><span class="nl">     </span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVS</span> <span class="o">-</span>  <span class="mf">0.54325E+01</span><span class="p">)</span> <span class="mi">20090</span><span class="p">,</span> <span class="mi">10090</span><span class="p">,</span> <span class="mi">40090</span>                  <span class="c">02210831</span>
+<a name="ln-224"></a><span class="nl">40090</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">AVS</span> <span class="o">-</span>  <span class="mf">0.54331E+01</span><span class="p">)</span> <span class="mi">10090</span><span class="p">,</span> <span class="mi">10090</span><span class="p">,</span> <span class="mi">20090</span>                  <span class="c">02220831</span>
+<a name="ln-225"></a><span class="nl">10090</span>      <span class="n">IVPASS</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">02230831</span>
+<a name="ln-226"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">IVTNUM</span>                                   <span class="c">02240831</span>
+<a name="ln-227"></a><span class="nl">     </span>      <span class="n">GO</span> <span class="n">TO</span> <span class="mi">0091</span>                                                   <span class="c">02250831</span>
+<a name="ln-228"></a><span class="nl">20090</span>      <span class="n">IVFAIL</span> <span class="o">=</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">02260831</span>
+<a name="ln-229"></a><span class="nl">     </span>      <span class="n">RVCORR</span> <span class="o">=</span> <span class="mf">5.4328279</span>                                           <span class="c">02270831</span>
+<a name="ln-230"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80012</span><span class="p">)</span> <span class="n">IVTNUM</span><span class="p">,</span> <span class="n">AVS</span><span class="p">,</span> <span class="n">RVCORR</span>                      <span class="c">02280831</span>
+<a name="ln-231"></a><span class="nl"> 0091</span>      <span class="k">CONTINUE</span>                                                     <span class="c">02290831</span>
+<a name="ln-232"></a><span class="c">CT010*  TEST 10                        TEST OF SIN AND COS WITH COMPLEX 02300831</span>
+<a name="ln-233"></a><span class="nl">     </span>      <span class="n">IVTNUM</span> <span class="o">=</span> <span class="mi">10</span>                                                  <span class="c">02310831</span>
+<a name="ln-234"></a><span class="nl">     </span>   <span class="n">AVC</span> <span class="o">=</span> <span class="nb">SIN</span><span class="p">((</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">))</span> <span class="o">*</span> <span class="nb">COS</span><span class="p">((</span><span class="o">-</span><span class="mf">4.75</span><span class="p">,</span> <span class="mf">1.25</span><span class="p">))</span>                      <span class="c">02320831</span>
+<a name="ln-235"></a><span class="nl">     </span>      <span class="k">IF</span> <span class="p">(</span><span class="n">R2E</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span>  <span class="mf">0.20512E+02</span><span class="p">)</span> <span class="mi">20100</span><span class="p">,</span> <span class="mi">40102</span><span class="p">,</span> <span class="mi">40101</span>               <span class="c">02330831</span>
+<a name="ln-236"></a><span class="nl">40101</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">R2E</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span>  <span class="mf">0.20510E+02</span><span class="p">)</span> <span class="mi">40102</span><span class="p">,</span> <span class="mi">40102</span><span class="p">,</span> <span class="mi">20100</span>               <span class="c">02340831</span>
+<a name="ln-237"></a><span class="nl">40102</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">R2E</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span>  <span class="mf">0.16820E+02</span><span class="p">)</span> <span class="mi">20100</span><span class="p">,</span> <span class="mi">10100</span><span class="p">,</span> <span class="mi">40100</span>               <span class="c">02350831</span>
+<a name="ln-238"></a><span class="nl">40100</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">R2E</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span>  <span class="mf">0.16817E+02</span><span class="p">)</span> <span class="mi">10100</span><span class="p">,</span> <span class="mi">10100</span><span class="p">,</span> <span class="mi">20100</span>               <span class="c">02360831</span>
+<a name="ln-239"></a><span class="nl">10100</span>      <span class="n">IVPASS</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">02370831</span>
+<a name="ln-240"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">IVTNUM</span>                                   <span class="c">02380831</span>
+<a name="ln-241"></a><span class="nl">     </span>      <span class="n">GO</span> <span class="n">TO</span> <span class="mi">0101</span>                                                   <span class="c">02390831</span>
+<a name="ln-242"></a><span class="nl">20100</span>      <span class="n">IVFAIL</span> <span class="o">=</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">02400831</span>
+<a name="ln-243"></a><span class="nl">     </span>      <span class="n">ZVCORR</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="mf">0.5109598</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="mf">6.8182771</span><span class="p">)</span>                          <span class="c">02410831</span>
+<a name="ln-244"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80045</span><span class="p">)</span> <span class="n">IVTNUM</span><span class="p">,</span> <span class="n">AVC</span><span class="p">,</span> <span class="n">ZVCORR</span>                      <span class="c">02420831</span>
+<a name="ln-245"></a><span class="nl"> 0101</span>      <span class="k">CONTINUE</span>                                                     <span class="c">02430831</span>
+<a name="ln-246"></a><span class="c">CT011*  TEST 11                     TEST OF SIN, COS AND TAN            02440831</span>
+<a name="ln-247"></a><span class="c">C*****                                            WITH REAL AND COMPLEX 02450831</span>
+<a name="ln-248"></a><span class="nl">     </span>      <span class="n">IVTNUM</span> <span class="o">=</span> <span class="mi">11</span>                                                  <span class="c">02460831</span>
+<a name="ln-249"></a><span class="nl">     </span>   <span class="n">AVS</span> <span class="o">=</span> <span class="mf">2.0</span>                                                       <span class="c">02470831</span>
+<a name="ln-250"></a><span class="nl">     </span>   <span class="n">CVC</span> <span class="o">=</span> <span class="p">(</span><span class="mf">3.125</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>                                              <span class="c">02480831</span>
+<a name="ln-251"></a><span class="nl">     </span>   <span class="n">BVS</span> <span class="o">=</span> <span class="mf">3.5</span>                                                       <span class="c">02490831</span>
+<a name="ln-252"></a><span class="nl">     </span>   <span class="n">AVC</span> <span class="o">=</span> <span class="nb">SIN</span><span class="p">(</span><span class="n">AVS</span><span class="p">)</span> <span class="o">+</span> <span class="nb">COS</span><span class="p">(</span><span class="n">CVC</span><span class="p">)</span> <span class="o">+</span> <span class="nb">TAN</span><span class="p">(</span><span class="n">BVS</span><span class="p">)</span>                            <span class="c">02500831</span>
+<a name="ln-253"></a><span class="nl">     </span>      <span class="k">IF</span> <span class="p">(</span><span class="n">R2E</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span>  <span class="mf">0.10683E+01</span><span class="p">)</span> <span class="mi">20110</span><span class="p">,</span> <span class="mi">40112</span><span class="p">,</span> <span class="mi">40111</span>               <span class="c">02510831</span>
+<a name="ln-254"></a><span class="nl">40111</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">R2E</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span>  <span class="mf">0.10681E+01</span><span class="p">)</span> <span class="mi">40112</span><span class="p">,</span> <span class="mi">40112</span><span class="p">,</span> <span class="mi">20110</span>               <span class="c">02520831</span>
+<a name="ln-255"></a><span class="nl">40112</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">R2E</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span>  <span class="mf">0.35331E-01</span><span class="p">)</span> <span class="mi">20110</span><span class="p">,</span> <span class="mi">10110</span><span class="p">,</span> <span class="mi">40110</span>               <span class="c">02530831</span>
+<a name="ln-256"></a><span class="nl">40110</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">R2E</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span>  <span class="mf">0.35327E-01</span><span class="p">)</span> <span class="mi">10110</span><span class="p">,</span> <span class="mi">10110</span><span class="p">,</span> <span class="mi">20110</span>               <span class="c">02540831</span>
+<a name="ln-257"></a><span class="nl">10110</span>      <span class="n">IVPASS</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">02550831</span>
+<a name="ln-258"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">IVTNUM</span>                                   <span class="c">02560831</span>
+<a name="ln-259"></a><span class="nl">     </span>      <span class="n">GO</span> <span class="n">TO</span> <span class="mi">0111</span>                                                   <span class="c">02570831</span>
+<a name="ln-260"></a><span class="nl">20110</span>      <span class="n">IVFAIL</span> <span class="o">=</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">02580831</span>
+<a name="ln-261"></a><span class="nl">     </span>      <span class="n">ZVCORR</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.068203</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0353288</span><span class="p">)</span>                             <span class="c">02590831</span>
+<a name="ln-262"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80045</span><span class="p">)</span> <span class="n">IVTNUM</span><span class="p">,</span> <span class="n">AVC</span><span class="p">,</span> <span class="n">ZVCORR</span>                      <span class="c">02600831</span>
+<a name="ln-263"></a><span class="nl"> 0111</span>      <span class="k">CONTINUE</span>                                                     <span class="c">02610831</span>
+<a name="ln-264"></a><span class="c">CT012*  TEST 12                     TEST OF ABS, MOD, SIN AND COS       02620831</span>
+<a name="ln-265"></a><span class="c">C*****                                   WITH INTEGER, REAL AND COMPLEX 02630831</span>
+<a name="ln-266"></a><span class="nl">     </span>      <span class="n">IVTNUM</span> <span class="o">=</span> <span class="mi">12</span>                                                  <span class="c">02640831</span>
+<a name="ln-267"></a><span class="nl">     </span>   <span class="n">AVC</span> <span class="o">=</span> <span class="nb">ABS</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="nb">MOD</span><span class="p">(</span><span class="mi">1</span><span class="mf">7.250</span><span class="p">,</span> <span class="mf">3.125</span><span class="p">)</span> <span class="o">+</span> <span class="nb">SIN</span><span class="p">(</span><span class="mf">3.125</span><span class="p">)</span> <span class="o">-</span>               <span class="c">02650831</span>
+<a name="ln-268"></a><span class="nl">     </span><span class="gs">1</span>          <span class="nb">COS</span><span class="p">((</span><span class="o">-</span><span class="mf">0.375</span><span class="p">,</span> <span class="mf">1.625</span><span class="p">))</span>                                    <span class="c">02660831</span>
+<a name="ln-269"></a><span class="nl">     </span>      <span class="k">IF</span> <span class="p">(</span><span class="n">R2E</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span>  <span class="mf">0.81218E+00</span><span class="p">)</span> <span class="mi">20120</span><span class="p">,</span> <span class="mi">40122</span><span class="p">,</span> <span class="mi">40121</span>               <span class="c">02670831</span>
+<a name="ln-270"></a><span class="nl">40121</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">R2E</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span>  <span class="mf">0.81227E+00</span><span class="p">)</span> <span class="mi">40122</span><span class="p">,</span> <span class="mi">40122</span><span class="p">,</span> <span class="mi">20120</span>               <span class="c">02680831</span>
+<a name="ln-271"></a><span class="nl">40122</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">R2E</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span>  <span class="mf">0.89403E+00</span><span class="p">)</span> <span class="mi">20120</span><span class="p">,</span> <span class="mi">10120</span><span class="p">,</span> <span class="mi">40120</span>               <span class="c">02690831</span>
+<a name="ln-272"></a><span class="nl">40120</span>      <span class="k">IF</span> <span class="p">(</span><span class="n">R2E</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span>  <span class="mf">0.89393E+00</span><span class="p">)</span> <span class="mi">10120</span><span class="p">,</span> <span class="mi">10120</span><span class="p">,</span> <span class="mi">20120</span>               <span class="c">02700831</span>
+<a name="ln-273"></a><span class="nl">10120</span>      <span class="n">IVPASS</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">02710831</span>
+<a name="ln-274"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80002</span><span class="p">)</span> <span class="n">IVTNUM</span>                                   <span class="c">02720831</span>
+<a name="ln-275"></a><span class="nl">     </span>      <span class="n">GO</span> <span class="n">TO</span> <span class="mi">0121</span>                                                   <span class="c">02730831</span>
+<a name="ln-276"></a><span class="nl">20120</span>      <span class="n">IVFAIL</span> <span class="o">=</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="mi">1</span>                                          <span class="c">02740831</span>
+<a name="ln-277"></a><span class="nl">     </span>      <span class="n">ZVCORR</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.8122242</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.893981</span><span class="p">)</span>                              <span class="c">02750831</span>
+<a name="ln-278"></a><span class="nl">     </span>      <span class="k">WRITE</span> <span class="p">(</span><span class="n">NUVI</span><span class="p">,</span> <span class="mi">80045</span><span class="p">)</span> <span class="n">IVTNUM</span><span class="p">,</span> <span class="n">AVC</span><span class="p">,</span> <span class="n">ZVCORR</span>                      <span class="c">02760831</span>
+<a name="ln-279"></a><span class="nl"> 0121</span>      <span class="k">CONTINUE</span>                                                     <span class="c">02770831</span>
+<a name="ln-280"></a><span class="c">C*****                                                                  02780831</span>
+<a name="ln-281"></a><span class="c">CBB** ********************** BBCSUM0  **********************************02790831</span>
+<a name="ln-282"></a><span class="c">C**** WRITE OUT TEST SUMMARY                                            02800831</span>
+<a name="ln-283"></a><span class="c">C****                                                                   02810831</span>
+<a name="ln-284"></a><span class="nl">     </span> <span class="n">IVTOTN</span> <span class="o">=</span> <span class="n">IVPASS</span> <span class="o">+</span> <span class="n">IVFAIL</span> <span class="o">+</span> <span class="n">IVDELE</span> <span class="o">+</span> <span class="n">IVINSP</span>                        <span class="c">02820831</span>
+<a name="ln-285"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90004</span><span class="p">)</span>                                                <span class="c">02830831</span>
+<a name="ln-286"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90014</span><span class="p">)</span>                                                <span class="c">02840831</span>
+<a name="ln-287"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90004</span><span class="p">)</span>                                                <span class="c">02850831</span>
+<a name="ln-288"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90020</span><span class="p">)</span> <span class="n">IVPASS</span>                                         <span class="c">02860831</span>
+<a name="ln-289"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90022</span><span class="p">)</span> <span class="n">IVFAIL</span>                                         <span class="c">02870831</span>
+<a name="ln-290"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90024</span><span class="p">)</span> <span class="n">IVDELE</span>                                         <span class="c">02880831</span>
+<a name="ln-291"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90026</span><span class="p">)</span> <span class="n">IVINSP</span>                                         <span class="c">02890831</span>
+<a name="ln-292"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span> <span class="mi">90028</span><span class="p">)</span> <span class="n">IVTOTN</span><span class="p">,</span> <span class="n">IVTOTL</span>                                 <span class="c">02900831</span>
+<a name="ln-293"></a><span class="c">CBE** ********************** BBCSUM0  **********************************02910831</span>
+<a name="ln-294"></a><span class="c">CBB** ********************** BBCFOOT0 **********************************02920831</span>
+<a name="ln-295"></a><span class="c">C**** WRITE OUT REPORT FOOTINGS                                         02930831</span>
+<a name="ln-296"></a><span class="c">C****                                                                   02940831</span>
+<a name="ln-297"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span><span class="mi">90016</span><span class="p">)</span> <span class="n">ZPROG</span><span class="p">,</span> <span class="n">ZPROG</span>                                    <span class="c">02950831</span>
+<a name="ln-298"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span><span class="mi">90018</span><span class="p">)</span> <span class="n">ZPROJ</span><span class="p">,</span> <span class="n">ZNAME</span><span class="p">,</span> <span class="n">ZTAPE</span><span class="p">,</span> <span class="n">ZTAPED</span>                     <span class="c">02960831</span>
+<a name="ln-299"></a><span class="nl">     </span> <span class="k">WRITE</span> <span class="p">(</span><span class="n">I02</span><span class="p">,</span><span class="mi">90019</span><span class="p">)</span>                                                 <span class="c">02970831</span>
+<a name="ln-300"></a><span class="c">CBE** ********************** BBCFOOT0 **********************************02980831</span>
+<a name="ln-301"></a><span class="c">CBB** ********************** BBCFMT0A **********************************02990831</span>
+<a name="ln-302"></a><span class="c">C**** FORMATS FOR TEST DETAIL LINES                                     03000831</span>
+<a name="ln-303"></a><span class="c">C****                                                                   03010831</span>
+<a name="ln-304"></a><span class="nl">80000</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">X</span><span class="p">,</span><span class="n">I3</span><span class="p">,</span><span class="mi">4</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;DELETED&quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                           <span class="c">03020831</span>
+<a name="ln-305"></a><span class="nl">80002</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">X</span><span class="p">,</span><span class="n">I3</span><span class="p">,</span><span class="mi">4</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot; PASS  &quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                           <span class="c">03030831</span>
+<a name="ln-306"></a><span class="nl">80004</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">X</span><span class="p">,</span><span class="n">I3</span><span class="p">,</span><span class="mi">4</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;INSPECT&quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                           <span class="c">03040831</span>
+<a name="ln-307"></a><span class="nl">80008</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">X</span><span class="p">,</span><span class="n">I3</span><span class="p">,</span><span class="mi">4</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                           <span class="c">03050831</span>
+<a name="ln-308"></a><span class="nl">80010</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">X</span><span class="p">,</span><span class="n">I3</span><span class="p">,</span><span class="mi">4</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">15</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="c">03060831</span>
+<a name="ln-309"></a><span class="nl">     </span><span class="gs">1</span><span class="n">I6</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">15</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">I6</span><span class="p">)</span>                                    <span class="c">03070831</span>
+<a name="ln-310"></a><span class="nl">80012</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">X</span><span class="p">,</span><span class="n">I3</span><span class="p">,</span><span class="mi">4</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="c">03080831</span>
+<a name="ln-311"></a><span class="nl">     </span><span class="gs">1</span><span class="n">E12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">E12</span><span class="p">.</span><span class="mi">5</span><span class="p">)</span>                              <span class="c">03090831</span>
+<a name="ln-312"></a><span class="nl">80018</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">X</span><span class="p">,</span><span class="n">I3</span><span class="p">,</span><span class="mi">4</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="c">03100831</span>
+<a name="ln-313"></a><span class="nl">     </span><span class="gs">1</span><span class="n">A21</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">A21</span><span class="p">)</span>                                  <span class="c">03110831</span>
+<a name="ln-314"></a><span class="nl">80020</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="n">A21</span><span class="p">,</span><span class="mi">1</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                         <span class="c">03120831</span>
+<a name="ln-315"></a><span class="nl">80022</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">A21</span><span class="p">,</span><span class="mi">1</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                         <span class="c">03130831</span>
+<a name="ln-316"></a><span class="nl">80024</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="n">I6</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                         <span class="c">03140831</span>
+<a name="ln-317"></a><span class="nl">80026</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">I6</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                         <span class="c">03150831</span>
+<a name="ln-318"></a><span class="nl">80028</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="n">E12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                      <span class="c">03160831</span>
+<a name="ln-319"></a><span class="nl">80030</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">E12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                      <span class="c">03170831</span>
+<a name="ln-320"></a><span class="nl">80050</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                                              <span class="c">03180831</span>
+<a name="ln-321"></a><span class="c">CBE** ********************** BBCFMT0A **********************************03190831</span>
+<a name="ln-322"></a><span class="c">CBB** ********************** BBCFMAT1 **********************************03200831</span>
+<a name="ln-323"></a><span class="c">C**** FORMATS FOR TEST DETAIL LINES - FULL LANGUAGE                     03210831</span>
+<a name="ln-324"></a><span class="c">C****                                                                   03220831</span>
+<a name="ln-325"></a><span class="nl">80031</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">X</span><span class="p">,</span><span class="n">I3</span><span class="p">,</span><span class="mi">4</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="c">03230831</span>
+<a name="ln-326"></a><span class="nl">     </span><span class="gs">1</span><span class="n">D17</span><span class="p">.</span><span class="mi">10</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">D17</span><span class="p">.</span><span class="mi">10</span><span class="p">)</span>                            <span class="c">03240831</span>
+<a name="ln-327"></a><span class="nl">80033</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="n">D17</span><span class="p">.</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                     <span class="c">03250831</span>
+<a name="ln-328"></a><span class="nl">80035</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">D17</span><span class="p">.</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>                     <span class="c">03260831</span>
+<a name="ln-329"></a><span class="nl">80037</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">E12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">E12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">,</span><span class="mi">6</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>    <span class="c">03270831</span>
+<a name="ln-330"></a><span class="nl">80039</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">E12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">E12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">,</span><span class="mi">6</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>    <span class="c">03280831</span>
+<a name="ln-331"></a><span class="nl">80041</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">F12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">F12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">,</span><span class="mi">6</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>    <span class="c">03290831</span>
+<a name="ln-332"></a><span class="nl">80043</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">F12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">F12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">,</span><span class="mi">6</span><span class="n">X</span><span class="p">,</span><span class="n">A31</span><span class="p">)</span>    <span class="c">03300831</span>
+<a name="ln-333"></a><span class="nl">80045</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">X</span><span class="p">,</span><span class="n">I3</span><span class="p">,</span><span class="mi">4</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="c">03310831</span>
+<a name="ln-334"></a><span class="nl">     </span><span class="gs">1</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">F12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">F12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span>                  <span class="c">03320831</span>
+<a name="ln-335"></a><span class="nl">     </span><span class="gs">2</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">F12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">F12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">)</span>                                         <span class="c">03330831</span>
+<a name="ln-336"></a><span class="c">CBE** ********************** BBCFMAT1 **********************************03340831</span>
+<a name="ln-337"></a><span class="c">CBB** ********************** BBCFMT0B **********************************03350831</span>
+<a name="ln-338"></a><span class="c">C**** FORMAT STATEMENTS FOR PAGE HEADERS                                03360831</span>
+<a name="ln-339"></a><span class="c">C****                                                                   03370831</span>
+<a name="ln-340"></a><span class="nl">90002</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>                                                      <span class="c">03380831</span>
+<a name="ln-341"></a><span class="nl">90004</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>                                                      <span class="c">03390831</span>
+<a name="ln-342"></a><span class="nl">90006</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">20</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY&quot;</span> <span class="p">)</span><span class="c">03400831</span>
+<a name="ln-343"></a><span class="nl">90007</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">19</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;FORTRAN COMPILER VALIDATION SYSTEM&quot;</span> <span class="p">)</span>            <span class="c">03410831</span>
+<a name="ln-344"></a><span class="nl">90008</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">X</span><span class="p">,</span><span class="n">A13</span><span class="p">,</span><span class="n">A17</span><span class="p">)</span>                                          <span class="c">03420831</span>
+<a name="ln-345"></a><span class="nl">90009</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; *&quot;</span><span class="p">,</span><span class="n">A5</span><span class="p">,</span><span class="s2">&quot;BEGIN*&quot;</span><span class="p">,</span><span class="mi">12</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;TEST RESULTS - &quot;</span> <span class="p">,</span><span class="n">A5</span><span class="p">,</span><span class="o">/</span><span class="p">)</span>       <span class="c">03430831</span>
+<a name="ln-346"></a><span class="nl">90010</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">8</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;TEST DATE*TIME= &quot;</span> <span class="p">,</span><span class="n">A17</span><span class="p">,</span><span class="s2">&quot;  -  COMPILER= &quot;</span> <span class="p">,</span><span class="n">A20</span><span class="p">)</span>    <span class="c">03440831</span>
+<a name="ln-347"></a><span class="nl">90013</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot; TEST   &quot;</span><span class="p">,</span><span class="s2">&quot;PASS/FAIL &quot;</span> <span class="p">,</span><span class="mi">6</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;DISPLAYED RESULTS&quot;</span> <span class="p">,</span>     <span class="c">03450831</span>
+<a name="ln-348"></a><span class="nl">     </span><span class="gs">1</span>       <span class="mi">7</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;REMARKS&quot;</span><span class="p">,</span><span class="mi">24</span><span class="n">X</span><span class="p">)</span>                                          <span class="c">03460831</span>
+<a name="ln-349"></a><span class="nl">90014</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot;----------------------------------------------&quot;</span> <span class="p">,</span>    <span class="c">03470831</span>
+<a name="ln-350"></a><span class="nl">     </span><span class="gs">1</span>        <span class="s2">&quot;---------------------------------&quot;</span> <span class="p">)</span>                     <span class="c">03480831</span>
+<a name="ln-351"></a><span class="nl">90015</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;THIS PROGRAM HAS &quot;</span> <span class="p">,</span><span class="n">I3</span><span class="p">,</span><span class="s2">&quot; TESTS&quot;</span><span class="p">,</span><span class="o">/</span><span class="p">)</span>               <span class="c">03490831</span>
+<a name="ln-352"></a><span class="c">C****                                                                   03500831</span>
+<a name="ln-353"></a><span class="c">C**** FORMAT STATEMENTS FOR REPORT FOOTINGS                             03510831</span>
+<a name="ln-354"></a><span class="c">C****                                                                   03520831</span>
+<a name="ln-355"></a><span class="nl">90016</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; *&quot;</span><span class="p">,</span><span class="n">A5</span><span class="p">,</span><span class="s2">&quot;END*&quot;</span><span class="p">,</span><span class="mi">14</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;END OF TEST - &quot;</span> <span class="p">,</span><span class="n">A5</span><span class="p">,</span><span class="o">/</span><span class="p">)</span>          <span class="c">03530831</span>
+<a name="ln-356"></a><span class="nl">90018</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="n">A13</span><span class="p">,</span><span class="mi">13</span><span class="n">X</span><span class="p">,</span><span class="n">A20</span><span class="p">,</span><span class="s2">&quot;   *   &quot;</span><span class="p">,</span><span class="n">A10</span><span class="p">,</span><span class="s2">&quot;/&quot;</span><span class="p">,</span>                        <span class="c">03540831</span>
+<a name="ln-357"></a><span class="nl">     </span><span class="gs">1</span>        <span class="n">A13</span><span class="p">)</span>                                                      <span class="c">03550831</span>
+<a name="ln-358"></a><span class="nl">90019</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot;FOR OFFICIAL USE ONLY     &quot;</span> <span class="p">,</span><span class="mi">35</span><span class="n">X</span><span class="p">,</span><span class="s2">&quot;COPYRIGHT  1982&quot;</span> <span class="p">)</span> <span class="c">03560831</span>
+<a name="ln-359"></a><span class="c">C****                                                                   03570831</span>
+<a name="ln-360"></a><span class="c">C**** FORMAT STATEMENTS FOR RUN SUMMARY                                 03580831</span>
+<a name="ln-361"></a><span class="c">C****                                                                   03590831</span>
+<a name="ln-362"></a><span class="nl">90020</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">X</span><span class="p">,</span><span class="n">I5</span><span class="p">,</span><span class="s2">&quot; TESTS PASSED&quot;</span> <span class="p">)</span>                              <span class="c">03600831</span>
+<a name="ln-363"></a><span class="nl">90022</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">X</span><span class="p">,</span><span class="n">I5</span><span class="p">,</span><span class="s2">&quot; TESTS FAILED&quot;</span> <span class="p">)</span>                              <span class="c">03610831</span>
+<a name="ln-364"></a><span class="nl">90024</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">X</span><span class="p">,</span><span class="n">I5</span><span class="p">,</span><span class="s2">&quot; TESTS DELETED&quot;</span> <span class="p">)</span>                             <span class="c">03620831</span>
+<a name="ln-365"></a><span class="nl">90026</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">X</span><span class="p">,</span><span class="n">I5</span><span class="p">,</span><span class="s2">&quot; TESTS REQUIRE INSPECTION&quot;</span> <span class="p">)</span>                  <span class="c">03630831</span>
+<a name="ln-366"></a><span class="nl">90028</span> <span class="k">FORMAT</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">X</span><span class="p">,</span><span class="n">I5</span><span class="p">,</span><span class="s2">&quot; OF &quot;</span><span class="p">,</span><span class="n">I3</span><span class="p">,</span><span class="s2">&quot; TESTS EXECUTED&quot;</span> <span class="p">)</span>                  <span class="c">03640831</span>
+<a name="ln-367"></a><span class="c">CBE** ********************** BBCFMT0B **********************************03650831</span>
+<a name="ln-368"></a><span class="c">C*****                                                                  03660831</span>
+<a name="ln-369"></a><span class="c">C*****    END OF TEST SEGMENT 208                                       03670831</span>
+<a name="ln-370"></a><span class="nl">     </span> <span class="k">STOP</span>                                                              <span class="c">03680831</span>
+<a name="ln-371"></a><span class="nl">     </span> <span class="k">END</span>                                                               <span class="c">03690831</span>
+</pre></div>
+
+    </section>
+    </div>
+  </div>
+
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2018 
+                                          </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+            
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> NIST-Fortran78 was developed by NIST</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>

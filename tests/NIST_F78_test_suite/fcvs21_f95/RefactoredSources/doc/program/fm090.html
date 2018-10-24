@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="A Fortran 77 test suite refactored by RefactorF4Acc">
+    
+    <meta name="author" content="NIST (refactored by RefactorF4Acc)" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>fm090 &ndash; Refactored NIST-Fortran78</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Refactored NIST-Fortran78 </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+               
+        
+            <li><a href="../lists/programs.html">Programs</a></li>
+        
+            </ul>
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/programs.html">Programs</a></li>
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>fm090
+    <small>Program</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.4% of total for programs.">283 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/FM090.f95"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+     <li><a href='../sourcefile/fm090.f95.html'>FM090.f95</a></li>
+    
+  
+     <li class="active">fm090</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-a">a</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-aaaaaa">aaaaaa</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-b">b</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-bbbbb">bbbbb</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-c">c</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-callfl">callfl</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-cccc">cccc</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-d">d</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ddd">ddd</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-do3">do3</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-e">e</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ee">ee</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-f">f</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-f0">f0</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-false%7E5">false</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-g">g</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-g12">g12</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-goto1">goto1</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-h">h</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-h345">h345</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-i%7E14">i</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-i01%7E68">i01</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-i02%7E68">i02</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-i6789">i6789</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iace11">iace11</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iace21">iace21</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iace31">iace31</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iacn11%7E7">iacn11</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iadn11%7E8">iadn11</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iate31">iate31</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-icon84">icon84</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-icte96">icte96</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iczero%7E68">iczero</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-idoeb6">idoeb6</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-idony4">idony4</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-if3">if3</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ifons3">ifons3</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ipmh">ipmh</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivcomp%7E40">ivcomp</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivcorr%7E42">ivcorr</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivdele%7E68">ivdele</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivfail%7E68">ivfail</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivon01%7E28">ivon01</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivon78">ivon78</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivpass%7E68">ivpass</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivte69">ivte69</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivtnum%7E68">ivtnum</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-j%7E6">j</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-j01234">j01234</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-k%7E2">k</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-k56789">k56789</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-l%7E3">l</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-l2l2l2">l2l2l2</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-m">m</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-m3m3m3">m3m3m3</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-n">n</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-n40">n40</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-o">o</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-omy">omy</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-p">p</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-q">q</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-r">r</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-race11">race11</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-race21">race21</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-racn31">racn31</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rade31">rade31</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rcon48">rcon48</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rcte54">rcte54</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rdon46">rdon46</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rfon77">rfon77</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rvoez9">rvoez9</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rvtnaz">rvtnaz</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-s">s</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-t">t</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-true%7E4">true</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-typei">typei</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-u">u</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-v">v</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-w">w</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-x">x</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-y">y</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-z">z</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../program/fm090.html#src">fm090</a>
+  </div>
+</div>
+
+
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    
+  
+
+    
+    
+    
+
+     <section class="visible-xs visible-sm hidden-md">
+       
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-a">a</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-aaaaaa">aaaaaa</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-b">b</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-bbbbb">bbbbb</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-c">c</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-callfl">callfl</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-cccc">cccc</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-d">d</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ddd">ddd</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-do3">do3</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-e">e</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ee">ee</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-f">f</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-f0">f0</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-false%7E5">false</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-g">g</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-g12">g12</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-goto1">goto1</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-h">h</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-h345">h345</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-i%7E14">i</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-i01%7E68">i01</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-i02%7E68">i02</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-i6789">i6789</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iace11">iace11</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iace21">iace21</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iace31">iace31</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iacn11%7E7">iacn11</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iadn11%7E8">iadn11</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iate31">iate31</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-icon84">icon84</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-icte96">icte96</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-iczero%7E68">iczero</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-idoeb6">idoeb6</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-idony4">idony4</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-if3">if3</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ifons3">ifons3</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ipmh">ipmh</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivcomp%7E40">ivcomp</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivcorr%7E42">ivcorr</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivdele%7E68">ivdele</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivfail%7E68">ivfail</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivon01%7E28">ivon01</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivon78">ivon78</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivpass%7E68">ivpass</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivte69">ivte69</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-ivtnum%7E68">ivtnum</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-j%7E6">j</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-j01234">j01234</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-k%7E2">k</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-k56789">k56789</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-l%7E3">l</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-l2l2l2">l2l2l2</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-m">m</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-m3m3m3">m3m3m3</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-n">n</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-n40">n40</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-o">o</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-omy">omy</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-p">p</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-q">q</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-r">r</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-race11">race11</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-race21">race21</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-racn31">racn31</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rade31">rade31</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rcon48">rcon48</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rcte54">rcte54</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rdon46">rdon46</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rfon77">rfon77</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rvoez9">rvoez9</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-rvtnaz">rvtnaz</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-s">s</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-t">t</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-true%7E4">true</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-typei">typei</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-u">u</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-v">v</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-w">w</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-x">x</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-y">y</a>
+      
+      <a class="list-group-item" href="../program/fm090.html#variable-z">z</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../program/fm090.html#src">fm090</a>
+  </div>
+</div>
+
+
+
+     </section>
+     <br class="visible-xs visible-sm hidden-md">
+
+     
+
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-a"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>a</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-aaaaaa"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>aaaaaa</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-b"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>b</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-bbbbb"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>bbbbb</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-c"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>c</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-callfl"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>callfl</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-cccc"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>cccc</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-d"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>d</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ddd"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ddd</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-do3"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>do3</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-e"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>e</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ee"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ee</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-f"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>f</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-f0"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>f0</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-false%7E5"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>false</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-g"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>g</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-g12"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>g12</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-goto1"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>goto1</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-h"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>h</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-h345"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>h345</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i%7E14"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>i</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i01%7E68"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>i01</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i02%7E68"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>i02</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i6789"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>i6789</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iace11"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>iace11</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iace21"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>iace21</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iace31"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>iace31</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iacn11%7E7"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>iacn11</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iadn11%7E8"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>iadn11</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iate31"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>iate31</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-icon84"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>icon84</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-icte96"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>icte96</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iczero%7E68"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>iczero</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-idoeb6"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>idoeb6</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-idony4"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>idony4</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-if3"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>if3</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ifons3"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ifons3</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ipmh"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ipmh</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivcomp%7E40"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivcomp</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivcorr%7E42"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivcorr</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivdele%7E68"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivdele</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivfail%7E68"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivfail</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivon01%7E28"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivon01</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivon78"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivon78</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivpass%7E68"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivpass</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivte69"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivte69</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivtnum%7E68"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivtnum</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-j%7E6"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>j</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-j01234"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>j01234</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-k%7E2"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>k</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-k56789"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>k56789</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-l%7E3"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>l</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-l2l2l2"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>l2l2l2</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-m"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>m</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-m3m3m3"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>m3m3m3</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-n"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>n</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-n40"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>n40</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-o"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>o</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-omy"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>omy</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-p"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>p</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-q"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>q</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-r"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>r</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-race11"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>race11</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-race21"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>race21</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-racn31"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>racn31</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-rade31"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>rade31</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-rcon48"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>rcon48</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-rcte54"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>rcte54</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-rdon46"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>rdon46</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-rfon77"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>rfon77</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-rvoez9"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>rvoez9</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-rvtnaz"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>rvtnaz</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-s"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>s</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-t"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>t</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-true%7E4"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>true</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-typei"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>typei</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-u"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>u</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-v"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>v</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-w"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>w</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-x"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>x</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-y"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>y</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-z"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>z</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    
+    
+    
+    <section>
+    <h2 id="src">Source Code</h2>
+    <div class="highlight"><pre><span></span>      <span class="k">program </span><span class="n">fm090</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i01</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i02</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivpass</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivfail</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivdele</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">iczero</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivtnum</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">a</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">b</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">c</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">d</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">e</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">f</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">g</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">h</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">j</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">k</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">l</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">m</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">n</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">o</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">p</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">q</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">r</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">s</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">t</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">u</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">v</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">w</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">x</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">y</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">z</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">aaaaaa</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">bbbbb</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">cccc</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">ddd</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">ee</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">f0</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">g12</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">h345</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i6789</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">j01234</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">k56789</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">l2l2l2</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">m3m3m3</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">n40</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">omy</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ipmh</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">goto1</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">if3</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">do3</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">callfl</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">typei</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">true</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">false</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivcomp</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivcorr</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">iace11</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">iace21</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">iace31</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">iacn11</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">iadn11</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">iate31</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">race11</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">race21</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">racn31</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">rade31</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivte69</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivon78</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">rvtnaz</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">rvoez9</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">icte96</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">icon84</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">rcon48</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">rcte54</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">idony4</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">idoeb6</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">rdon46</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ifons3</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">rfon77</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivon01</span>
+<span class="c">!      COMMENT SECTION.                                                  </span>
+<span class="c">!      WV: VARIANT of FM010, removed spaces to make it sane              </span>
+<span class="c">!       FM090                                                            </span>
+<span class="c">!                                                                        </span>
+<span class="c">!              THIS ROUTINE TESTS REFERENCE FORMAT OF FORTRAN STATEMENTS </span>
+<span class="c">!      AND STATEMENT NUMBERS.  THE USE OF THE BLANK CHARACTER IS TESTED  </span>
+<span class="c">!      BOTH WITHIN THE STATEMENT NUMBER FIELD AND WITHIN THE FORTRAN     </span>
+<span class="c">!      STATEMENTS THEMSELVES.  LEADING ZERO IS TESTED FOR STATEMENTS AND </span>
+<span class="c">!      INTEGER CONSTANTS.  VARIABLE NAMES WHICH LOOK VERY MUCH LIKE      </span>
+<span class="c">!      FORTRAN RESERVED WORDS ARE TESTED IN ARITHMETIC ASSIGNMENT        </span>
+<span class="c">!      STATEMENTS.  NAMING CONVENTIONS USED THROUGHOUT THE FCVS ARE      </span>
+<span class="c">!      TESTED ALSO IN ARITHMETIC ASSIGNMENT STATEMENTS.                  </span>
+<span class="c">!                                                                        </span>
+<span class="c">!       REFERENCES                                                       </span>
+<span class="c">!         AMERICAN NATIONAL STANDARD PROGRAMMING LANGUAGE FORTRAN,       </span>
+<span class="c">!               X3.9-1978                                                </span>
+<span class="c">!                                                                        </span>
+<span class="c">!         SECTION 2.5, VARIABLES                                         </span>
+<span class="c">!         SECTION 3.1.6, BLANK CHARACTER                                 </span>
+<span class="c">!         SECTION 3.2.2, INITIAL LINES                                   </span>
+<span class="c">!         SECTION 3.4, STATEMENT LABELS                                  </span>
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!       **********************************************************       </span>
+<span class="c">!                                                                        </span>
+<span class="c">!          A COMPILER VALIDATION SYSTEM FOR THE FORTRAN LANGUAGE         </span>
+<span class="c">!      BASED ON SPECIFICATIONS AS DEFINED IN AMERICAN NATIONAL STANDARD  </span>
+<span class="c">!      PROGRAMMING LANGUAGE FORTRAN X3.9-1978, HAS BEEN DEVELOPED BY THE </span>
+<span class="c">!      FEDERAL COBOL COMPILER TESTING SERVICE.  THE FORTRAN COMPILER     </span>
+<span class="c">!      VALIDATION SYSTEM (FCVS) CONSISTS OF AUDIT ROUTINES, THEIR RELATED</span>
+<span class="c">!      DATA, AND AN EXECUTIVE SYSTEM.  EACH AUDIT ROUTINE IS A FORTRAN   </span>
+<span class="c">!      PROGRAM, SUBPROGRAM OR FUNCTION WHICH INCLUDES TESTS OF SPECIFIC  </span>
+<span class="c">!      LANGUAGE ELEMENTS AND SUPPORTING PROCEDURES INDICATING THE RESULT </span>
+<span class="c">!      OF EXECUTING THESE TESTS.                                         </span>
+<span class="c">!                                                                        </span>
+<span class="c">!          THIS PARTICULAR PROGRAM/SUBPROGRAM/FUNCTION CONTAINS FEATURES </span>
+<span class="c">!      FOUND ONLY IN THE SUBSET AS DEFINED IN X3.9-1978.                 </span>
+<span class="c">!                                                                        </span>
+<span class="c">!          SUGGESTIONS AND COMMENTS SHOULD BE FORWARDED TO -             </span>
+<span class="c">!                                                                        </span>
+<span class="c">!               NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY           </span>
+<span class="c">!                    SOFTWARE STANDARDS VALIDATION GROUP                 </span>
+<span class="c">!                           BUILDING 225  RM A266                        </span>
+<span class="c">!                          GAITHERSBURG, MD  20899                       </span>
+<span class="c">!       **********************************************************       </span>
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      INITIALIZATION SECTION                                            </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      INITIALIZE CONSTANTS                                              </span>
+<span class="c">!       **************                                                   </span>
+<span class="c">!      I01 CONTAINS THE LOGICAL UNIT NUMBER FOR THE CARD READER.         </span>
+      <span class="n">i01</span> <span class="o">=</span> <span class="mi">5</span>                                                           
+<span class="c">!      I02 CONTAINS THE LOGICAL UNIT NUMBER FOR THE PRINTER.             </span>
+      <span class="n">i02</span> <span class="o">=</span> <span class="mi">6</span>                                                           
+<span class="c">!      SYSTEM ENVIRONMENT SECTION                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">! X010    THIS CARD IS REPLACED BY CONTENTS OF FEXEC X-010 CONTROL CARD. </span>
+<span class="c">!      THE CX010 CARD IS FOR OVERRIDING THE PROGRAM DEFAULT I01 = 5      </span>
+<span class="c">!      (UNIT NUMBER FOR CARD READER).                                    </span>
+<span class="c">! X011    THIS CARD IS REPLACED BY CONTENTS OF FEXEC X-011 CONTROL CARD. </span>
+<span class="c">!      THE CX011 CARD IS FOR SYSTEMS WHICH REQUIRE ADDITIONAL            </span>
+<span class="c">!      FORTRAN STATEMENTS FOR FILES ASSOCIATED WITH CX010 ABOVE.         </span>
+<span class="c">!                                                                        </span>
+<span class="c">! X020    THIS CARD IS REPLACED BY CONTENTS OF FEXEC X-020 CONTROL CARD. </span>
+<span class="c">!      THE CX020 CARD IS FOR OVERRIDING THE PROGRAM DEFAULT I02 = 6      </span>
+<span class="c">!      (UNIT NUMBER FOR PRINTER).                                        </span>
+<span class="c">! X021    THIS CARD IS REPLACED BY CONTENTS OF FEXEC X-021 CONTROL CARD. </span>
+<span class="c">!      THE CX021 CARD IS FOR SYSTEMS WHICH REQUIRE ADDITIONAL            </span>
+<span class="c">!      FORTRAN STATEMENTS FOR FILES ASSOCIATED WITH CX020 ABOVE.         </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivpass</span><span class="o">=</span><span class="mi">0</span>                                                          
+      <span class="n">ivfail</span><span class="o">=</span><span class="mi">0</span>                                                          
+      <span class="n">ivdele</span><span class="o">=</span><span class="mi">0</span>                                                          
+      <span class="n">iczero</span><span class="o">=</span><span class="mi">0</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!      WRITE PAGE HEADERS                                                </span>
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90000</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90001</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90002</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90003</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90011</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90005</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90006</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+ <span class="mi">1001</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">100</span>                                                      
+<span class="c">!                                                                        </span>
+<span class="c">!       ****  TEST  100  ****                                            </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      TEST 100  -  TO CHECK THE VARIOUS COMBINATIONS OF FORMING VARIABLE</span>
+<span class="c">!            NAMES.  THESE ARE ACTUALLY SYMBOLIC NAMES (ANSI X3.9-1978   </span>
+<span class="c">!            SECTION 2.2).  THIS IS BASICALLY A SYNTAX CHECK USING A     </span>
+<span class="c">!            COMBINATION OF FROM ONE TO SIX ALPHANUMERIC CHARACTERS WITH </span>
+<span class="c">!            THE FIRST CHARACTER ALWAYS ALPHABETIC.  REFERENCE FORMAT IS </span>
+<span class="c">!            ALSO CHECKED BY HAVING EACH ASSIGNMENT STATEMENT AN INITIAL </span>
+<span class="c">!            LINE (SECTION 3.2.2).  THIS MEANS ZERO MAY APPEAR IN COLUMN </span>
+<span class="c">!            SIX WITHOUT EFFECT, THAT LINES MAY BEGIN ANYWHERE FROM      </span>
+<span class="c">!            COLUMN SEVEN TO COLUMN 72, AND BLANKS MAY BE USED FREELY    </span>
+<span class="c">!            WITHOUT MEANING (3.1.6 BLANK CHARACTERS).                   </span>
+<span class="c">!                                                                        </span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">31000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">31000</span>                                    
+ <span class="mi">1000</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">a</span><span class="o">=</span><span class="mf">1.</span>                                                              
+      <span class="n">b</span> <span class="o">=</span><span class="mf">2.</span>                                                             
+      <span class="n">c</span> <span class="o">=</span><span class="mf">3.</span>                                                             
+      <span class="n">d</span>   <span class="o">=</span><span class="mf">4.</span>                                                           
+      <span class="n">e</span>     <span class="o">=</span><span class="mf">5.</span>                                                         
+      <span class="n">f</span>      <span class="o">=</span><span class="mf">6.</span>                                                        
+      <span class="n">g</span>                      <span class="o">=</span>                   <span class="mf">7.</span>                     
+                                        <span class="n">h</span><span class="o">=</span><span class="mf">8.</span>                            
+                                                                     <span class="n">i</span><span class="o">=</span><span class="mi">9</span>
+      <span class="n">j</span>  <span class="o">=</span>  <span class="mi">10</span>                                                          
+          <span class="n">k</span>        <span class="o">=</span>          <span class="mi">11</span>                                        
+      <span class="n">l</span>                                 <span class="o">=</span>                             <span class="mi">12</span>
+      <span class="n">m</span><span class="o">=</span><span class="mi">13</span>                                                              
+      <span class="n">n</span><span class="o">=</span><span class="mi">14</span>                                                              
+      <span class="n">o</span><span class="o">=</span><span class="mi">1</span><span class="mf">5.</span>                                                             
+      <span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="mf">6.</span>                                                             
+      <span class="n">q</span><span class="o">=</span><span class="mi">1</span><span class="mf">7.</span>                                                             
+      <span class="n">r</span><span class="o">=</span><span class="mi">1</span><span class="mf">8.</span>                                                             
+      <span class="n">s</span><span class="o">=</span><span class="mi">1</span><span class="mf">9.</span>                                                             
+      <span class="n">t</span><span class="o">=</span><span class="mi">2</span><span class="mf">0.</span>                                                             
+      <span class="n">u</span><span class="o">=</span><span class="mi">2</span><span class="mf">1.</span>                                                             
+      <span class="n">v</span><span class="o">=</span><span class="mi">2</span><span class="mf">2.</span>                                                             
+      <span class="n">w</span><span class="o">=</span><span class="mi">2</span><span class="mf">3.</span>                                                             
+      <span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="mf">4.</span>                                                             
+      <span class="n">y</span><span class="o">=</span><span class="mi">2</span><span class="mf">5.</span>                                                             
+      <span class="n">z</span><span class="o">=</span><span class="mi">2</span><span class="mf">6.</span>                                                             
+      <span class="n">aaaaaa</span><span class="o">=</span><span class="mi">2</span><span class="mf">7.</span>                                                        
+      <span class="n">bbbbb</span><span class="o">=</span><span class="mi">2</span><span class="mf">8.</span>                                                         
+      <span class="n">cccc</span><span class="o">=</span><span class="mi">2</span><span class="mf">9.</span>                                                          
+      <span class="n">ddd</span><span class="o">=</span><span class="mi">30</span>                                                            
+      <span class="n">ee</span><span class="o">=</span><span class="mi">3</span><span class="mf">1.</span>                                                            
+      <span class="n">f0</span><span class="o">=</span><span class="mi">3</span><span class="mf">2.</span>                                                            
+      <span class="n">g12</span><span class="o">=</span><span class="mi">3</span><span class="mf">3.</span>                                                           
+      <span class="n">h345</span> <span class="o">=</span> <span class="mi">3</span><span class="mf">4.</span>                                                        
+      <span class="n">i6789</span> <span class="o">=</span> <span class="mi">35</span>                                                        
+      <span class="n">j01234</span> <span class="o">=</span> <span class="mi">36</span>                                                       
+      <span class="n">k56789</span><span class="o">=</span><span class="mi">37</span>                                                         
+       <span class="n">l2l2l2</span> <span class="o">=</span><span class="mi">38</span>                                                       
+        <span class="n">m3m3m3</span>   <span class="o">=</span>                                                   <span class="mi">39</span> 
+         <span class="n">n40</span>        <span class="o">=</span>                   <span class="mi">40</span>                              
+          <span class="n">omy</span>    <span class="o">=</span>           <span class="mi">4</span><span class="mf">1.</span>                                        
+      <span class="n">ipmh</span> <span class="o">=</span>           <span class="mi">42</span>                                               
+      <span class="n">goto1</span> <span class="o">=</span> <span class="mi">4</span><span class="mf">3.</span>                                                       
+      <span class="n">if3</span>  <span class="o">=</span> <span class="mi">44</span>                                                         
+      <span class="n">do3</span>  <span class="o">=</span>   <span class="mi">5</span><span class="mf">3.</span>                                                      
+      <span class="n">callfl</span>  <span class="o">=</span><span class="mi">6</span><span class="mf">2.</span>                                                      
+      <span class="n">typei</span>  <span class="o">=</span> <span class="mi">6</span><span class="mf">3.</span>                                                      
+      <span class="n">true</span>   <span class="o">=</span><span class="mi">7</span><span class="mf">1.</span>                                                       
+      <span class="n">false</span>  <span class="o">=</span> <span class="mi">7</span><span class="mf">2.</span>                                                      
+      <span class="k">goto </span><span class="mi">41000</span>                                                       
+<span class="mi">31000</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">41000</span><span class="p">,</span> <span class="mi">1011</span><span class="p">,</span> <span class="mi">41000</span>                                    
+<span class="mi">41000</span> <span class="k">if</span> <span class="p">(</span><span class="n">ipmh</span> <span class="o">-</span> <span class="mi">42</span><span class="p">)</span> <span class="mi">21000</span><span class="p">,</span><span class="mi">11000</span><span class="p">,</span><span class="mi">21000</span>                                  
+<span class="mi">11000</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">1011</span>                                                        
+<span class="mi">21000</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">ipmh</span>                                                     
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">42</span>                                                       
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span> <span class="p">,</span><span class="n">ivcorr</span>                          
+ <span class="mi">1011</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">101</span>                                                      
+<span class="c">!                                                                        </span>
+<span class="c">!       ****  TEST  101  ****                                            </span>
+<span class="c">!      TEST 101  -  CHECKS THE FCVS NAMING CONVENTIONS FOR INTEGER AND   </span>
+<span class="c">!            REAL VARIABLES IN ASSIGNMENT STATEMENTS: VARIABLE = CONSTANT</span>
+<span class="c">!            BASICALLY A SYNTAX CHECK ON SIX CHARACTER VARIABLE NAMES.   </span>
+<span class="c">!                                                                        </span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">31010</span><span class="p">,</span> <span class="mi">1010</span><span class="p">,</span> <span class="mi">31010</span>                                    
+ <span class="mi">1010</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">iace11</span> <span class="o">=</span> <span class="mi">1</span>                                                        
+      <span class="n">iace21</span> <span class="o">=</span> <span class="mi">2</span>                                                        
+      <span class="n">iace31</span> <span class="o">=</span> <span class="mi">3</span>                                                        
+      <span class="n">iacn11</span> <span class="o">=</span> <span class="mi">4</span>                                                        
+      <span class="n">iadn11</span> <span class="o">=</span> <span class="mi">5</span>                                                        
+      <span class="n">iate31</span> <span class="o">=</span> <span class="mi">6</span>                                                        
+      <span class="n">race11</span> <span class="o">=</span> <span class="mf">7.</span>                                                       
+      <span class="n">race21</span> <span class="o">=</span> <span class="mf">8.</span>                                                       
+      <span class="n">racn31</span> <span class="o">=</span> <span class="mf">9.</span>                                                       
+      <span class="n">rade31</span> <span class="o">=</span> <span class="mi">1</span><span class="mf">0.</span>                                                      
+      <span class="n">ivte69</span> <span class="o">=</span> <span class="mi">11</span>                                                       
+      <span class="n">ivon78</span> <span class="o">=</span> <span class="mi">12</span>                                                       
+      <span class="n">rvtnaz</span> <span class="o">=</span> <span class="mi">1</span><span class="mf">3.</span>                                                      
+      <span class="n">rvoez9</span> <span class="o">=</span> <span class="mi">1</span><span class="mf">4.</span>                                                      
+      <span class="n">icte96</span> <span class="o">=</span> <span class="mi">15</span>                                                       
+      <span class="n">icon84</span> <span class="o">=</span> <span class="mi">16</span>                                                       
+      <span class="n">rcon48</span> <span class="o">=</span> <span class="mi">1</span><span class="mf">7.</span>                                                      
+      <span class="n">rcte54</span> <span class="o">=</span> <span class="mi">1</span><span class="mf">8.</span>                                                      
+      <span class="n">idony4</span> <span class="o">=</span> <span class="mi">19</span>                                                       
+      <span class="n">idoeb6</span> <span class="o">=</span> <span class="mi">20</span>                                                       
+      <span class="n">rdon46</span> <span class="o">=</span> <span class="mi">2</span><span class="mf">1.</span>                                                      
+      <span class="n">ifons3</span> <span class="o">=</span> <span class="mi">22</span>                                                       
+      <span class="n">rfon77</span> <span class="o">=</span> <span class="mi">2</span><span class="mf">3.</span>                                                      
+      <span class="k">goto </span><span class="mi">41010</span>                                                       
+<span class="mi">31010</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">41010</span><span class="p">,</span> <span class="mi">1021</span><span class="p">,</span> <span class="mi">41010</span>                                    
+<span class="mi">41010</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivte69</span> <span class="o">-</span> <span class="mi">11</span><span class="p">)</span> <span class="mi">21010</span><span class="p">,</span><span class="mi">11010</span><span class="p">,</span><span class="mi">21010</span>                                
+<span class="mi">11010</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">1021</span>                                                        
+<span class="mi">21010</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">ivte69</span>                                                   
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">11</span>                                                       
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span> <span class="p">,</span><span class="n">ivcorr</span>                          
+ <span class="mi">1021</span> <span class="k">continue                                                          </span>
+<span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">102</span>                                                      
+<span class="c">!                                                                        </span>
+<span class="c">!       ****  TEST  102  ****                                            </span>
+<span class="c">!      TEST 102  -  REFERENCE FORMAT CHECK ON STATEMENT LABELS (SECTION  </span>
+<span class="c">!            3.4). THESE ARE NON-ZERO INTEGERS, FROM 1 TO 5 DIGITS,      </span>
+<span class="c">!            MAY BEGIN ANYWHERE FROM COLS. 1 TO 5, AND LEADING ZEROS ARE </span>
+<span class="c">!            NOT SIGNIFICANT.  BLANKS WILL BE IMBEDDED IN SOME OF THE    </span>
+<span class="c">!            STATEMENT LABELS AND THESE SHOULD HAVE NO EFFECT.  THE      </span>
+<span class="c">!            CONTINUE STATEMENT (SECTION 11.11) IS USED FOR THIS TEST.   </span>
+<span class="c">!            A BASIC FCVS ASSUMPTION IS THAT THE LOGIC WILL FALL THRU A  </span>
+<span class="c">!            SERIES OF CONTINUE STATEMENTS (NORMAL EXECUTION SEQUENCE).  </span>
+<span class="c">!                                                                        </span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">31020</span><span class="p">,</span> <span class="mi">1020</span><span class="p">,</span> <span class="mi">31020</span>                                    
+ <span class="mi">1020</span> <span class="k">continue                                                          </span>
+<span class="mi">1</span>     <span class="k">continue                                                          </span>
+<span class="k"> </span><span class="mi">2</span>    <span class="k">continue                                                          </span>
+<span class="k">  </span><span class="mi">3</span>   <span class="k">continue                                                          </span>
+<span class="k">   </span><span class="mi">4</span>  <span class="k">continue                                                          </span>
+<span class="k">    </span><span class="mi">5</span> <span class="k">continue                                                          </span>
+<span class="mi">06</span>    <span class="k">continue                                                          </span>
+<span class="k"> </span><span class="mi">007</span>  <span class="k">continue                                                          </span>
+<span class="k"> </span><span class="mi">0008</span> <span class="k">continue                                                          </span>
+<span class="mi">00009</span> <span class="k">continue                                                          </span>
+<span class="k"> </span><span class="mi">010</span>  <span class="k">continue                                                          </span>
+<span class="k">   </span><span class="mi">11</span> <span class="k">continue                                                          </span>
+<span class="k">  </span><span class="mi">012</span> <span class="k">continue                                                          </span>
+<span class="k">  </span><span class="mi">013</span> <span class="k">continue                                                          </span>
+<span class="k"> </span><span class="mi">0014</span> <span class="k">continue                                                          </span>
+<span class="k"> </span><span class="mi">015</span>  <span class="k">continue                                                          </span>
+<span class="k"> </span><span class="mi">0016</span> <span class="k">continue                                                          </span>
+<span class="mi">100</span>   <span class="k">continue                                                          </span>
+<span class="mi">101</span>   <span class="k">continue                                                          </span>
+<span class="mi">102</span>   <span class="n">ivon01</span> <span class="o">=</span> <span class="mi">1</span>                                                        
+<span class="mi">103</span>   <span class="k">continue                                                          </span>
+<span class="k"> </span><span class="mi">104</span>  <span class="k">continue                                                          </span>
+<span class="mi">0105</span>  <span class="k">continue                                                          </span>
+<span class="mi">0106</span>  <span class="k">continue                                                          </span>
+<span class="mi">0107</span>  <span class="k">continue                                                          </span>
+<span class="mi">00108</span> <span class="k">continue                                                          </span>
+<span class="mi">111</span>   <span class="k">continue                                                          </span>
+<span class="mi">1111</span>  <span class="k">continue                                                          </span>
+<span class="k">  </span><span class="mi">99</span>  <span class="k">continue                                                          </span>
+<span class="mi">999</span>   <span class="k">continue                                                          </span>
+<span class="mi">9999</span>  <span class="k">continue                                                          </span>
+<span class="k">      goto </span><span class="mi">41020</span>                                                       
+<span class="mi">31020</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">41020</span><span class="p">,</span> <span class="mi">1031</span><span class="p">,</span> <span class="mi">41020</span>                                    
+<span class="mi">41020</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivon01</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="mi">21020</span><span class="p">,</span><span class="mi">11020</span><span class="p">,</span><span class="mi">21020</span>                                 
+<span class="mi">11020</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+      <span class="k">goto </span><span class="mi">1031</span>                                                        
+<span class="mi">21020</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">ivon01</span>                                                   
+      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">1</span>                                                        
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span> <span class="p">,</span><span class="n">ivcorr</span>                          
+ <span class="mi">1031</span> <span class="k">continue</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">!      WRITE PAGE FOOTINGS AND RUN SUMMARIES                             </span>
+<span class="mi">99999</span> <span class="k">continue                                                          </span>
+<span class="k">      write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90006</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90007</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90008</span><span class="p">)</span>  <span class="n">ivfail</span>                                         
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90009</span><span class="p">)</span> <span class="n">ivpass</span>                                          
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90010</span><span class="p">)</span> <span class="n">ivdele</span>                                          
+<span class="c">!                                                                        </span>
+<span class="c">!                                                                        </span>
+<span class="c">!      TERMINATE ROUTINE EXECUTION                                       </span>
+      <span class="k">stop</span>                                                              
+<span class="c">!                                                                        </span>
+<span class="c">!      FORMAT STATEMENTS FOR PAGE HEADERS                                </span>
+<span class="mi">90000</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>                                                      
+<span class="mi">90002</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>                                                      
+<span class="mi">90001</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FORTRAN COMPILER VALIDATION SYSTEM&quot;</span> <span class="p">)</span>            
+<span class="mi">90003</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;VERSION 2.1&quot;</span> <span class="p">)</span>                                   
+<span class="mi">90004</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FOR OFFICIAL USE ONLY - COPYRIGHT 1978&quot;</span> <span class="p">)</span>        
+<span class="mi">90005</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;TEST&quot;</span><span class="p">,</span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;PASS/FAIL&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED&quot;</span><span class="p">,</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT&quot;</span><span class="p">)</span> 
+<span class="mi">90006</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;----------------------------------------------&quot;</span> <span class="p">)</span> 
+<span class="mi">90011</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">18</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;SUBSET LEVEL TEST&quot;</span> <span class="p">)</span>                             
+<span class="c">!                                                                        </span>
+<span class="c">!      FORMAT STATEMENTS FOR RUN SUMMARIES                               </span>
+<span class="mi">90008</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">15</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; ERRORS ENCOUNTERED&quot;</span> <span class="p">)</span>                        
+<span class="mi">90009</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">15</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS PASSED&quot;</span> <span class="p">)</span>                              
+<span class="mi">90010</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">15</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS DELETED&quot;</span> <span class="p">)</span>                             
+<span class="c">!                                                                        </span>
+<span class="c">!      FORMAT STATEMENTS FOR TEST RESULTS                                </span>
+<span class="mi">80001</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;PASS&quot;</span><span class="p">)</span>                                      
+<span class="mi">80002</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FAIL&quot;</span><span class="p">)</span>                                      
+<span class="mi">80003</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;DELETED&quot;</span><span class="p">)</span>                                   
+<span class="mi">80004</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FAIL&quot;</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="n">i6</span><span class="p">,</span><span class="mi">9</span><span class="n">x</span><span class="p">,</span><span class="n">i6</span><span class="p">)</span>                         
+<span class="mi">80005</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FAIL&quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="n">x</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">)</span>                    
+<span class="c">!                                                                        </span>
+<span class="mi">90007</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">20</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;END OF PROGRAM FM090&quot;</span> <span class="p">)</span>                          
+      <span class="k">end program </span><span class="n">fm090</span>
+</pre></div>
+
+    </section>
+    
+    
+    </div>
+  </div>
+
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2018 
+                                          </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+            
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> Refactored NIST-Fortran78 was developed by NIST (refactored by RefactorF4Acc)</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="A Fortran 77 test suite refactored by RefactorF4Acc">
+    
+    <meta name="author" content="NIST (refactored by RefactorF4Acc)" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>FM098.f95 &ndash; Refactored NIST-Fortran78</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Refactored NIST-Fortran78 </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+               
+        
+            <li><a href="../lists/programs.html">Programs</a></li>
+        
+            </ul>
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/programs.html">Programs</a></li>
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>FM098.f95
+    <small>Source File</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.9% of total for source files.">631 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/FM098.f95"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+  
+     <li class="active">FM098.f95</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#progs-0">Programs</a></h3></div>
+  <div id="progs-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm098.html">fm098</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../sourcefile/fm098.f95.html#src">FM098.f95</a>
+  </div>
+</div>
+
+
+
+</div>
+
+    </div>
+    <div class="col-md-9" id='text'>
+      
+      <br>
+    
+      
+      
+
+    <section class="visible-xs visible-sm hidden-md">
+      
+<h3>Contents</h3>
+ 
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#progs-1">Programs</a></h3></div>
+  <div id="progs-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm098.html">fm098</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../sourcefile/fm098.f95.html#src">FM098.f95</a>
+  </div>
+</div>
+
+
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+    <section>
+      <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="hl"><pre><span></span><a name="ln-1"></a>      <span class="k">program </span><span class="n">fm098</span>
+<a name="ln-2"></a>      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i01</span>
+<a name="ln-3"></a>      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i02</span>
+<a name="ln-4"></a>      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivpass</span>
+<a name="ln-5"></a>      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivfail</span>
+<a name="ln-6"></a>      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivdele</span>
+<a name="ln-7"></a>      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">iczero</span>
+<a name="ln-8"></a>      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivtnum</span>
+<a name="ln-9"></a>      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivcomp</span>
+<a name="ln-10"></a>      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivcorr</span>
+<a name="ln-11"></a>      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivon01</span>
+<a name="ln-12"></a>      <span class="kt">real</span> <span class="kd">::</span> <span class="n">rvon01</span>
+<a name="ln-13"></a>      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivon02</span>
+<a name="ln-14"></a>      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivon03</span>
+<a name="ln-15"></a>      <span class="kt">real</span> <span class="kd">::</span> <span class="n">rvon02</span>
+<a name="ln-16"></a>      <span class="kt">real</span> <span class="kd">::</span> <span class="n">rvon03</span>
+<a name="ln-17"></a>      <span class="kt">real</span> <span class="kd">::</span> <span class="n">rvon04</span>
+<a name="ln-18"></a><span class="c">!      COMMENT SECTION                                                   </span>
+<a name="ln-19"></a><span class="c">!                                                                        </span>
+<a name="ln-20"></a><span class="c">!      FM098                                                             </span>
+<a name="ln-21"></a><span class="c">!                                                                        </span>
+<a name="ln-22"></a><span class="c">!      THIS ROUTINE TESTS INTRINSIC FUNCTIONS WHERE THE FUNCTION TYPE IS </span>
+<a name="ln-23"></a><span class="c">!      INTEGER AND THE ARGUMENTS ARE EITHER INTEGER OR REAL.  THE REAL   </span>
+<a name="ln-24"></a><span class="c">!      AND INTEGER VARIABLES AND THE REAL AND INTEGER CONSTANTS CONTAIN  </span>
+<a name="ln-25"></a><span class="c">!      BOTH POSITIVE AND NEGATIVE VALUES.  THE INTRINSIC FUNCTIONS TESTED</span>
+<a name="ln-26"></a><span class="c">!      BY FM098 INCLUDE                                                  </span>
+<a name="ln-27"></a><span class="c">!                                                      TYPE OF           </span>
+<a name="ln-28"></a><span class="c">!        INTRINSIC FUNCTION          NAME       ARGUMENT     FUNCTION    </span>
+<a name="ln-29"></a><span class="c">!        ------------------          ----       --------     --------    </span>
+<a name="ln-30"></a><span class="c">!          ABSOLUTE VALUE            IABS       INTEGER      INTEGER     </span>
+<a name="ln-31"></a><span class="c">!          TRUNCATION                INT        REAL         INTEGER     </span>
+<a name="ln-32"></a><span class="c">!          REMAINDERING              MOD        INTEGER      INTEGER     </span>
+<a name="ln-33"></a><span class="c">!          CHOOSING LARGEST VALUE    MAX0       INTEGER      INTEGER     </span>
+<a name="ln-34"></a><span class="c">!                                    MAX1       REAL         INTEGER     </span>
+<a name="ln-35"></a><span class="c">!          CHOOSING SMALLEST VALUE   MIN0       INTEGER      INTEGER     </span>
+<a name="ln-36"></a><span class="c">!                                    MIN1       REAL         INTEGER     </span>
+<a name="ln-37"></a><span class="c">!          FIX                       IFIX      REAL          INTEGER     </span>
+<a name="ln-38"></a><span class="c">!          TRANSFER OF SIGN          ISIGN     INTEGER       INTEGER     </span>
+<a name="ln-39"></a><span class="c">!          POSITIVE DIFFERENCE       IDIM      INTEGER       INTEGER     </span>
+<a name="ln-40"></a><span class="c">!                                                                        </span>
+<a name="ln-41"></a><span class="c">!       REFERENCES                                                       </span>
+<a name="ln-42"></a><span class="c">!         AMERICAN NATIONAL STANDARD PROGRAMMING LANGUAGE FORTRAN,       </span>
+<a name="ln-43"></a><span class="c">!               X3.9-1978                                                </span>
+<a name="ln-44"></a><span class="c">!                                                                        </span>
+<a name="ln-45"></a><span class="c">!         SECTION 4.1.2, TYPE RULES FOR DATA AND PROCEDURE IDENTIFIERS   </span>
+<a name="ln-46"></a><span class="c">!         SECTION 15.3, INTRINSIC FUNCTION                               </span>
+<a name="ln-47"></a><span class="c">!         SECTION 15.3.2, INTRINSIC FUNCTIONS AND THEIR REFERENCE        </span>
+<a name="ln-48"></a><span class="c">!                                                                        </span>
+<a name="ln-49"></a><span class="c">!                                                                        </span>
+<a name="ln-50"></a><span class="c">!       **********************************************************       </span>
+<a name="ln-51"></a><span class="c">!                                                                        </span>
+<a name="ln-52"></a><span class="c">!          A COMPILER VALIDATION SYSTEM FOR THE FORTRAN LANGUAGE         </span>
+<a name="ln-53"></a><span class="c">!      BASED ON SPECIFICATIONS AS DEFINED IN AMERICAN NATIONAL STANDARD  </span>
+<a name="ln-54"></a><span class="c">!      PROGRAMMING LANGUAGE FORTRAN X3.9-1978, HAS BEEN DEVELOPED BY THE </span>
+<a name="ln-55"></a><span class="c">!      FEDERAL COBOL COMPILER TESTING SERVICE.  THE FORTRAN COMPILER     </span>
+<a name="ln-56"></a><span class="c">!      VALIDATION SYSTEM (FCVS) CONSISTS OF AUDIT ROUTINES, THEIR RELATED</span>
+<a name="ln-57"></a><span class="c">!      DATA, AND AN EXECUTIVE SYSTEM.  EACH AUDIT ROUTINE IS A FORTRAN   </span>
+<a name="ln-58"></a><span class="c">!      PROGRAM, SUBPROGRAM OR FUNCTION WHICH INCLUDES TESTS OF SPECIFIC  </span>
+<a name="ln-59"></a><span class="c">!      LANGUAGE ELEMENTS AND SUPPORTING PROCEDURES INDICATING THE RESULT </span>
+<a name="ln-60"></a><span class="c">!      OF EXECUTING THESE TESTS.                                         </span>
+<a name="ln-61"></a><span class="c">!                                                                        </span>
+<a name="ln-62"></a><span class="c">!          THIS PARTICULAR PROGRAM/SUBPROGRAM/FUNCTION CONTAINS FEATURES </span>
+<a name="ln-63"></a><span class="c">!      FOUND ONLY IN THE SUBSET AS DEFINED IN X3.9-1978.                 </span>
+<a name="ln-64"></a><span class="c">!                                                                        </span>
+<a name="ln-65"></a><span class="c">!          SUGGESTIONS AND COMMENTS SHOULD BE FORWARDED TO -             </span>
+<a name="ln-66"></a><span class="c">!                                                                        </span>
+<a name="ln-67"></a><span class="c">!               NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY           </span>
+<a name="ln-68"></a><span class="c">!                    SOFTWARE STANDARDS VALIDATION GROUP                 </span>
+<a name="ln-69"></a><span class="c">!                           BUILDING 225  RM A266                        </span>
+<a name="ln-70"></a><span class="c">!                          GAITHERSBURG, MD  20899                       </span>
+<a name="ln-71"></a><span class="c">!       **********************************************************       </span>
+<a name="ln-72"></a><span class="c">!                                                                        </span>
+<a name="ln-73"></a><span class="c">!                                                                        </span>
+<a name="ln-74"></a><span class="c">!                                                                        </span>
+<a name="ln-75"></a><span class="c">!      INITIALIZATION SECTION                                            </span>
+<a name="ln-76"></a><span class="c">!                                                                        </span>
+<a name="ln-77"></a><span class="c">!      INITIALIZE CONSTANTS                                              </span>
+<a name="ln-78"></a><span class="c">!       **************                                                   </span>
+<a name="ln-79"></a><span class="c">!      I01 CONTAINS THE LOGICAL UNIT NUMBER FOR THE CARD READER.         </span>
+<a name="ln-80"></a>      <span class="n">i01</span> <span class="o">=</span> <span class="mi">5</span>                                                           
+<a name="ln-81"></a><span class="c">!      I02 CONTAINS THE LOGICAL UNIT NUMBER FOR THE PRINTER.             </span>
+<a name="ln-82"></a>      <span class="n">i02</span> <span class="o">=</span> <span class="mi">6</span>                                                           
+<a name="ln-83"></a><span class="c">!      SYSTEM ENVIRONMENT SECTION                                        </span>
+<a name="ln-84"></a><span class="c">!                                                                        </span>
+<a name="ln-85"></a><span class="c">! X010    THIS CARD IS REPLACED BY CONTENTS OF FEXEC X-010 CONTROL CARD. </span>
+<a name="ln-86"></a><span class="c">!      THE CX010 CARD IS FOR OVERRIDING THE PROGRAM DEFAULT I01 = 5      </span>
+<a name="ln-87"></a><span class="c">!      (UNIT NUMBER FOR CARD READER).                                    </span>
+<a name="ln-88"></a><span class="c">! X011    THIS CARD IS REPLACED BY CONTENTS OF FEXEC X-011 CONTROL CARD. </span>
+<a name="ln-89"></a><span class="c">!      THE CX011 CARD IS FOR SYSTEMS WHICH REQUIRE ADDITIONAL            </span>
+<a name="ln-90"></a><span class="c">!      FORTRAN STATEMENTS FOR FILES ASSOCIATED WITH CX010 ABOVE.         </span>
+<a name="ln-91"></a><span class="c">!                                                                        </span>
+<a name="ln-92"></a><span class="c">! X020    THIS CARD IS REPLACED BY CONTENTS OF FEXEC X-020 CONTROL CARD. </span>
+<a name="ln-93"></a><span class="c">!      THE CX020 CARD IS FOR OVERRIDING THE PROGRAM DEFAULT I02 = 6      </span>
+<a name="ln-94"></a><span class="c">!      (UNIT NUMBER FOR PRINTER).                                        </span>
+<a name="ln-95"></a><span class="c">! X021    THIS CARD IS REPLACED BY CONTENTS OF FEXEC X-021 CONTROL CARD. </span>
+<a name="ln-96"></a><span class="c">!      THE CX021 CARD IS FOR SYSTEMS WHICH REQUIRE ADDITIONAL            </span>
+<a name="ln-97"></a><span class="c">!      FORTRAN STATEMENTS FOR FILES ASSOCIATED WITH CX020 ABOVE.         </span>
+<a name="ln-98"></a><span class="c">!                                                                        </span>
+<a name="ln-99"></a>      <span class="n">ivpass</span><span class="o">=</span><span class="mi">0</span>                                                          
+<a name="ln-100"></a>      <span class="n">ivfail</span><span class="o">=</span><span class="mi">0</span>                                                          
+<a name="ln-101"></a>      <span class="n">ivdele</span><span class="o">=</span><span class="mi">0</span>                                                          
+<a name="ln-102"></a>      <span class="n">iczero</span><span class="o">=</span><span class="mi">0</span>                                                          
+<a name="ln-103"></a><span class="c">!                                                                        </span>
+<a name="ln-104"></a><span class="c">!      WRITE PAGE HEADERS                                                </span>
+<a name="ln-105"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90000</span><span class="p">)</span>                                                 
+<a name="ln-106"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90001</span><span class="p">)</span>                                                 
+<a name="ln-107"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+<a name="ln-108"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90002</span><span class="p">)</span>                                                
+<a name="ln-109"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90003</span><span class="p">)</span>                                                 
+<a name="ln-110"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+<a name="ln-111"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+<a name="ln-112"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+<a name="ln-113"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90011</span><span class="p">)</span>                                                 
+<a name="ln-114"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+<a name="ln-115"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+<a name="ln-116"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90005</span><span class="p">)</span>                                                 
+<a name="ln-117"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90006</span><span class="p">)</span>                                                 
+<a name="ln-118"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+<a name="ln-119"></a><span class="c">!                                                                        </span>
+<a name="ln-120"></a><span class="c">!      TEST SECTION                                                      </span>
+<a name="ln-121"></a><span class="c">!                                                                        </span>
+<a name="ln-122"></a><span class="c">!      TEST 907 THROUGH TEST 909 CONTAIN INTRINSIC FUNCTION TESTS FOR    </span>
+<a name="ln-123"></a><span class="c">!      ABSOLUTE VALUE WHERE ARGUMENT AND FUNCTION ARE INTEGER            </span>
+<a name="ln-124"></a><span class="c">!                                                                        </span>
+<a name="ln-125"></a> <span class="mi">9071</span> <span class="k">continue                                                          </span>
+<a name="ln-126"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">907</span>                                                      
+<a name="ln-127"></a><span class="c">!                                                                        </span>
+<a name="ln-128"></a><span class="c">!       ****  TEST 907  ****                                             </span>
+<a name="ln-129"></a><span class="c">!                                                                        </span>
+<a name="ln-130"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39070</span><span class="p">,</span> <span class="mi">9070</span><span class="p">,</span> <span class="mi">39070</span>                                    
+<a name="ln-131"></a> <span class="mi">9070</span> <span class="k">continue                                                          </span>
+<a name="ln-132"></a><span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">iabs</span> <span class="p">(</span><span class="o">-</span><span class="mi">382</span><span class="p">)</span>                                              
+<a name="ln-133"></a>      <span class="k">goto </span><span class="mi">49070</span>                                                       
+<a name="ln-134"></a><span class="mi">39070</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-135"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-136"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49070</span><span class="p">,</span> <span class="mi">9081</span><span class="p">,</span> <span class="mi">49070</span>                                    
+<a name="ln-137"></a><span class="mi">49070</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">382</span><span class="p">)</span> <span class="mi">29070</span><span class="p">,</span><span class="mi">19070</span><span class="p">,</span><span class="mi">29070</span>                               
+<a name="ln-138"></a><span class="mi">19070</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-139"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-140"></a>      <span class="k">goto </span><span class="mi">9081</span>                                                        
+<a name="ln-141"></a><span class="mi">29070</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-142"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">382</span>                                                      
+<a name="ln-143"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-144"></a> <span class="mi">9081</span> <span class="k">continue                                                          </span>
+<a name="ln-145"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">908</span>                                                      
+<a name="ln-146"></a><span class="c">!                                                                        </span>
+<a name="ln-147"></a><span class="c">!       ****  TEST 908  ****                                             </span>
+<a name="ln-148"></a><span class="c">!                                                                        </span>
+<a name="ln-149"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39080</span><span class="p">,</span> <span class="mi">9080</span><span class="p">,</span> <span class="mi">39080</span>                                    
+<a name="ln-150"></a> <span class="mi">9080</span> <span class="k">continue                                                          </span>
+<a name="ln-151"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">445</span>                                                      
+<a name="ln-152"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">iabs</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">)</span>                                            
+<a name="ln-153"></a>      <span class="k">goto </span><span class="mi">49080</span>                                                       
+<a name="ln-154"></a><span class="mi">39080</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-155"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-156"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49080</span><span class="p">,</span> <span class="mi">9091</span><span class="p">,</span> <span class="mi">49080</span>                                    
+<a name="ln-157"></a><span class="mi">49080</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">445</span><span class="p">)</span> <span class="mi">29080</span><span class="p">,</span><span class="mi">19080</span><span class="p">,</span><span class="mi">29080</span>                               
+<a name="ln-158"></a><span class="mi">19080</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-159"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-160"></a>      <span class="k">goto </span><span class="mi">9091</span>                                                        
+<a name="ln-161"></a><span class="mi">29080</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-162"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">445</span>                                                      
+<a name="ln-163"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-164"></a> <span class="mi">9091</span> <span class="k">continue                                                          </span>
+<a name="ln-165"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">909</span>                                                      
+<a name="ln-166"></a><span class="c">!                                                                        </span>
+<a name="ln-167"></a><span class="c">!       ****  TEST 909  ****                                             </span>
+<a name="ln-168"></a><span class="c">!                                                                        </span>
+<a name="ln-169"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39090</span><span class="p">,</span> <span class="mi">9090</span><span class="p">,</span> <span class="mi">39090</span>                                    
+<a name="ln-170"></a> <span class="mi">9090</span> <span class="k">continue                                                          </span>
+<a name="ln-171"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="o">-</span><span class="mi">32176</span>                                                   
+<a name="ln-172"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">iabs</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">)</span>                                            
+<a name="ln-173"></a>      <span class="k">goto </span><span class="mi">49090</span>                                                       
+<a name="ln-174"></a><span class="mi">39090</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-175"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-176"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49090</span><span class="p">,</span> <span class="mi">9101</span><span class="p">,</span> <span class="mi">49090</span>                                    
+<a name="ln-177"></a><span class="mi">49090</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">32176</span><span class="p">)</span> <span class="mi">29090</span><span class="p">,</span><span class="mi">19090</span><span class="p">,</span><span class="mi">29090</span>                             
+<a name="ln-178"></a><span class="mi">19090</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-179"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-180"></a>      <span class="k">goto </span><span class="mi">9101</span>                                                        
+<a name="ln-181"></a><span class="mi">29090</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-182"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">32176</span>                                                    
+<a name="ln-183"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-184"></a><span class="c">!                                                                        </span>
+<a name="ln-185"></a><span class="c">!      TEST 910 THROUGH TEST 913 CONTAIN INTRINSIC FUNCTION TESTS FOR    </span>
+<a name="ln-186"></a><span class="c">!      TRUNCATION WHERE ARGUMENT IS REAL AND FUNCTION IS INTEGER         </span>
+<a name="ln-187"></a><span class="c">!                                                                        </span>
+<a name="ln-188"></a> <span class="mi">9101</span> <span class="k">continue                                                          </span>
+<a name="ln-189"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">910</span>                                                      
+<a name="ln-190"></a><span class="c">!                                                                        </span>
+<a name="ln-191"></a><span class="c">!       ****  TEST 910  ****                                             </span>
+<a name="ln-192"></a><span class="c">!                                                                        </span>
+<a name="ln-193"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39100</span><span class="p">,</span> <span class="mi">9100</span><span class="p">,</span> <span class="mi">39100</span>                                    
+<a name="ln-194"></a> <span class="mi">9100</span> <span class="k">continue                                                          </span>
+<a name="ln-195"></a><span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="mi">3</span><span class="mf">8.2</span><span class="p">)</span>                                               
+<a name="ln-196"></a>      <span class="k">goto </span><span class="mi">49100</span>                                                       
+<a name="ln-197"></a><span class="mi">39100</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-198"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-199"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49100</span><span class="p">,</span> <span class="mi">9111</span><span class="p">,</span> <span class="mi">49100</span>                                    
+<a name="ln-200"></a><span class="mi">49100</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">38</span><span class="p">)</span> <span class="mi">29100</span><span class="p">,</span><span class="mi">19100</span><span class="p">,</span><span class="mi">29100</span>                                
+<a name="ln-201"></a><span class="mi">19100</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-202"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-203"></a>      <span class="k">goto </span><span class="mi">9111</span>                                                        
+<a name="ln-204"></a><span class="mi">29100</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-205"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">38</span>                                                       
+<a name="ln-206"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-207"></a> <span class="mi">9111</span> <span class="k">continue                                                          </span>
+<a name="ln-208"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">911</span>                                                      
+<a name="ln-209"></a><span class="c">!                                                                        </span>
+<a name="ln-210"></a><span class="c">!       ****  TEST 911  ****                                             </span>
+<a name="ln-211"></a><span class="c">!                                                                        </span>
+<a name="ln-212"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39110</span><span class="p">,</span> <span class="mi">9110</span><span class="p">,</span> <span class="mi">39110</span>                                    
+<a name="ln-213"></a> <span class="mi">9110</span> <span class="k">continue                                                          </span>
+<a name="ln-214"></a><span class="k">      </span><span class="n">rvon01</span> <span class="o">=</span> <span class="o">-</span><span class="mi">44</span><span class="mf">5.95</span>                                                  
+<a name="ln-215"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="n">rvon01</span><span class="p">)</span>                                             
+<a name="ln-216"></a>      <span class="k">goto </span><span class="mi">49110</span>                                                       
+<a name="ln-217"></a><span class="mi">39110</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-218"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-219"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49110</span><span class="p">,</span> <span class="mi">9121</span><span class="p">,</span> <span class="mi">49110</span>                                    
+<a name="ln-220"></a><span class="mi">49110</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">+</span> <span class="mi">445</span><span class="p">)</span> <span class="mi">29110</span><span class="p">,</span><span class="mi">19110</span><span class="p">,</span><span class="mi">29110</span>                               
+<a name="ln-221"></a><span class="mi">19110</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-222"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-223"></a>      <span class="k">goto </span><span class="mi">9121</span>                                                        
+<a name="ln-224"></a><span class="mi">29110</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-225"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="o">-</span><span class="mi">445</span>                                                     
+<a name="ln-226"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-227"></a> <span class="mi">9121</span> <span class="k">continue                                                          </span>
+<a name="ln-228"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">912</span>                                                      
+<a name="ln-229"></a><span class="c">!                                                                        </span>
+<a name="ln-230"></a><span class="c">!       ****  TEST 912  ****                                             </span>
+<a name="ln-231"></a><span class="c">!                                                                        </span>
+<a name="ln-232"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39120</span><span class="p">,</span> <span class="mi">9120</span><span class="p">,</span> <span class="mi">39120</span>                                    
+<a name="ln-233"></a> <span class="mi">9120</span> <span class="k">continue                                                          </span>
+<a name="ln-234"></a><span class="k">      </span><span class="n">rvon01</span> <span class="o">=</span> <span class="mi">46</span><span class="mf">6.01</span>                                                   
+<a name="ln-235"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="n">rvon01</span><span class="p">)</span>                                             
+<a name="ln-236"></a>      <span class="k">goto </span><span class="mi">49120</span>                                                       
+<a name="ln-237"></a><span class="mi">39120</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-238"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-239"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49120</span><span class="p">,</span> <span class="mi">9131</span><span class="p">,</span> <span class="mi">49120</span>                                    
+<a name="ln-240"></a><span class="mi">49120</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">466</span><span class="p">)</span> <span class="mi">29120</span><span class="p">,</span><span class="mi">19120</span><span class="p">,</span><span class="mi">29120</span>                               
+<a name="ln-241"></a><span class="mi">19120</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-242"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-243"></a>      <span class="k">goto </span><span class="mi">9131</span>                                                        
+<a name="ln-244"></a><span class="mi">29120</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-245"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">466</span>                                                      
+<a name="ln-246"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-247"></a> <span class="mi">9131</span> <span class="k">continue                                                          </span>
+<a name="ln-248"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">913</span>                                                      
+<a name="ln-249"></a><span class="c">!                                                                        </span>
+<a name="ln-250"></a><span class="c">!       ****  TEST 913  ****                                             </span>
+<a name="ln-251"></a><span class="c">!                                                                        </span>
+<a name="ln-252"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39130</span><span class="p">,</span> <span class="mi">9130</span><span class="p">,</span> <span class="mi">39130</span>                                    
+<a name="ln-253"></a> <span class="mi">9130</span> <span class="k">continue                                                          </span>
+<a name="ln-254"></a><span class="k">      </span><span class="n">rvon01</span> <span class="o">=</span> <span class="mi">38</span><span class="err">2</span><span class="n">e</span><span class="o">-</span><span class="mi">1</span>                                                   
+<a name="ln-255"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="n">rvon01</span><span class="p">)</span>                                             
+<a name="ln-256"></a>      <span class="k">goto </span><span class="mi">49130</span>                                                       
+<a name="ln-257"></a><span class="mi">39130</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-258"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-259"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49130</span><span class="p">,</span> <span class="mi">9141</span><span class="p">,</span> <span class="mi">49130</span>                                    
+<a name="ln-260"></a><span class="mi">49130</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">38</span><span class="p">)</span> <span class="mi">29130</span><span class="p">,</span><span class="mi">19130</span><span class="p">,</span><span class="mi">29130</span>                                
+<a name="ln-261"></a><span class="mi">19130</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-262"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-263"></a>      <span class="k">goto </span><span class="mi">9141</span>                                                        
+<a name="ln-264"></a><span class="mi">29130</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-265"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">38</span>                                                       
+<a name="ln-266"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-267"></a><span class="c">!                                                                        </span>
+<a name="ln-268"></a><span class="c">!      TEST 914 THROUGH TEST 917 CONTAIN INTRINSIC FUNCTION TESTS FOR    </span>
+<a name="ln-269"></a><span class="c">!      REMAINDERING WHERE ARGUMENTS AND FUNCTION ARE INTEGERS            </span>
+<a name="ln-270"></a><span class="c">!                                                                        </span>
+<a name="ln-271"></a> <span class="mi">9141</span> <span class="k">continue                                                          </span>
+<a name="ln-272"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">914</span>                                                      
+<a name="ln-273"></a><span class="c">!                                                                        </span>
+<a name="ln-274"></a><span class="c">!       ****  TEST 914  ****                                             </span>
+<a name="ln-275"></a><span class="c">!                                                                        </span>
+<a name="ln-276"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39140</span><span class="p">,</span> <span class="mi">9140</span><span class="p">,</span> <span class="mi">39140</span>                                    
+<a name="ln-277"></a> <span class="mi">9140</span> <span class="k">continue                                                          </span>
+<a name="ln-278"></a><span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">mod</span> <span class="p">(</span><span class="mi">42</span><span class="p">,</span><span class="mi">19</span><span class="p">)</span>                                              
+<a name="ln-279"></a>      <span class="k">goto </span><span class="mi">49140</span>                                                       
+<a name="ln-280"></a><span class="mi">39140</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-281"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-282"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49140</span><span class="p">,</span> <span class="mi">9151</span><span class="p">,</span> <span class="mi">49140</span>                                    
+<a name="ln-283"></a><span class="mi">49140</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">4</span><span class="p">)</span> <span class="mi">29140</span><span class="p">,</span><span class="mi">19140</span><span class="p">,</span><span class="mi">29140</span>                                 
+<a name="ln-284"></a><span class="mi">19140</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-285"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-286"></a>      <span class="k">goto </span><span class="mi">9151</span>                                                        
+<a name="ln-287"></a><span class="mi">29140</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-288"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">4</span>                                                        
+<a name="ln-289"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-290"></a> <span class="mi">9151</span> <span class="k">continue                                                          </span>
+<a name="ln-291"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">915</span>                                                      
+<a name="ln-292"></a><span class="c">!                                                                        </span>
+<a name="ln-293"></a><span class="c">!       ****  TEST 915  ****                                             </span>
+<a name="ln-294"></a><span class="c">!                                                                        </span>
+<a name="ln-295"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39150</span><span class="p">,</span> <span class="mi">9150</span><span class="p">,</span> <span class="mi">39150</span>                                    
+<a name="ln-296"></a> <span class="mi">9150</span> <span class="k">continue                                                          </span>
+<a name="ln-297"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">6667</span>                                                     
+<a name="ln-298"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="mi">2</span>                                                        
+<a name="ln-299"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">mod</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">)</span>                                      
+<a name="ln-300"></a>      <span class="k">goto </span><span class="mi">49150</span>                                                       
+<a name="ln-301"></a><span class="mi">39150</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-302"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-303"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49150</span><span class="p">,</span> <span class="mi">9161</span><span class="p">,</span> <span class="mi">49150</span>                                    
+<a name="ln-304"></a><span class="mi">49150</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="mi">29150</span><span class="p">,</span><span class="mi">19150</span><span class="p">,</span><span class="mi">29150</span>                                 
+<a name="ln-305"></a><span class="mi">19150</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-306"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-307"></a>      <span class="k">goto </span><span class="mi">9161</span>                                                        
+<a name="ln-308"></a><span class="mi">29150</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-309"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">1</span>                                                        
+<a name="ln-310"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-311"></a> <span class="mi">9161</span> <span class="k">continue                                                          </span>
+<a name="ln-312"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">916</span>                                                      
+<a name="ln-313"></a><span class="c">!                                                                        </span>
+<a name="ln-314"></a><span class="c">!       ****  TEST 916  ****                                             </span>
+<a name="ln-315"></a><span class="c">!                                                                        </span>
+<a name="ln-316"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39160</span><span class="p">,</span> <span class="mi">9160</span><span class="p">,</span> <span class="mi">39160</span>                                    
+<a name="ln-317"></a> <span class="mi">9160</span> <span class="k">continue                                                          </span>
+<a name="ln-318"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">225</span>                                                      
+<a name="ln-319"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="mi">50</span>                                                       
+<a name="ln-320"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">mod</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">)</span>                                      
+<a name="ln-321"></a>      <span class="k">goto </span><span class="mi">49160</span>                                                       
+<a name="ln-322"></a><span class="mi">39160</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-323"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-324"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49160</span><span class="p">,</span> <span class="mi">9171</span><span class="p">,</span> <span class="mi">49160</span>                                    
+<a name="ln-325"></a><span class="mi">49160</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">25</span><span class="p">)</span> <span class="mi">29160</span><span class="p">,</span><span class="mi">19160</span><span class="p">,</span><span class="mi">29160</span>                                
+<a name="ln-326"></a><span class="mi">19160</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-327"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-328"></a>      <span class="k">goto </span><span class="mi">9171</span>                                                        
+<a name="ln-329"></a><span class="mi">29160</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-330"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">25</span>                                                       
+<a name="ln-331"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-332"></a> <span class="mi">9171</span> <span class="k">continue                                                          </span>
+<a name="ln-333"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">917</span>                                                      
+<a name="ln-334"></a><span class="c">!                                                                        </span>
+<a name="ln-335"></a><span class="c">!       ****  TEST 917  ****                                             </span>
+<a name="ln-336"></a><span class="c">!                                                                        </span>
+<a name="ln-337"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39170</span><span class="p">,</span> <span class="mi">9170</span><span class="p">,</span> <span class="mi">39170</span>                                    
+<a name="ln-338"></a> <span class="mi">9170</span> <span class="k">continue                                                          </span>
+<a name="ln-339"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="o">-</span><span class="mi">39</span>                                                      
+<a name="ln-340"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="mi">500</span>                                                      
+<a name="ln-341"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">mod</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">)</span>                                      
+<a name="ln-342"></a>      <span class="k">goto </span><span class="mi">49170</span>                                                       
+<a name="ln-343"></a><span class="mi">39170</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-344"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-345"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49170</span><span class="p">,</span> <span class="mi">9181</span><span class="p">,</span> <span class="mi">49170</span>                                    
+<a name="ln-346"></a><span class="mi">49170</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">+</span> <span class="mi">39</span><span class="p">)</span> <span class="mi">29170</span><span class="p">,</span><span class="mi">19170</span><span class="p">,</span><span class="mi">29170</span>                                
+<a name="ln-347"></a><span class="mi">19170</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-348"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-349"></a>      <span class="k">goto </span><span class="mi">9181</span>                                                        
+<a name="ln-350"></a><span class="mi">29170</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-351"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="o">-</span><span class="mi">39</span>                                                      
+<a name="ln-352"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-353"></a><span class="c">!                                                                        </span>
+<a name="ln-354"></a><span class="c">!      TEST 918 AND 919 CONTAIN INTRINSIC FUNCTION TESTS FOR CHOOSING    </span>
+<a name="ln-355"></a><span class="c">!      LARGEST VALUE WHERE ARGUMENTS AND FUNCTION ARE INTEGER            </span>
+<a name="ln-356"></a><span class="c">!                                                                        </span>
+<a name="ln-357"></a> <span class="mi">9181</span> <span class="k">continue                                                          </span>
+<a name="ln-358"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">918</span>                                                      
+<a name="ln-359"></a><span class="c">!                                                                        </span>
+<a name="ln-360"></a><span class="c">!       ****  TEST 918  ****                                             </span>
+<a name="ln-361"></a><span class="c">!                                                                        </span>
+<a name="ln-362"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39180</span><span class="p">,</span> <span class="mi">9180</span><span class="p">,</span> <span class="mi">39180</span>                                    
+<a name="ln-363"></a> <span class="mi">9180</span> <span class="k">continue                                                          </span>
+<a name="ln-364"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">317</span>                                                      
+<a name="ln-365"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="o">-</span><span class="mi">99</span>                                                      
+<a name="ln-366"></a>      <span class="n">ivon03</span> <span class="o">=</span> <span class="mi">1</span>                                                        
+<a name="ln-367"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">max0</span> <span class="p">(</span><span class="mi">263</span><span class="p">,</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">,</span><span class="n">ivon03</span><span class="p">)</span>                          
+<a name="ln-368"></a>      <span class="k">goto </span><span class="mi">49180</span>                                                       
+<a name="ln-369"></a><span class="mi">39180</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-370"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-371"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49180</span><span class="p">,</span> <span class="mi">9191</span><span class="p">,</span> <span class="mi">49180</span>                                    
+<a name="ln-372"></a><span class="mi">49180</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">317</span><span class="p">)</span> <span class="mi">29180</span><span class="p">,</span><span class="mi">19180</span><span class="p">,</span><span class="mi">29180</span>                               
+<a name="ln-373"></a><span class="mi">19180</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-374"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-375"></a>      <span class="k">goto </span><span class="mi">9191</span>                                                        
+<a name="ln-376"></a><span class="mi">29180</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-377"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">317</span>                                                      
+<a name="ln-378"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-379"></a> <span class="mi">9191</span> <span class="k">continue                                                          </span>
+<a name="ln-380"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">919</span>                                                      
+<a name="ln-381"></a><span class="c">!                                                                        </span>
+<a name="ln-382"></a><span class="c">!       ****  TEST 919  ****                                             </span>
+<a name="ln-383"></a><span class="c">!                                                                        </span>
+<a name="ln-384"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39190</span><span class="p">,</span> <span class="mi">9190</span><span class="p">,</span> <span class="mi">39190</span>                                    
+<a name="ln-385"></a> <span class="mi">9190</span> <span class="k">continue                                                          </span>
+<a name="ln-386"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">2572</span>                                                     
+<a name="ln-387"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="mi">2570</span>                                                     
+<a name="ln-388"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">max0</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">)</span>                                     
+<a name="ln-389"></a>      <span class="k">goto </span><span class="mi">49190</span>                                                       
+<a name="ln-390"></a><span class="mi">39190</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-391"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-392"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49190</span><span class="p">,</span> <span class="mi">9201</span><span class="p">,</span> <span class="mi">49190</span>                                    
+<a name="ln-393"></a><span class="mi">49190</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">2572</span><span class="p">)</span> <span class="mi">29190</span><span class="p">,</span><span class="mi">19190</span><span class="p">,</span><span class="mi">29190</span>                              
+<a name="ln-394"></a><span class="mi">19190</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-395"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-396"></a>      <span class="k">goto </span><span class="mi">9201</span>                                                        
+<a name="ln-397"></a><span class="mi">29190</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-398"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">2572</span>                                                     
+<a name="ln-399"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-400"></a><span class="c">!                                                                        </span>
+<a name="ln-401"></a><span class="c">!      TEST 920 AND 921 CONTAIN INTRINSIC FUNCTION TESTS FOR CHOOSING    </span>
+<a name="ln-402"></a><span class="c">!      LARGEST VALUE WHERE ARGUMENTS ARE REAL AND FUNCTION IS INTEGER    </span>
+<a name="ln-403"></a><span class="c">!                                                                        </span>
+<a name="ln-404"></a> <span class="mi">9201</span> <span class="k">continue                                                          </span>
+<a name="ln-405"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">920</span>                                                      
+<a name="ln-406"></a><span class="c">!                                                                        </span>
+<a name="ln-407"></a><span class="c">!       ****  TEST 920  ****                                             </span>
+<a name="ln-408"></a><span class="c">!                                                                        </span>
+<a name="ln-409"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39200</span><span class="p">,</span> <span class="mi">9200</span><span class="p">,</span> <span class="mi">39200</span>                                    
+<a name="ln-410"></a> <span class="mi">9200</span> <span class="k">continue                                                          </span>
+<a name="ln-411"></a><span class="k">      </span><span class="n">rvon01</span> <span class="o">=</span> <span class="p">.</span><span class="mi">32</span><span class="err">6</span><span class="n">e</span><span class="o">+</span><span class="mi">2</span>                                                  
+<a name="ln-412"></a>      <span class="n">rvon02</span> <span class="o">=</span> <span class="mi">2</span><span class="mf">2.075</span>                                                   
+<a name="ln-413"></a>      <span class="n">rvon03</span> <span class="o">=</span> <span class="mi">7</span><span class="err">6</span><span class="n">e</span><span class="o">-</span><span class="mi">1</span>                                                    
+<a name="ln-414"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">max1</span> <span class="p">(</span><span class="n">rvon01</span><span class="p">,</span><span class="n">rvon02</span><span class="p">,</span><span class="n">rvon03</span><span class="p">)</span>                              
+<a name="ln-415"></a>      <span class="k">goto </span><span class="mi">49200</span>                                                       
+<a name="ln-416"></a><span class="mi">39200</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-417"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-418"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49200</span><span class="p">,</span> <span class="mi">9211</span><span class="p">,</span> <span class="mi">49200</span>                                    
+<a name="ln-419"></a><span class="mi">49200</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="mi">29200</span><span class="p">,</span><span class="mi">19200</span><span class="p">,</span><span class="mi">29200</span>                                
+<a name="ln-420"></a><span class="mi">19200</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-421"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-422"></a>      <span class="k">goto </span><span class="mi">9211</span>                                                        
+<a name="ln-423"></a><span class="mi">29200</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-424"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">32</span>                                                       
+<a name="ln-425"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-426"></a> <span class="mi">9211</span> <span class="k">continue                                                          </span>
+<a name="ln-427"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">921</span>                                                      
+<a name="ln-428"></a><span class="c">!                                                                        </span>
+<a name="ln-429"></a><span class="c">!       ****  TEST 921  ****                                             </span>
+<a name="ln-430"></a><span class="c">!                                                                        </span>
+<a name="ln-431"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39210</span><span class="p">,</span> <span class="mi">9210</span><span class="p">,</span> <span class="mi">39210</span>                                    
+<a name="ln-432"></a> <span class="mi">9210</span> <span class="k">continue                                                          </span>
+<a name="ln-433"></a><span class="k">      </span><span class="n">rvon01</span> <span class="o">=</span> <span class="o">-</span><span class="mf">6.3e2</span>                                                   
+<a name="ln-434"></a>      <span class="n">rvon02</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span><span class="mf">1.0</span>                                                    
+<a name="ln-435"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">max1</span> <span class="p">(</span><span class="o">-</span><span class="mi">46</span><span class="mf">3.3</span><span class="p">,</span><span class="n">rvon01</span><span class="p">,</span><span class="n">rvon02</span><span class="p">)</span>                              
+<a name="ln-436"></a>      <span class="k">goto </span><span class="mi">49210</span>                                                       
+<a name="ln-437"></a><span class="mi">39210</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-438"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-439"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49210</span><span class="p">,</span> <span class="mi">9221</span><span class="p">,</span> <span class="mi">49210</span>                                    
+<a name="ln-440"></a><span class="mi">49210</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">+</span> <span class="mi">21</span><span class="p">)</span> <span class="mi">29210</span><span class="p">,</span><span class="mi">19210</span><span class="p">,</span><span class="mi">29210</span>                                
+<a name="ln-441"></a><span class="mi">19210</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-442"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-443"></a>      <span class="k">goto </span><span class="mi">9221</span>                                                        
+<a name="ln-444"></a><span class="mi">29210</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-445"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="o">-</span><span class="mi">21</span>                                                      
+<a name="ln-446"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-447"></a><span class="c">!                                                                        </span>
+<a name="ln-448"></a><span class="c">!      TEST 922 AND 923 CONTAIN INTRINSIC FUNCTION TESTS FOR CHOOSING    </span>
+<a name="ln-449"></a><span class="c">!      SMALLEST VALUE WHERE ARGUMENTS AND FUNCTION ARE INTEGER           </span>
+<a name="ln-450"></a><span class="c">!                                                                        </span>
+<a name="ln-451"></a> <span class="mi">9221</span> <span class="k">continue                                                          </span>
+<a name="ln-452"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">922</span>                                                      
+<a name="ln-453"></a><span class="c">!                                                                        </span>
+<a name="ln-454"></a><span class="c">!       ****  TEST 922  ****                                             </span>
+<a name="ln-455"></a><span class="c">!                                                                        </span>
+<a name="ln-456"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39220</span><span class="p">,</span> <span class="mi">9220</span><span class="p">,</span> <span class="mi">39220</span>                                    
+<a name="ln-457"></a> <span class="mi">9220</span> <span class="k">continue                                                          </span>
+<a name="ln-458"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="o">-</span><span class="mi">75</span>                                                      
+<a name="ln-459"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="o">-</span><span class="mi">243</span>                                                     
+<a name="ln-460"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">min0</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">)</span>                                     
+<a name="ln-461"></a>      <span class="k">goto </span><span class="mi">49220</span>                                                       
+<a name="ln-462"></a><span class="mi">39220</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-463"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-464"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49220</span><span class="p">,</span> <span class="mi">9231</span><span class="p">,</span> <span class="mi">49220</span>                                    
+<a name="ln-465"></a><span class="mi">49220</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">+</span> <span class="mi">243</span><span class="p">)</span> <span class="mi">29220</span><span class="p">,</span><span class="mi">19220</span><span class="p">,</span><span class="mi">29220</span>                               
+<a name="ln-466"></a><span class="mi">19220</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-467"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-468"></a>      <span class="k">goto </span><span class="mi">9231</span>                                                        
+<a name="ln-469"></a><span class="mi">29220</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-470"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="o">-</span><span class="mi">243</span>                                                     
+<a name="ln-471"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-472"></a> <span class="mi">9231</span> <span class="k">continue                                                          </span>
+<a name="ln-473"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">923</span>                                                      
+<a name="ln-474"></a><span class="c">!                                                                        </span>
+<a name="ln-475"></a><span class="c">!       ****  TEST 923  ****                                             </span>
+<a name="ln-476"></a><span class="c">!                                                                        </span>
+<a name="ln-477"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39230</span><span class="p">,</span> <span class="mi">9230</span><span class="p">,</span> <span class="mi">39230</span>                                    
+<a name="ln-478"></a> <span class="mi">9230</span> <span class="k">continue                                                          </span>
+<a name="ln-479"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="o">-</span><span class="mi">11</span>                                                      
+<a name="ln-480"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="mi">11</span>                                                       
+<a name="ln-481"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">min0</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">)</span>                                   
+<a name="ln-482"></a>      <span class="k">goto </span><span class="mi">49230</span>                                                       
+<a name="ln-483"></a><span class="mi">39230</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-484"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-485"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49230</span><span class="p">,</span> <span class="mi">9241</span><span class="p">,</span> <span class="mi">49230</span>                                    
+<a name="ln-486"></a><span class="mi">49230</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">+</span> <span class="mi">11</span><span class="p">)</span> <span class="mi">29230</span><span class="p">,</span><span class="mi">19230</span><span class="p">,</span><span class="mi">29230</span>                                
+<a name="ln-487"></a><span class="mi">19230</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-488"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-489"></a>      <span class="k">goto </span><span class="mi">9241</span>                                                        
+<a name="ln-490"></a><span class="mi">29230</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-491"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="o">-</span><span class="mi">11</span>                                                      
+<a name="ln-492"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-493"></a><span class="c">!                                                                        </span>
+<a name="ln-494"></a><span class="c">!      TEST 924 AND 925 CONTAIN INTRINSIC FUNCTION TESTS FOR CHOOSING    </span>
+<a name="ln-495"></a><span class="c">!      SMALLEST VALUE WHERE ARGUMENTS ARE REAL AND FUNCTION IS INTEGER   </span>
+<a name="ln-496"></a><span class="c">!                                                                        </span>
+<a name="ln-497"></a> <span class="mi">9241</span> <span class="k">continue                                                          </span>
+<a name="ln-498"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">924</span>                                                      
+<a name="ln-499"></a><span class="c">!                                                                        </span>
+<a name="ln-500"></a><span class="c">!       ****  TEST 924  ****                                             </span>
+<a name="ln-501"></a><span class="c">!                                                                        </span>
+<a name="ln-502"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39240</span><span class="p">,</span> <span class="mi">9240</span><span class="p">,</span> <span class="mi">39240</span>                                    
+<a name="ln-503"></a> <span class="mi">9240</span> <span class="k">continue                                                          </span>
+<a name="ln-504"></a><span class="k">      </span><span class="n">rvon01</span> <span class="o">=</span> <span class="mf">1.1111</span>                                                   
+<a name="ln-505"></a>      <span class="n">rvon02</span> <span class="o">=</span> <span class="mi">2</span><span class="mf">2.222</span>                                                   
+<a name="ln-506"></a>      <span class="n">rvon03</span> <span class="o">=</span> <span class="mi">33</span><span class="mf">3.33</span>                                                   
+<a name="ln-507"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">min1</span> <span class="p">(</span><span class="n">rvon01</span><span class="p">,</span><span class="n">rvon02</span><span class="p">,</span><span class="n">rvon03</span><span class="p">)</span>                              
+<a name="ln-508"></a>      <span class="k">goto </span><span class="mi">49240</span>                                                       
+<a name="ln-509"></a><span class="mi">39240</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-510"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-511"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49240</span><span class="p">,</span> <span class="mi">9251</span><span class="p">,</span> <span class="mi">49240</span>                                    
+<a name="ln-512"></a><span class="mi">49240</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="mi">29240</span><span class="p">,</span><span class="mi">19240</span><span class="p">,</span><span class="mi">29240</span>                                 
+<a name="ln-513"></a><span class="mi">19240</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-514"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-515"></a>      <span class="k">goto </span><span class="mi">9251</span>                                                        
+<a name="ln-516"></a><span class="mi">29240</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-517"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">1</span>                                                        
+<a name="ln-518"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-519"></a> <span class="mi">9251</span> <span class="k">continue                                                          </span>
+<a name="ln-520"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">925</span>                                                      
+<a name="ln-521"></a><span class="c">!                                                                        </span>
+<a name="ln-522"></a><span class="c">!       ****  TEST 925  ****                                             </span>
+<a name="ln-523"></a><span class="c">!                                                                        </span>
+<a name="ln-524"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39250</span><span class="p">,</span> <span class="mi">9250</span><span class="p">,</span> <span class="mi">39250</span>                                    
+<a name="ln-525"></a> <span class="mi">9250</span> <span class="k">continue                                                          </span>
+<a name="ln-526"></a><span class="k">      </span><span class="n">rvon01</span> <span class="o">=</span> <span class="mi">2</span><span class="mf">8.8</span>                                                     
+<a name="ln-527"></a>      <span class="n">rvon02</span> <span class="o">=</span> <span class="mf">2.88e1</span>                                                   
+<a name="ln-528"></a>      <span class="n">rvon03</span> <span class="o">=</span> <span class="mi">28</span><span class="err">8</span><span class="n">e</span><span class="o">-</span><span class="mi">1</span>                                                   
+<a name="ln-529"></a>      <span class="n">rvon04</span> <span class="o">=</span> <span class="mi">3</span><span class="mf">5.0</span>                                                     
+<a name="ln-530"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">min1</span> <span class="p">(</span><span class="n">rvon01</span><span class="p">,</span><span class="n">rvon02</span><span class="p">,</span><span class="n">rvon03</span><span class="p">,</span><span class="n">rvon04</span><span class="p">)</span>                       
+<a name="ln-531"></a>      <span class="k">goto </span><span class="mi">49250</span>                                                       
+<a name="ln-532"></a><span class="mi">39250</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-533"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-534"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49250</span><span class="p">,</span> <span class="mi">9261</span><span class="p">,</span> <span class="mi">49250</span>                                    
+<a name="ln-535"></a><span class="mi">49250</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">28</span><span class="p">)</span> <span class="mi">29250</span><span class="p">,</span><span class="mi">19250</span><span class="p">,</span><span class="mi">29250</span>                                
+<a name="ln-536"></a><span class="mi">19250</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-537"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-538"></a>      <span class="k">goto </span><span class="mi">9261</span>                                                        
+<a name="ln-539"></a><span class="mi">29250</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-540"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">28</span>                                                       
+<a name="ln-541"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-542"></a><span class="c">!                                                                        </span>
+<a name="ln-543"></a><span class="c">!      TEST 926 THROUGH TEST 929 CONTAIN THE INTRINSIC FUNCTION FIX      </span>
+<a name="ln-544"></a><span class="c">!      WHICH CONVERTS REAL ARGUMENTS TO INTEGER FUNCTION RESULTS         </span>
+<a name="ln-545"></a><span class="c">!                                                                        </span>
+<a name="ln-546"></a> <span class="mi">9261</span> <span class="k">continue                                                          </span>
+<a name="ln-547"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">926</span>                                                      
+<a name="ln-548"></a><span class="c">!                                                                        </span>
+<a name="ln-549"></a><span class="c">!       ****  TEST 926  ****                                             </span>
+<a name="ln-550"></a><span class="c">!                                                                        </span>
+<a name="ln-551"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39260</span><span class="p">,</span> <span class="mi">9260</span><span class="p">,</span> <span class="mi">39260</span>                                    
+<a name="ln-552"></a> <span class="mi">9260</span> <span class="k">continue                                                          </span>
+<a name="ln-553"></a><span class="k">      </span><span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">ifix</span> <span class="p">(</span><span class="o">-</span><span class="mf">6.06</span><span class="p">)</span>                                             
+<a name="ln-554"></a>      <span class="k">goto </span><span class="mi">49260</span>                                                       
+<a name="ln-555"></a><span class="mi">39260</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-556"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-557"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49260</span><span class="p">,</span> <span class="mi">9271</span><span class="p">,</span> <span class="mi">49260</span>                                    
+<a name="ln-558"></a><span class="mi">49260</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">+</span> <span class="mi">6</span><span class="p">)</span> <span class="mi">29260</span><span class="p">,</span><span class="mi">19260</span><span class="p">,</span><span class="mi">29260</span>                                 
+<a name="ln-559"></a><span class="mi">19260</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-560"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-561"></a>      <span class="k">goto </span><span class="mi">9271</span>                                                        
+<a name="ln-562"></a><span class="mi">29260</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-563"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="o">-</span><span class="mi">6</span>                                                       
+<a name="ln-564"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-565"></a> <span class="mi">9271</span> <span class="k">continue                                                          </span>
+<a name="ln-566"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">927</span>                                                      
+<a name="ln-567"></a><span class="c">!                                                                        </span>
+<a name="ln-568"></a><span class="c">!       ****  TEST 927  ****                                             </span>
+<a name="ln-569"></a><span class="c">!                                                                        </span>
+<a name="ln-570"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39270</span><span class="p">,</span> <span class="mi">9270</span><span class="p">,</span> <span class="mi">39270</span>                                    
+<a name="ln-571"></a> <span class="mi">9270</span> <span class="k">continue                                                          </span>
+<a name="ln-572"></a><span class="k">      </span><span class="n">rvon01</span> <span class="o">=</span> <span class="mi">7</span><span class="mf">1.01</span>                                                    
+<a name="ln-573"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">ifix</span> <span class="p">(</span><span class="n">rvon01</span><span class="p">)</span>                                            
+<a name="ln-574"></a>      <span class="k">goto </span><span class="mi">49270</span>                                                       
+<a name="ln-575"></a><span class="mi">39270</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-576"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-577"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49270</span><span class="p">,</span> <span class="mi">9281</span><span class="p">,</span> <span class="mi">49270</span>                                    
+<a name="ln-578"></a><span class="mi">49270</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">71</span><span class="p">)</span> <span class="mi">29270</span><span class="p">,</span><span class="mi">19270</span><span class="p">,</span><span class="mi">29270</span>                                
+<a name="ln-579"></a><span class="mi">19270</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-580"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-581"></a>      <span class="k">goto </span><span class="mi">9281</span>                                                        
+<a name="ln-582"></a><span class="mi">29270</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-583"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">71</span>                                                       
+<a name="ln-584"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-585"></a> <span class="mi">9281</span> <span class="k">continue                                                          </span>
+<a name="ln-586"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">928</span>                                                      
+<a name="ln-587"></a><span class="c">!                                                                        </span>
+<a name="ln-588"></a><span class="c">!       ****  TEST 928  ****                                             </span>
+<a name="ln-589"></a><span class="c">!                                                                        </span>
+<a name="ln-590"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39280</span><span class="p">,</span> <span class="mi">9280</span><span class="p">,</span> <span class="mi">39280</span>                                    
+<a name="ln-591"></a> <span class="mi">9280</span> <span class="k">continue                                                          </span>
+<a name="ln-592"></a><span class="k">      </span><span class="n">rvon01</span> <span class="o">=</span> <span class="mf">3.211e2</span>                                                  
+<a name="ln-593"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">ifix</span> <span class="p">(</span><span class="n">rvon01</span><span class="p">)</span>                                            
+<a name="ln-594"></a>      <span class="k">goto </span><span class="mi">49280</span>                                                       
+<a name="ln-595"></a><span class="mi">39280</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-596"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-597"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49280</span><span class="p">,</span> <span class="mi">9291</span><span class="p">,</span> <span class="mi">49280</span>                                    
+<a name="ln-598"></a><span class="mi">49280</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">321</span><span class="p">)</span> <span class="mi">29280</span><span class="p">,</span><span class="mi">19280</span><span class="p">,</span><span class="mi">29280</span>                               
+<a name="ln-599"></a><span class="mi">19280</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-600"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-601"></a>      <span class="k">goto </span><span class="mi">9291</span>                                                        
+<a name="ln-602"></a><span class="mi">29280</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-603"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">321</span>                                                      
+<a name="ln-604"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-605"></a> <span class="mi">9291</span> <span class="k">continue                                                          </span>
+<a name="ln-606"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">929</span>                                                      
+<a name="ln-607"></a><span class="c">!                                                                        </span>
+<a name="ln-608"></a><span class="c">!       ****  TEST 929  ****                                             </span>
+<a name="ln-609"></a><span class="c">!                                                                        </span>
+<a name="ln-610"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39290</span><span class="p">,</span> <span class="mi">9290</span><span class="p">,</span> <span class="mi">39290</span>                                    
+<a name="ln-611"></a> <span class="mi">9290</span> <span class="k">continue                                                          </span>
+<a name="ln-612"></a><span class="k">      </span><span class="n">rvon01</span> <span class="o">=</span> <span class="mi">77</span><span class="err">7</span><span class="n">e</span><span class="o">-</span><span class="mi">1</span>                                                   
+<a name="ln-613"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">ifix</span> <span class="p">(</span><span class="n">rvon01</span><span class="p">)</span>                                            
+<a name="ln-614"></a>      <span class="k">goto </span><span class="mi">49290</span>                                                       
+<a name="ln-615"></a><span class="mi">39290</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-616"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-617"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49290</span><span class="p">,</span> <span class="mi">9301</span><span class="p">,</span> <span class="mi">49290</span>                                    
+<a name="ln-618"></a><span class="mi">49290</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">77</span><span class="p">)</span> <span class="mi">29290</span><span class="p">,</span><span class="mi">19290</span><span class="p">,</span><span class="mi">29290</span>                                
+<a name="ln-619"></a><span class="mi">19290</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-620"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-621"></a>      <span class="k">goto </span><span class="mi">9301</span>                                                        
+<a name="ln-622"></a><span class="mi">29290</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-623"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">77</span>                                                       
+<a name="ln-624"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-625"></a><span class="c">!                                                                        </span>
+<a name="ln-626"></a><span class="c">!      TEST 930 THROUGH TEST 932 CONTAIN INTRINSIC FUNCTION TESTS FOR    </span>
+<a name="ln-627"></a><span class="c">!      TRANSFER OF SIGN WHERE ARGUMENTS AND FUNCTION ARE INTEGER         </span>
+<a name="ln-628"></a><span class="c">!                                                                        </span>
+<a name="ln-629"></a> <span class="mi">9301</span> <span class="k">continue                                                          </span>
+<a name="ln-630"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">930</span>                                                      
+<a name="ln-631"></a><span class="c">!                                                                        </span>
+<a name="ln-632"></a><span class="c">!       ****  TEST 930  ****                                             </span>
+<a name="ln-633"></a><span class="c">!                                                                        </span>
+<a name="ln-634"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39300</span><span class="p">,</span> <span class="mi">9300</span><span class="p">,</span> <span class="mi">39300</span>                                    
+<a name="ln-635"></a> <span class="mi">9300</span> <span class="k">continue                                                          </span>
+<a name="ln-636"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">643</span>                                                      
+<a name="ln-637"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">isign</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>                                        
+<a name="ln-638"></a>      <span class="k">goto </span><span class="mi">49300</span>                                                       
+<a name="ln-639"></a><span class="mi">39300</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-640"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-641"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49300</span><span class="p">,</span> <span class="mi">9311</span><span class="p">,</span> <span class="mi">49300</span>                                    
+<a name="ln-642"></a><span class="mi">49300</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">+</span> <span class="mi">643</span><span class="p">)</span> <span class="mi">29300</span><span class="p">,</span><span class="mi">19300</span><span class="p">,</span><span class="mi">29300</span>                               
+<a name="ln-643"></a><span class="mi">19300</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-644"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-645"></a>      <span class="k">goto </span><span class="mi">9311</span>                                                        
+<a name="ln-646"></a><span class="mi">29300</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-647"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="o">-</span><span class="mi">643</span>                                                     
+<a name="ln-648"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-649"></a> <span class="mi">9311</span> <span class="k">continue                                                          </span>
+<a name="ln-650"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">931</span>                                                      
+<a name="ln-651"></a><span class="c">!                                                                        </span>
+<a name="ln-652"></a><span class="c">!       ****  TEST 931  ****                                             </span>
+<a name="ln-653"></a><span class="c">!                                                                        </span>
+<a name="ln-654"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39310</span><span class="p">,</span> <span class="mi">9310</span><span class="p">,</span> <span class="mi">39310</span>                                    
+<a name="ln-655"></a> <span class="mi">9310</span> <span class="k">continue                                                          </span>
+<a name="ln-656"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="o">-</span><span class="mi">22</span>                                                      
+<a name="ln-657"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="mi">723</span>                                                      
+<a name="ln-658"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">isign</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">)</span>                                    
+<a name="ln-659"></a>      <span class="k">goto </span><span class="mi">49310</span>                                                       
+<a name="ln-660"></a><span class="mi">39310</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-661"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-662"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49310</span><span class="p">,</span> <span class="mi">9321</span><span class="p">,</span> <span class="mi">49310</span>                                    
+<a name="ln-663"></a><span class="mi">49310</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">22</span><span class="p">)</span> <span class="mi">29310</span><span class="p">,</span><span class="mi">19310</span><span class="p">,</span><span class="mi">29310</span>                                
+<a name="ln-664"></a><span class="mi">19310</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-665"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-666"></a>      <span class="k">goto </span><span class="mi">9321</span>                                                        
+<a name="ln-667"></a><span class="mi">29310</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-668"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">22</span>                                                       
+<a name="ln-669"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-670"></a> <span class="mi">9321</span> <span class="k">continue                                                          </span>
+<a name="ln-671"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">932</span>                                                      
+<a name="ln-672"></a><span class="c">!                                                                        </span>
+<a name="ln-673"></a><span class="c">!       ****  TEST 932  ****                                             </span>
+<a name="ln-674"></a><span class="c">!                                                                        </span>
+<a name="ln-675"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39320</span><span class="p">,</span> <span class="mi">9320</span><span class="p">,</span> <span class="mi">39320</span>                                    
+<a name="ln-676"></a> <span class="mi">9320</span> <span class="k">continue                                                          </span>
+<a name="ln-677"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">3532</span>                                                     
+<a name="ln-678"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="mi">1</span>                                                        
+<a name="ln-679"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">isign</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">)</span>                                    
+<a name="ln-680"></a>      <span class="k">goto </span><span class="mi">49320</span>                                                       
+<a name="ln-681"></a><span class="mi">39320</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-682"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-683"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49320</span><span class="p">,</span> <span class="mi">9331</span><span class="p">,</span> <span class="mi">49320</span>                                    
+<a name="ln-684"></a><span class="mi">49320</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">3532</span><span class="p">)</span> <span class="mi">29320</span><span class="p">,</span><span class="mi">19320</span><span class="p">,</span><span class="mi">29320</span>                              
+<a name="ln-685"></a><span class="mi">19320</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-686"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-687"></a>      <span class="k">goto </span><span class="mi">9331</span>                                                        
+<a name="ln-688"></a><span class="mi">29320</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-689"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">3532</span>                                                     
+<a name="ln-690"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-691"></a><span class="c">!                                                                        </span>
+<a name="ln-692"></a><span class="c">!      TEST 933 THROUGH TEST 936 CONTAIN INTRINSIC FUNCTION TESTS FOR    </span>
+<a name="ln-693"></a><span class="c">!      POSITIVE DIFFERENCE WHERE ARGUMENTS AND FUNCTION ARE INTEGERS     </span>
+<a name="ln-694"></a><span class="c">!                                                                        </span>
+<a name="ln-695"></a> <span class="mi">9331</span> <span class="k">continue                                                          </span>
+<a name="ln-696"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">933</span>                                                      
+<a name="ln-697"></a><span class="c">!                                                                        </span>
+<a name="ln-698"></a><span class="c">!       ****  TEST 933  ****                                             </span>
+<a name="ln-699"></a><span class="c">!                                                                        </span>
+<a name="ln-700"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39330</span><span class="p">,</span> <span class="mi">9330</span><span class="p">,</span> <span class="mi">39330</span>                                    
+<a name="ln-701"></a> <span class="mi">9330</span> <span class="k">continue                                                          </span>
+<a name="ln-702"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">222</span>                                                      
+<a name="ln-703"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">idim</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>                                          
+<a name="ln-704"></a>      <span class="k">goto </span><span class="mi">49330</span>                                                       
+<a name="ln-705"></a><span class="mi">39330</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-706"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-707"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49330</span><span class="p">,</span> <span class="mi">9341</span><span class="p">,</span> <span class="mi">49330</span>                                    
+<a name="ln-708"></a><span class="mi">49330</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">221</span><span class="p">)</span> <span class="mi">29330</span><span class="p">,</span><span class="mi">19330</span><span class="p">,</span><span class="mi">29330</span>                               
+<a name="ln-709"></a><span class="mi">19330</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-710"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-711"></a>      <span class="k">goto </span><span class="mi">9341</span>                                                        
+<a name="ln-712"></a><span class="mi">29330</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-713"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">221</span>                                                      
+<a name="ln-714"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-715"></a> <span class="mi">9341</span> <span class="k">continue                                                          </span>
+<a name="ln-716"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">934</span>                                                      
+<a name="ln-717"></a><span class="c">!                                                                        </span>
+<a name="ln-718"></a><span class="c">!       ****  TEST 934  ****                                             </span>
+<a name="ln-719"></a><span class="c">!                                                                        </span>
+<a name="ln-720"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39340</span><span class="p">,</span> <span class="mi">9340</span><span class="p">,</span> <span class="mi">39340</span>                                    
+<a name="ln-721"></a> <span class="mi">9340</span> <span class="k">continue                                                          </span>
+<a name="ln-722"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">45</span>                                                       
+<a name="ln-723"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="mi">41</span>                                                       
+<a name="ln-724"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">idim</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">)</span>                                     
+<a name="ln-725"></a>      <span class="k">goto </span><span class="mi">49340</span>                                                       
+<a name="ln-726"></a><span class="mi">39340</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-727"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-728"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49340</span><span class="p">,</span> <span class="mi">9351</span><span class="p">,</span> <span class="mi">49340</span>                                    
+<a name="ln-729"></a><span class="mi">49340</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">4</span><span class="p">)</span> <span class="mi">29340</span><span class="p">,</span><span class="mi">19340</span><span class="p">,</span><span class="mi">29340</span>                                 
+<a name="ln-730"></a><span class="mi">19340</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-731"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-732"></a>      <span class="k">goto </span><span class="mi">9351</span>                                                        
+<a name="ln-733"></a><span class="mi">29340</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-734"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">4</span>                                                        
+<a name="ln-735"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-736"></a> <span class="mi">9351</span> <span class="k">continue                                                          </span>
+<a name="ln-737"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">935</span>                                                      
+<a name="ln-738"></a><span class="c">!                                                                        </span>
+<a name="ln-739"></a><span class="c">!       ****  TEST 935  ****                                             </span>
+<a name="ln-740"></a><span class="c">!                                                                        </span>
+<a name="ln-741"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39350</span><span class="p">,</span> <span class="mi">9350</span><span class="p">,</span> <span class="mi">39350</span>                                    
+<a name="ln-742"></a> <span class="mi">9350</span> <span class="k">continue                                                          </span>
+<a name="ln-743"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">2</span>                                                        
+<a name="ln-744"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="mi">10</span>                                                       
+<a name="ln-745"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">idim</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">)</span>                                     
+<a name="ln-746"></a>      <span class="k">goto </span><span class="mi">49350</span>                                                       
+<a name="ln-747"></a><span class="mi">39350</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-748"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-749"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49350</span><span class="p">,</span> <span class="mi">9361</span><span class="p">,</span> <span class="mi">49350</span>                                    
+<a name="ln-750"></a><span class="mi">49350</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span><span class="p">)</span> <span class="mi">29350</span><span class="p">,</span><span class="mi">19350</span><span class="p">,</span><span class="mi">29350</span>                                     
+<a name="ln-751"></a><span class="mi">19350</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-752"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-753"></a>      <span class="k">goto </span><span class="mi">9361</span>                                                        
+<a name="ln-754"></a><span class="mi">29350</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-755"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+<a name="ln-756"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-757"></a> <span class="mi">9361</span> <span class="k">continue                                                          </span>
+<a name="ln-758"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">936</span>                                                      
+<a name="ln-759"></a><span class="c">!                                                                        </span>
+<a name="ln-760"></a><span class="c">!       ****  TEST 936  ****                                             </span>
+<a name="ln-761"></a><span class="c">!                                                                        </span>
+<a name="ln-762"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39360</span><span class="p">,</span> <span class="mi">9360</span><span class="p">,</span> <span class="mi">39360</span>                                    
+<a name="ln-763"></a> <span class="mi">9360</span> <span class="k">continue                                                          </span>
+<a name="ln-764"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">165</span>                                                      
+<a name="ln-765"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span>                                                       
+<a name="ln-766"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">idim</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">)</span>                                     
+<a name="ln-767"></a>      <span class="k">goto </span><span class="mi">49360</span>                                                       
+<a name="ln-768"></a><span class="mi">39360</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-769"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-770"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49360</span><span class="p">,</span> <span class="mi">9371</span><span class="p">,</span> <span class="mi">49360</span>                                    
+<a name="ln-771"></a><span class="mi">49360</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">167</span><span class="p">)</span> <span class="mi">29360</span><span class="p">,</span><span class="mi">19360</span><span class="p">,</span><span class="mi">29360</span>                               
+<a name="ln-772"></a><span class="mi">19360</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-773"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-774"></a>      <span class="k">goto </span><span class="mi">9371</span>                                                        
+<a name="ln-775"></a><span class="mi">29360</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-776"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">167</span>                                                      
+<a name="ln-777"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-778"></a><span class="c">!                                                                        </span>
+<a name="ln-779"></a><span class="c">!      TESTS 937 AND 938 CONTAIN EXPRESSIONS CONTAINING MORE THAN ONE    </span>
+<a name="ln-780"></a><span class="c">!      INTRINSIC FUNCTION - THE FUNCTIONS ARE INTEGER AND THE ARGUMENTS  </span>
+<a name="ln-781"></a><span class="c">!      ARE REAL AND INTEGER                                              </span>
+<a name="ln-782"></a><span class="c">!                                                                        </span>
+<a name="ln-783"></a> <span class="mi">9371</span> <span class="k">continue                                                          </span>
+<a name="ln-784"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">937</span>                                                      
+<a name="ln-785"></a><span class="c">!                                                                        </span>
+<a name="ln-786"></a><span class="c">!       ****  TEST 937  ****                                             </span>
+<a name="ln-787"></a><span class="c">!                                                                        </span>
+<a name="ln-788"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39370</span><span class="p">,</span> <span class="mi">9370</span><span class="p">,</span> <span class="mi">39370</span>                                    
+<a name="ln-789"></a> <span class="mi">9370</span> <span class="k">continue                                                          </span>
+<a name="ln-790"></a><span class="k">      </span><span class="n">rvon01</span> <span class="o">=</span> <span class="mi">3</span><span class="mf">3.3</span>                                                     
+<a name="ln-791"></a>      <span class="n">ivon01</span> <span class="o">=</span> <span class="o">-</span><span class="mi">12</span>                                                      
+<a name="ln-792"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="n">rvon01</span><span class="p">)</span> <span class="o">+</span> <span class="nb">iabs</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">)</span>                             
+<a name="ln-793"></a>      <span class="k">goto </span><span class="mi">49370</span>                                                       
+<a name="ln-794"></a><span class="mi">39370</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-795"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-796"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49370</span><span class="p">,</span> <span class="mi">9381</span><span class="p">,</span> <span class="mi">49370</span>                                    
+<a name="ln-797"></a><span class="mi">49370</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span>  <span class="mi">45</span><span class="p">)</span> <span class="mi">29370</span><span class="p">,</span><span class="mi">19370</span><span class="p">,</span><span class="mi">29370</span>                               
+<a name="ln-798"></a><span class="mi">19370</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-799"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-800"></a>      <span class="k">goto </span><span class="mi">9381</span>                                                        
+<a name="ln-801"></a><span class="mi">29370</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-802"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">45</span>                                                       
+<a name="ln-803"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-804"></a> <span class="mi">9381</span> <span class="k">continue                                                          </span>
+<a name="ln-805"></a><span class="k">      </span><span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">938</span>                                                      
+<a name="ln-806"></a><span class="c">!                                                                        </span>
+<a name="ln-807"></a><span class="c">!       ****  TEST 938  ****                                             </span>
+<a name="ln-808"></a><span class="c">!                                                                        </span>
+<a name="ln-809"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">39380</span><span class="p">,</span> <span class="mi">9380</span><span class="p">,</span> <span class="mi">39380</span>                                    
+<a name="ln-810"></a> <span class="mi">9380</span> <span class="k">continue                                                          </span>
+<a name="ln-811"></a><span class="k">      </span><span class="n">ivon01</span> <span class="o">=</span> <span class="mi">76</span>                                                       
+<a name="ln-812"></a>      <span class="n">ivon02</span> <span class="o">=</span> <span class="mi">21</span>                                                       
+<a name="ln-813"></a>      <span class="n">ivon03</span> <span class="o">=</span> <span class="mi">30</span>                                                       
+<a name="ln-814"></a>      <span class="n">ivcomp</span> <span class="o">=</span> <span class="n">max0</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">,</span><span class="n">ivon03</span><span class="p">)</span> <span class="o">-</span> <span class="n">min0</span> <span class="p">(</span><span class="n">ivon01</span><span class="p">,</span><span class="n">ivon02</span><span class="p">,</span><span class="n">ivon03</span><span class="p">)</span>
+<a name="ln-815"></a>      <span class="k">goto </span><span class="mi">49380</span>                                                       
+<a name="ln-816"></a><span class="mi">39380</span> <span class="n">ivdele</span> <span class="o">=</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-817"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80003</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-818"></a>      <span class="k">if</span> <span class="p">(</span><span class="n">iczero</span><span class="p">)</span> <span class="mi">49380</span><span class="p">,</span> <span class="mi">9391</span><span class="p">,</span> <span class="mi">49380</span>                                    
+<a name="ln-819"></a><span class="mi">49380</span> <span class="k">if</span> <span class="p">(</span><span class="n">ivcomp</span> <span class="o">-</span> <span class="mi">55</span><span class="p">)</span> <span class="mi">29380</span><span class="p">,</span><span class="mi">19380</span><span class="p">,</span><span class="mi">29380</span>                                
+<a name="ln-820"></a><span class="mi">19380</span> <span class="n">ivpass</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-821"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80001</span><span class="p">)</span> <span class="n">ivtnum</span>                                          
+<a name="ln-822"></a>      <span class="k">goto </span><span class="mi">9391</span>                                                        
+<a name="ln-823"></a><span class="mi">29380</span> <span class="n">ivfail</span> <span class="o">=</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="mi">1</span>                                               
+<a name="ln-824"></a>      <span class="n">ivcorr</span> <span class="o">=</span> <span class="mi">55</span>                                                       
+<a name="ln-825"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">ivcomp</span><span class="p">,</span> <span class="n">ivcorr</span>                          
+<a name="ln-826"></a> <span class="mi">9391</span> <span class="k">continue</span>                                                          
+<a name="ln-827"></a><span class="c">!                                                                        </span>
+<a name="ln-828"></a><span class="c">!      WRITE PAGE FOOTINGS AND RUN SUMMARIES                             </span>
+<a name="ln-829"></a><span class="mi">99999</span> <span class="k">continue                                                          </span>
+<a name="ln-830"></a><span class="k">      write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+<a name="ln-831"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90006</span><span class="p">)</span>                                                 
+<a name="ln-832"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+<a name="ln-833"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+<a name="ln-834"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90007</span><span class="p">)</span>                                                 
+<a name="ln-835"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90002</span><span class="p">)</span>                                                 
+<a name="ln-836"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90008</span><span class="p">)</span>  <span class="n">ivfail</span>                                         
+<a name="ln-837"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90009</span><span class="p">)</span> <span class="n">ivpass</span>                                          
+<a name="ln-838"></a>      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90010</span><span class="p">)</span> <span class="n">ivdele</span>                                          
+<a name="ln-839"></a><span class="c">!                                                                        </span>
+<a name="ln-840"></a><span class="c">!                                                                        </span>
+<a name="ln-841"></a><span class="c">!      TERMINATE ROUTINE EXECUTION                                       </span>
+<a name="ln-842"></a>      <span class="k">stop</span>                                                              
+<a name="ln-843"></a><span class="c">!                                                                        </span>
+<a name="ln-844"></a><span class="c">!      FORMAT STATEMENTS FOR PAGE HEADERS                                </span>
+<a name="ln-845"></a><span class="mi">90000</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>                                                      
+<a name="ln-846"></a><span class="mi">90002</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>                                                      
+<a name="ln-847"></a><span class="mi">90001</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FORTRAN COMPILER VALIDATION SYSTEM&quot;</span> <span class="p">)</span>            
+<a name="ln-848"></a><span class="mi">90003</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;VERSION 2.1&quot;</span> <span class="p">)</span>                                   
+<a name="ln-849"></a><span class="mi">90004</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FOR OFFICIAL USE ONLY - COPYRIGHT 1978&quot;</span> <span class="p">)</span>        
+<a name="ln-850"></a><span class="mi">90005</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;TEST&quot;</span><span class="p">,</span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;PASS/FAIL&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED&quot;</span><span class="p">,</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT&quot;</span><span class="p">)</span> 
+<a name="ln-851"></a><span class="mi">90006</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;----------------------------------------------&quot;</span> <span class="p">)</span> 
+<a name="ln-852"></a><span class="mi">90011</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">18</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;SUBSET LEVEL TEST&quot;</span> <span class="p">)</span>                             
+<a name="ln-853"></a><span class="c">!                                                                        </span>
+<a name="ln-854"></a><span class="c">!      FORMAT STATEMENTS FOR RUN SUMMARIES                               </span>
+<a name="ln-855"></a><span class="mi">90008</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">15</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; ERRORS ENCOUNTERED&quot;</span> <span class="p">)</span>                        
+<a name="ln-856"></a><span class="mi">90009</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">15</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS PASSED&quot;</span> <span class="p">)</span>                              
+<a name="ln-857"></a><span class="mi">90010</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">15</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS DELETED&quot;</span> <span class="p">)</span>                             
+<a name="ln-858"></a><span class="c">!                                                                        </span>
+<a name="ln-859"></a><span class="c">!      FORMAT STATEMENTS FOR TEST RESULTS                                </span>
+<a name="ln-860"></a><span class="mi">80001</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;PASS&quot;</span><span class="p">)</span>                                      
+<a name="ln-861"></a><span class="mi">80002</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FAIL&quot;</span><span class="p">)</span>                                      
+<a name="ln-862"></a><span class="mi">80003</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;DELETED&quot;</span><span class="p">)</span>                                   
+<a name="ln-863"></a><span class="mi">80004</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FAIL&quot;</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="n">i6</span><span class="p">,</span><span class="mi">9</span><span class="n">x</span><span class="p">,</span><span class="n">i6</span><span class="p">)</span>                         
+<a name="ln-864"></a><span class="mi">80005</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FAIL&quot;</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="n">x</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">)</span>                    
+<a name="ln-865"></a><span class="c">!                                                                        </span>
+<a name="ln-866"></a><span class="mi">90007</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">20</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;END OF PROGRAM FM098&quot;</span> <span class="p">)</span>                          
+<a name="ln-867"></a>      <span class="k">end program </span><span class="n">fm098</span>
+</pre></div>
+
+    </section>
+    </div>
+  </div>
+
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2018 
+                                          </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+            
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> Refactored NIST-Fortran78 was developed by NIST (refactored by RefactorF4Acc)</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>

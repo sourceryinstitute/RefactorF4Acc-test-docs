@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="A Fortran 77 test suite">
+    
+    <meta name="author" content="NIST" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>FM110 &ndash; NIST-Fortran78</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">NIST-Fortran78 </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            
+    <li><a href="../lists/blockdata.html">Block Data Units</a></li>
+    
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+               
+        
+            <li><a href="../lists/programs.html">Programs</a></li>
+        
+            </ul>
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/blockdata.html">Block Data Units</a></li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/programs.html">Programs</a></li>
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>FM110
+    <small>Program</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.4% of total for programs.">291 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/FM110.f"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+     <li><a href='../sourcefile/fm110.f.html'>FM110.f</a></li>
+    
+  
+     <li class="active">FM110</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-a1s">A1S</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-a2s">A2S</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-a3s">A3S</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-ac1s">AC1S</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-ac2s">AC2S</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-mca3i">MCA3I</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-mvs">MVS</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-remrks%7E71">REMRKS</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zcompl%7E71">ZCOMPL</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zdate%7E71">ZDATE</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zname%7E71">ZNAME</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zprog%7E71">ZPROG</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zproj%7E71">ZPROJ</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-ztape%7E71">ZTAPE</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-ztaped%7E71">ZTAPED</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zvers%7E71">ZVERS</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zversd%7E71">ZVERSD</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    
+  
+
+    <p><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>00010110
+<strong><em>*  FORTRAN 77                                                      00020110
+</em></strong><em>   FM110               IOFMT - (350)                              00030110
+<strong><em>*                                                                  00040110
+</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*00050110
+</em></strong></em>  GENERAL PURPOSE                                      SUBSET REFS00060110
+<strong><em>*    TO TEST ADDITIONAL FEATURES OF READ AND WRITE          12.8   00070110
+</em></strong><em>    STATEMENTS, FORMATTED RECORDS AND FORMAT STATEMENTS    12.1.1 00080110
+<strong><em>*    FOR INTEGER AND REAL DATA TYPES                               00090110
+</em></strong></em>  RESTRICTIONS OBSERVED                                           00100110
+<strong><em>*  *  ALL FORMAT STATEMENTS ARE LABELED                     13.1.1 00110110
+</em></strong><em>  *  H AND X DESCRIPTORS ARE NEVER REPEATED                13.2.1 00120110
+<strong><em>*  *  FOR W.D DESCRIPTORS, D IS ALWAYS SPECIFIED AND               00130110
+</em></strong></em>     W IS EQUAL TO OR GREATER THAN D                              00140110
+<strong><em>*  *  FIELD WIDTH IS NEVER ZERO                                    00150110
+</em></strong><em>  *  IF AN I/O LIST SPECIFIES AT LEAST ONE ITEM            13.3   00160110
+<strong><em>*     AT LEAST ONE REPEATABLE EDIT DESCRIPTOR MUST EXIST           00170110
+</em></strong></em>     IN THE FORMAT SPECIFICATION                                  00180110
+<strong><em>*  *  ITEMS IN I/O LIST CORRESPOND TO EDIT DESCRIPTORS             00190110
+</em></strong><em>  *  NEGATIVE OUTPUT VALUES ARE SIGNED                     13.5.9 00200110
+<strong><em>*  *  AN H EDIT DESCRIPTOR IS NEVER USED ON INPUT           13.5.2 00210110
+</em></strong></em>  *  IN THE INPUT FIELD, FOR THE IW EDIT DESCRIPTOR      13.5.9.1 00220110
+<strong><em>*     THE CHARACTER STRING MUST BE AN OPTIONALLY SIGNED            00230110
+</em></strong><em>     INTEGER CONSTANT                                             00240110
+BB<strong> <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><em> BBCCOMNT <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>*00250110
+</strong></em>                                                                   00260110
+<strong><em>            1978 FORTRAN COMPILER VALIDATION SYSTEM                00270110
+</em></strong>                          VERSION 2.1                              00280110
+<strong><em>                                                                   00290110
+</em></strong>                                                                   00300110
+<strong><em>           SUGGESTIONS AND COMMENTS SHOULD BE FORWARDED TO         00310110
+</em></strong>          NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY           00320110
+<strong><em>               SOFTWARE STANDARDS VALIDATION GROUP                 00330110
+</em></strong>                      BUILDING 225  RM A266                        00340110
+<strong><em>                     GAITHERSBURG, MD  20899                       00350110
+</em></strong>                                                                   00360110
+<strong><em>                                                                   00370110
+</em></strong>                                                                   00380110
+BE</strong> <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong></em> BBCCOMNT <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>*00390110
+  INPUT DATA TO THIS SEGMENT CONSISTS OF 40 CARD IMAGES IN COL. 1 - 80 00400110
+    COLS.        22  25  31  34-35  40-43  55  67  69  74-76           00410110
+ARD  1            .   .   .     0.   E+00   +   +   .    E00           00420110
+    COLS.        16  31  33  42-45  50  59-60                          00430110
+ARD  2            +   +   .   D+00   .     D0                          00440110
+    COLS. 1-----------14  18-----26  28-------38                       00450110
+ARD 3     1.23456987654.  +1.234E-0  -98.7654E+0                       00460110
+    COLS         1---5                                                 00470110
+ARDS 4,5,6,7,8   12345                                                 00480110
+    COLS.        1-3                                                   00490110
+ARDS 9,10,11,12  1.1                                                   00500110
+    COLS. 1------------------------------------------------------58    00510110
+ARD 13    +0.339567E+02                                                00520110
+ARD 14      + .339567+2                                                00530110
+ARD 15     + 3.395670E1                                                00540110
+ARD 16     0.96295134244D+04                                           00550110
+ARD 17       .96295134244D04                                           00560110
+ARD 18       0.96295134244+4                                           00570110
+ARD 19       +.96295134244D4                                           00580110
+ARD 20    31.23+0.14E+04+0.2D+02                                       00590110
+ARD 21    31.23   .14D+4   +.2+2                                       00600110
+ARD 22    -0.13579E+054444                                             00610110
+ARD 23    4444                                                         00620110
+ARD 24    4444                                                         00630110
+ARD 25    4444                                                         00640110
+ARD 26    4444                                                         00650110
+ARD 27    -333 5.555+0.4545E-04                                        00660110
+ARD 28    -6.666  .9989E+12                                            00670110
+ARD 29    7.77-0.747E-02  +0.549E022                                   00680110
+ARD 30    +0.662E-00  0.468-1011                                       00690110
+ARD 31     0.59542D+04-44.6666-0.1234560000D-03                        00700110
+ARD 32     54.9327-0.1395624534D+00                                    00710110
+ARD 33    65432.1                                                      00720110
+ARD 34    +0.848E+03    .848E3 + .1290D7+0.129D+07  0.412D21           00730110
+ARD 35    22222222222222222222222222222222222222222222222222           00740110
+ARD 36       -.987E0-0.987E+00   -.987D0                               00750110
+ARD 37       5   5                                                     00760110
+ARD 38        987654   8647.86   987.654                               00770110
+ARD 39    1.2345E0  1.2345  1234.5                                     00780110
+ARD 40    12345.                                                       00790110
+ARD COLS. NOT MENTIONED ARE BLANK                                      00800110
+</strong><strong>                                                                  00810110
+<strong><em>*  S P E C I F I C A T I O N S  SEGMENT 350                        00820110
+</em></strong><em>                                                                  00830110
+<strong><em> THE FOLLOWING 9 COMMENT LINES (CZ01, CZ02, ...) CAN BE REPLACED   01060110
+</em></strong> FOR IDENTIFYING THE TEST ENVIRONMENT                              01070110
+<strong><em>                                                                   01080110
+Z01  ZVERS  = 'VERSION OF THE COMPILER VALIDATION SYSTEM'              01090110
+Z02  ZVERSD = 'CREATION DATE/TIME OF THE COMPILER VALIDATION SYSTEM'   01100110
+Z03  ZPROG  = 'PROGRAM NAME'                                           01110110
+Z04  ZDATE  = 'DATE OF TEST'                                           01120110
+Z05  ZCOMPL = 'COMPILER IDENTIFICATION'                                01130110
+Z06  ZPROJ  = 'PROJECT NUMBER/IDENTIFICATION'                          01140110
+Z07  ZNAME  = 'NAME OF USER'                                           01150110
+Z08  ZTAPE  = 'TAPE OWNER/ID'                                          01160110
+Z09  ZTAPED = 'DATE TAPE COPIED'                                       01170110
+                                                                       01180110
+</em></strong>                                                                   01480110
+<strong><em> WRITE REPORT TITLE                                                01490110
+</em></strong>                                                                   01500110
+<strong><em>*    ALL VARIABLES AND ARRAY ELEMENTS USED IN THIS SEGMENT         01580110
+</em></strong></em>    ARE FIRST SET TO A NON-ZERO VALUE                             01590110
+<strong><em>*                                                                  01600110
+</em></strong><em>    HEADER FOR SEGMENT 350 WRITTEN                                01610110
+<strong><em>*                                                                  01650110
+BB</em>* </strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>* BBCHED0B </strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*01660110
+</em></strong> WRITE DETAIL REPORT HEADERS                                       01670110
+<strong><em>                                                                   01680110
+</em></strong>                                                                   01910110
+                                                                       01920110
+T001</em>  TEST 1                                                          01930110
+<strong><em>*</em>                                                                 01950110
+</strong></strong>     TEST THAT BLANK INPUT FIELDS ARE TREATED AS ZERO      13.5.9 01960110
+<strong><em>*     I, E, and F EDIT DESCRIPTORS ARE TESTED                      01970110
+</em></strong><em>     CARDS 1 AND 2                                                01980110
+<strong><em>*                                                                  01990110
+</em></strong>      TO DELETE TEST INSERT THE FOLLOWING CODE:                    02040110
+<strong><em>      IVDELE=IVDELE+1                                              02050110
+</em></strong>      WRITE (NUVI,80000) IVTNUM                                    02060110
+<strong><em>      COMMENT OUT FOLLOWING CODE UNTIL NEXT TEST                   02070110
+</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong></em>                                             02120110
+<strong><em>*                                                                  02240110
+T002</em>  TEST 2                                                          02250110
+</strong><strong>     TEST THAT DECIMAL POINTS APPEARING IN INPUT FIELDS 13.5.9.2.102270110
+<strong><em>*     OVERRIDE THE SPECIFICATIONS SUPPLIED BY E AND F              02280110
+</em></strong>*     EDIT  DESCRIPTORS                                            02290110
+<strong><em>*  CARD 3                                                          02350110
+</em></strong>      SEE TEST 1 TO DELETE TEST (ENTER CODE HERE)                  02470110
+<strong><em>*                                                                  02530110
+T003</em>  TEST 3                                                          02540110
+</strong></strong>     TEST COMPLETE FORMAT RESCAN                          13.3    02560110
+<strong><em>*     WHEN ADDITIONAL ITEMS REMAIN IN AN I/O LIST                  02570110
+</em></strong><em>     AND THE LAST RIGHT PARENTHESIS HAS BEEN REACHED              02580110
+<strong><em>*     IN THE CORRESPONDING FORMAT STATEMENT                        02590110
+</em></strong></em>  CARDS 4, 5, 6, 7, 8                                             02680110
+<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><em>                                                02700110
+<strong><em>      TO DELETE TEST 3 - CARDS 4 THRU 21 MUST BE BYPASS            02710110
+</em></strong>      USE THE FOLLOWING CODE:                                      02720110
+<strong><em>      IVDELE=IVDELE+1                                              02730110
+</em></strong>      WRITE (NUVI,80000) IVTNUM                                    02740110
+<strong><em>      DO 0031 IPASS=1,18                                           02750110
+0032      FORMAT (A80)                                                 02760110
+</em></strong>      READ (IRVI,0032) IDATA                                       02770110
+0031      CONTINUE                                                     02780110
+<strong><em>      COMMENT OUT REMAINING CODE UNTIL NEXT TEST                   02790110
+</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>                                              02800110
+<strong><em>*  CARDS 9, 10, 11, 12                                             02920110
+</em></strong></em>  CARDS 13, 14, 15                                                03010110
+<strong><em>*  CARDS 16, 17, 18, 19 WITH D EXPONENTS                           03110110
+</em></strong><em>  CARDS 20, 21                                                    03210110
+<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>                                     03350110
+T004*  TEST 4                                                          03360110
+</strong><strong>                                                                  03380110
+<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>                                   03390110
+<strong><em>*   TEST THAT FORMAT CONTROL PASSES TO THE GROUP                   03400110
+</em></strong><em>   ENCLOSED BY THE LAST PRECEDING RIGHT PARENTHESIS               03410110
+<strong><em>*   WHEN THE I/O LIST CONTAINS MORE ELEMENTS THAN                  03420110
+</em></strong></em>   THE NUMBER OF DESCRIPTORS IN THE FORMAT STATEMENT              03430110
+<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>                                03440110
+</em></strong><em> CARDS 22, 23, 24, 25, 26                                         03690110
+<strong><em>*     SEE NOTES TEST1 &amp; TEST 3 TO BYPASS TEST                      03710110
+</em></strong></em>     CARDS 22 THRU 26 MUST BE BYPASSED                            03720110
+<strong><em>*                                                                  03870110
+</em></strong><em>     CARDS 27, 28                                                 03890110
+<strong><em>*     SEE NOTES TEST 1 &amp; TEST 3 TO DELETE TEST                     03900110
+</em></strong></em>     CARDS 27,28 SHOULD BE BYPASSED                               03910110
+<strong><em>*     CARDS 29, 30                                                 04110110
+</em></strong><em>     SEE NOTES TEST 1 &amp; 3 TO DELETE TEST                          04130110
+<strong><em>*     CARDS 29 &amp; 30 MUST BE BYPASSED                               04140110
+</em></strong></em>     CARDS 31, 32                                                 04430110
+<strong><em>*     SEE NOTES TEST 1 &amp; TEST 3 TO DELETE TEST                     04440110
+</em></strong>*     CARDS 31,&amp; 32 SHOULD BE BYPASSED                             04450110
+<strong><em>                                                                   04720110
+T008</em>  TEST 8                                                          04730110
+</strong></strong>     CARDS 33, 34, 35, 36                                         04750110
+<strong><em>*     SEE NOTES TEST 1 &amp; TEST 3 TO DELETE TEST                     04760110
+</em></strong></em>     CARDS 33 THRU 36 SHOULD BE BYPASSED                          04770110
+<strong><em>*     THIS READ CAUSES AN INPUT DATA CARD TO BE SKIPPED            04820110
+</em></strong><em>     TEST FOR EMPTY FORMAT STATEMENT                              05010110
+<strong><em>*     SEE NOTES TEST 1 TO DELETE TEST                              05020110
+</em></strong></em>  POSITION INPUT TO INSURE CORRECT RECORD FOR NEXT TESTS          05120110
+<strong><em>*     CARD 37                                                      05140110
+</em></strong><em>                                                                  05200110
+<strong><em>*     ADDITIONAL  SCALE FACTOR ON INPUT-OUTPUT            13.5.7   05210110
+</em></strong></em>     CARD 38                                                      05220110
+<strong><em>      SEE NOTES TEST 1 TO DELETE TEST (INSERT CODE HERE)           05270110
+</em></strong><em>     CARDS 39 &amp; 40                                                05360110
+<strong><em>*     SCALE FACTOR HAS NO EFFECT ON FORMAT RESCAN OR F EDIT        05370110
+</em></strong></em>     DESCRIPTOR WITH INPUT DATA CONTAINING AN EXPONENT            05380110
+<strong><em>      SEE NOTES TEST 1 TO DELETE TEST                              05430110
+</em></strong> WRITE OUT TEST SUMMARY                                            05560110
+<strong><em>                                                                   05570110
+</em></strong> WRITE OUT REPORT FOOTINGS                                         05690110
+<strong><em>                                                                   05700110
+</em></strong> FORMATS FOR TEST DETAIL LINES                                     05760110
+<strong><em>                                                                   05770110
+</em></strong> FORMATS FOR TEST DETAIL LINES - FULL LANGUAGE                     05970110
+<strong><em>                                                                   05980110
+</em></strong> FORMAT STATEMENTS FOR PAGE HEADERS                                06120110
+<strong><em>                                                                   06130110
+</em></strong>                                                                   06260110
+<strong><em> FORMAT STATEMENTS FOR REPORT FOOTINGS                             06270110
+</em></strong>                                                                   06280110
+<strong><em>                                                                   06330110
+</em></strong> FORMAT STATEMENTS FOR RUN SUMMARY                                 06340110
+<strong><em>                                                                   06350110
+</em></strong>*    END OF TEST SEGMENT 350                                       06420110</p>
+    
+    <br>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Calls</h3>
+      </div>
+      <div class="panel-body">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: program~~fm110~~CallsGraph Pages: 1 -->
+<svg id="programfm110CallsGraph" width="152pt" height="242pt"
+ viewBox="0.00 0.00 152.00 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="program~~fm110~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>program~~fm110~~CallsGraph</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-238 148,-238 148,4 -4,4"/>
+<!-- program~fm110 -->
+<g id="program~~fm110~~CallsGraph_node1" class="node">
+<title>program~fm110</title>
+<polygon fill="none" stroke="#000000" points="54,-129 0,-129 0,-105 54,-105 54,-129"/>
+<text text-anchor="middle" x="27" y="-114.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#000000">FM110</text>
+</g>
+<!-- iac2i -->
+<g id="program~~fm110~~CallsGraph_node2" class="node">
+<title>iac2i</title>
+<polygon fill="#777777" stroke="#777777" points="144,-234 90,-234 90,-210 144,-210 144,-234"/>
+<text text-anchor="middle" x="117" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">iac2i</text>
+</g>
+<!-- program~fm110&#45;&gt;iac2i -->
+<g id="program~~fm110~~CallsGraph_edge1" class="edge">
+<title>program~fm110&#45;&gt;iac2i</title>
+<path fill="none" stroke="#000000" d="M34.648,-129.1965C45.6836,-146.2857 67.258,-177.8555 90,-201 90.6555,-201.6671 91.3326,-202.3317 92.0261,-202.9914"/>
+<polygon fill="#000000" stroke="#000000" points="90.0019,-205.8688 99.8502,-209.7755 94.5877,-200.58 90.0019,-205.8688"/>
+</g>
+<!-- iac1i -->
+<g id="program~~fm110~~CallsGraph_node3" class="node">
+<title>iac1i</title>
+<polygon fill="#777777" stroke="#777777" points="144,-192 90,-192 90,-168 144,-168 144,-192"/>
+<text text-anchor="middle" x="117" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">iac1i</text>
+</g>
+<!-- program~fm110&#45;&gt;iac1i -->
+<g id="program~~fm110~~CallsGraph_edge2" class="edge">
+<title>program~fm110&#45;&gt;iac1i</title>
+<path fill="none" stroke="#000000" d="M44.3529,-129.147C57.6752,-138.4726 76.2758,-151.4931 91.3202,-162.0241"/>
+<polygon fill="#000000" stroke="#000000" points="89.5009,-165.0229 99.7004,-167.8903 93.5152,-159.2883 89.5009,-165.0229"/>
+</g>
+<!-- 3 -->
+<g id="program~~fm110~~CallsGraph_node4" class="node">
+<title>3</title>
+<polygon fill="#777777" stroke="#777777" points="144,-150 90,-150 90,-126 144,-126 144,-150"/>
+<text text-anchor="middle" x="117" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">3</text>
+</g>
+<!-- program~fm110&#45;&gt;3 -->
+<g id="program~~fm110~~CallsGraph_edge3" class="edge">
+<title>program~fm110&#45;&gt;3</title>
+<path fill="none" stroke="#000000" d="M54.003,-123.3007C62.1158,-125.1937 71.1631,-127.3047 79.8131,-129.323"/>
+<polygon fill="#000000" stroke="#000000" points="79.1713,-132.7672 89.705,-131.6312 80.7619,-125.9504 79.1713,-132.7672"/>
+</g>
+<!-- 2 -->
+<g id="program~~fm110~~CallsGraph_node5" class="node">
+<title>2</title>
+<polygon fill="#777777" stroke="#777777" points="144,-108 90,-108 90,-84 144,-84 144,-108"/>
+<text text-anchor="middle" x="117" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">2</text>
+</g>
+<!-- program~fm110&#45;&gt;2 -->
+<g id="program~~fm110~~CallsGraph_edge4" class="edge">
+<title>program~fm110&#45;&gt;2</title>
+<path fill="none" stroke="#000000" d="M54.003,-110.6993C62.1158,-108.8063 71.1631,-106.6953 79.8131,-104.677"/>
+<polygon fill="#000000" stroke="#000000" points="80.7619,-108.0496 89.705,-102.3688 79.1713,-101.2328 80.7619,-108.0496"/>
+</g>
+<!-- 4 -->
+<g id="program~~fm110~~CallsGraph_node6" class="node">
+<title>4</title>
+<polygon fill="#777777" stroke="#777777" points="144,-66 90,-66 90,-42 144,-42 144,-66"/>
+<text text-anchor="middle" x="117" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">4</text>
+</g>
+<!-- program~fm110&#45;&gt;4 -->
+<g id="program~~fm110~~CallsGraph_edge5" class="edge">
+<title>program~fm110&#45;&gt;4</title>
+<path fill="none" stroke="#000000" d="M44.3529,-104.853C57.6752,-95.5274 76.2758,-82.5069 91.3202,-71.9759"/>
+<polygon fill="#000000" stroke="#000000" points="93.5152,-74.7117 99.7004,-66.1097 89.5009,-68.9771 93.5152,-74.7117"/>
+</g>
+<!-- ep1s -->
+<g id="program~~fm110~~CallsGraph_node7" class="node">
+<title>ep1s</title>
+<polygon fill="#777777" stroke="#777777" points="144,-24 90,-24 90,0 144,0 144,-24"/>
+<text text-anchor="middle" x="117" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">ep1s</text>
+</g>
+<!-- program~fm110&#45;&gt;ep1s -->
+<g id="program~~fm110~~CallsGraph_edge6" class="edge">
+<title>program~fm110&#45;&gt;ep1s</title>
+<path fill="none" stroke="#000000" d="M34.648,-104.8035C45.6836,-87.7143 67.258,-56.1445 90,-33 90.6555,-32.3329 91.3326,-31.6683 92.0261,-31.0086"/>
+<polygon fill="#000000" stroke="#000000" points="94.5877,-33.42 99.8502,-24.2245 90.0019,-28.1312 94.5877,-33.42"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="560pt" height="32pt"
+ viewBox="0.00 0.00 559.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-28 555.5,-28 555.5,4 -4,4"/>
+<!-- Subroutine -->
+<g id="node1" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="64,-24 0,-24 0,0 64,0 64,-24"/>
+<text text-anchor="middle" x="32" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node2" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="136,-24 82,-24 82,0 136,0 136,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Function</text>
+</g>
+<!-- Interface -->
+<g id="node3" class="node">
+<title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="209.5,-24 154.5,-24 154.5,0 209.5,0 209.5,-24"/>
+<text text-anchor="middle" x="182" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node4" class="node">
+<title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="364,-24 228,-24 228,0 364,0 364,-24"/>
+<text text-anchor="middle" x="296" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="436,-24 382,-24 382,0 436,0 436,-24"/>
+<text text-anchor="middle" x="409" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="#000000" points="551.5,-24 454.5,-24 454.5,0 551.5,0 551.5,-24"/>
+<text text-anchor="middle" x="503" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#000000">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a procedure to one which it calls. Dashed 
+    arrows point from an interface to procedures which implement that interface.
+    This could include the module procedures in a generic interface or the
+    implementation in a submodule of an interface in a parent module.
+    </p>
+    </div></div></div></div>
+      </div>
+    </div>
+     
+    <br>
+
+     <section class="visible-xs visible-sm hidden-md">
+       
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-a1s">A1S</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-a2s">A2S</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-a3s">A3S</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-ac1s">AC1S</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-ac2s">AC2S</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-mca3i">MCA3I</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-mvs">MVS</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-remrks%7E71">REMRKS</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zcompl%7E71">ZCOMPL</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zdate%7E71">ZDATE</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zname%7E71">ZNAME</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zprog%7E71">ZPROG</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zproj%7E71">ZPROJ</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-ztape%7E71">ZTAPE</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-ztaped%7E71">ZTAPED</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zvers%7E71">ZVERS</a>
+      
+      <a class="list-group-item" href="../program/fm110.html#variable-zversd%7E71">ZVERSD</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </section>
+     <br class="visible-xs visible-sm hidden-md">
+
+     
+
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-a1s"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>A1S</strong>(5)</td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-a2s"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>A2S</strong>(2,2)</td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-a3s"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>A3S</strong>(3,3,3)</td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ac1s"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>AC1S</strong>(25)</td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ac2s"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>AC2S</strong>(5,6)</td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-mca3i"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>MCA3I</strong>(2,3,3)</td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-mvs"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>MVS</strong></td><td></td><td></td><td><p><strong><em>* IDATA USED BY TEST 3 TO BYPASS CARDS 4-21 TO DELETE TEST         00890110
+</em></strong><em>                                                                  00900110
+BB<strong> <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><em> BBCINITA <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>*00910110
+</strong></em> SPECIFICATION STATEMENTS                                          00920110
+</strong></em>                                                                   00930110</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-remrks%7E71"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>REMRKS</strong>*31</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00980110</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zcompl%7E71"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZCOMPL</strong>*20</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00980110</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zdate%7E71"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZDATE</strong>*17</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00980110</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zname%7E71"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZNAME</strong>*20</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00980110</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zprog%7E71"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZPROG</strong>*5</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00980110</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zproj%7E71"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZPROJ</strong>*13</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00980110</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ztape%7E71"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZTAPE</strong>*10</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00980110</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ztaped%7E71"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZTAPED</strong>*13</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00980110</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zvers%7E71"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZVERS</strong>*13</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00980110</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zversd%7E71"></span>character</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ZVERSD</strong>*17</td><td></td><td></td><td><p>*** INITIALIZE SECTION                                                00980110</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    
+    
+    
+    
+    </div>
+  </div>
+
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2018 
+                                          </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+            
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> NIST-Fortran78 was developed by NIST</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>

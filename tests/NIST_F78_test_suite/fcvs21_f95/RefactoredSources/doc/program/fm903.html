@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="A Fortran 77 test suite refactored by RefactorF4Acc">
+    
+    <meta name="author" content="NIST (refactored by RefactorF4Acc)" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>fm903 &ndash; Refactored NIST-Fortran78</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Refactored NIST-Fortran78 </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+               
+        
+            <li><a href="../lists/programs.html">Programs</a></li>
+        
+            </ul>
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/programs.html">Programs</a></li>
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>fm903
+    <small>Program</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.4% of total for programs.">298 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/FM903.f95"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+     <li><a href='../sourcefile/fm903.f95.html'>FM903.f95</a></li>
+    
+  
+     <li class="active">fm903</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a11vk">a11vk</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a19vk">a19vk</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a1d%7E2">a1d</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a2c">a2c</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a32vk">a32vk</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a52vk">a52vk</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a65vk">a65vk</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a85vk">a85vk</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-avc%7E6">avc</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-avd%7E8">avd</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-avs%7E8">avs</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-b4d">b4d</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-bvc%7E4">bvc</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-c151k">c151k</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-c251k">c251k</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-cvc%7E4">cvc</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-i01%7E24">i01</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-i02%7E24">i02</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ia1i">ia1i</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-iczero%7E24">iczero</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-irvi%7E3">irvi</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivdele%7E24">ivdele</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivfail%7E24">ivfail</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivi%7E5">ivi</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivinsp%7E16">ivinsp</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivpass%7E24">ivpass</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivtnum%7E24">ivtnum</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivtotl%7E16">ivtotl</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivtotn%7E16">ivtotn</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-j1i">j1i</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-jvi%7E5">jvi</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-nuvi%7E15">nuvi</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-remrks%7E16">remrks</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zcompl%7E16">zcompl</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zdate%7E16">zdate</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zname%7E16">zname</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zprog%7E16">zprog</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zproj%7E16">zproj</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ztape%7E16">ztape</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ztaped%7E16">ztaped</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zvers%7E16">zvers</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zversd%7E16">zversd</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../program/fm903.html#src">fm903</a>
+  </div>
+</div>
+
+
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    
+  
+
+    
+    
+    <br>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Calls</h3>
+      </div>
+      <div class="panel-body">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: program~~fm903~~CallsGraph Pages: 1 -->
+<svg id="programfm903CallsGraph" width="152pt" height="158pt"
+ viewBox="0.00 0.00 152.00 158.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="program~~fm903~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 154)">
+<title>program~~fm903~~CallsGraph</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-154 148,-154 148,4 -4,4"/>
+<!-- program~fm903 -->
+<g id="program~~fm903~~CallsGraph_node1" class="node">
+<title>program~fm903</title>
+<polygon fill="none" stroke="#000000" points="54,-87 0,-87 0,-63 54,-63 54,-87"/>
+<text text-anchor="middle" x="27" y="-72.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#000000">fm903</text>
+</g>
+<!-- proc~sn904 -->
+<g id="program~~fm903~~CallsGraph_node2" class="node">
+<title>proc~sn904</title>
+<g id="a_program~~fm903~~CallsGraph_node2"><a xlink:href=".././proc/sn904.html" xlink:title="sn904">
+<polygon fill="#d9534f" stroke="#d9534f" points="144,-150 90,-150 90,-126 144,-126 144,-150"/>
+<text text-anchor="middle" x="117" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">sn904</text>
+</a>
+</g>
+</g>
+<!-- program~fm903&#45;&gt;proc~sn904 -->
+<g id="program~~fm903~~CallsGraph_edge1" class="edge">
+<title>program~fm903&#45;&gt;proc~sn904</title>
+<path fill="none" stroke="#000000" d="M44.3529,-87.147C57.6752,-96.4726 76.2758,-109.4931 91.3202,-120.0241"/>
+<polygon fill="#000000" stroke="#000000" points="89.5009,-123.0229 99.7004,-125.8903 93.5152,-117.2883 89.5009,-123.0229"/>
+</g>
+<!-- 8 -->
+<g id="program~~fm903~~CallsGraph_node3" class="node">
+<title>8</title>
+<polygon fill="#777777" stroke="#777777" points="144,-108 90,-108 90,-84 144,-84 144,-108"/>
+<text text-anchor="middle" x="117" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">8</text>
+</g>
+<!-- program~fm903&#45;&gt;8 -->
+<g id="program~~fm903~~CallsGraph_edge2" class="edge">
+<title>program~fm903&#45;&gt;8</title>
+<path fill="none" stroke="#000000" d="M54.003,-81.3007C62.1158,-83.1937 71.1631,-85.3047 79.8131,-87.323"/>
+<polygon fill="#000000" stroke="#000000" points="79.1713,-90.7672 89.705,-89.6312 80.7619,-83.9504 79.1713,-90.7672"/>
+</g>
+<!-- 2 -->
+<g id="program~~fm903~~CallsGraph_node4" class="node">
+<title>2</title>
+<polygon fill="#777777" stroke="#777777" points="144,-66 90,-66 90,-42 144,-42 144,-66"/>
+<text text-anchor="middle" x="117" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">2</text>
+</g>
+<!-- program~fm903&#45;&gt;2 -->
+<g id="program~~fm903~~CallsGraph_edge3" class="edge">
+<title>program~fm903&#45;&gt;2</title>
+<path fill="none" stroke="#000000" d="M54.003,-68.6993C62.1158,-66.8063 71.1631,-64.6953 79.8131,-62.677"/>
+<polygon fill="#000000" stroke="#000000" points="80.7619,-66.0496 89.705,-60.3688 79.1713,-59.2328 80.7619,-66.0496"/>
+</g>
+<!-- 4 -->
+<g id="program~~fm903~~CallsGraph_node5" class="node">
+<title>4</title>
+<polygon fill="#777777" stroke="#777777" points="144,-24 90,-24 90,0 144,0 144,-24"/>
+<text text-anchor="middle" x="117" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">4</text>
+</g>
+<!-- program~fm903&#45;&gt;4 -->
+<g id="program~~fm903~~CallsGraph_edge4" class="edge">
+<title>program~fm903&#45;&gt;4</title>
+<path fill="none" stroke="#000000" d="M44.3529,-62.853C57.6752,-53.5274 76.2758,-40.5069 91.3202,-29.9759"/>
+<polygon fill="#000000" stroke="#000000" points="93.5152,-32.7117 99.7004,-24.1097 89.5009,-26.9771 93.5152,-32.7117"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="560pt" height="32pt"
+ viewBox="0.00 0.00 559.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-28 555.5,-28 555.5,4 -4,4"/>
+<!-- Subroutine -->
+<g id="node1" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="64,-24 0,-24 0,0 64,0 64,-24"/>
+<text text-anchor="middle" x="32" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node2" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="136,-24 82,-24 82,0 136,0 136,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Function</text>
+</g>
+<!-- Interface -->
+<g id="node3" class="node">
+<title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="209.5,-24 154.5,-24 154.5,0 209.5,0 209.5,-24"/>
+<text text-anchor="middle" x="182" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node4" class="node">
+<title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="364,-24 228,-24 228,0 364,0 364,-24"/>
+<text text-anchor="middle" x="296" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="436,-24 382,-24 382,0 436,0 436,-24"/>
+<text text-anchor="middle" x="409" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#ffffff">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="#000000" points="551.5,-24 454.5,-24 454.5,0 551.5,0 551.5,-24"/>
+<text text-anchor="middle" x="503" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="#000000">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a procedure to one which it calls. Dashed 
+    arrows point from an interface to procedures which implement that interface.
+    This could include the module procedures in a generic interface or the
+    implementation in a submodule of an interface in a parent module.
+    </p>
+    </div></div></div></div>
+      </div>
+    </div>
+     
+    <br>
+
+     <section class="visible-xs visible-sm hidden-md">
+       
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a11vk">a11vk</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a19vk">a19vk</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a1d%7E2">a1d</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a2c">a2c</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a32vk">a32vk</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a52vk">a52vk</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a65vk">a65vk</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-a85vk">a85vk</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-avc%7E6">avc</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-avd%7E8">avd</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-avs%7E8">avs</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-b4d">b4d</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-bvc%7E4">bvc</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-c151k">c151k</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-c251k">c251k</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-cvc%7E4">cvc</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-i01%7E24">i01</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-i02%7E24">i02</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ia1i">ia1i</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-iczero%7E24">iczero</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-irvi%7E3">irvi</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivdele%7E24">ivdele</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivfail%7E24">ivfail</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivi%7E5">ivi</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivinsp%7E16">ivinsp</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivpass%7E24">ivpass</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivtnum%7E24">ivtnum</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivtotl%7E16">ivtotl</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ivtotn%7E16">ivtotn</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-j1i">j1i</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-jvi%7E5">jvi</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-nuvi%7E15">nuvi</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-remrks%7E16">remrks</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zcompl%7E16">zcompl</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zdate%7E16">zdate</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zname%7E16">zname</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zprog%7E16">zprog</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zproj%7E16">zproj</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ztape%7E16">ztape</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-ztaped%7E16">ztaped</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zvers%7E16">zvers</a>
+      
+      <a class="list-group-item" href="../program/fm903.html#variable-zversd%7E16">zversd</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../program/fm903.html#src">fm903</a>
+  </div>
+</div>
+
+
+
+     </section>
+     <br class="visible-xs visible-sm hidden-md">
+
+     
+
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-a11vk"></span>character(len=11)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>a11vk</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-a19vk"></span>character(len=19)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>a19vk</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-a1d%7E2"></span>double precision,</td>
+  
+  
+  <td>dimension(1:4)</td><td>::</td>
+  <td><strong>a1d</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-a2c"></span>complex,</td>
+  
+  
+  <td>dimension(1:2,1:2)</td><td>::</td>
+  <td><strong>a2c</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-a32vk"></span>character(len=32)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>a32vk</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-a52vk"></span>character(len=52)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>a52vk</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-a65vk"></span>character(len=65)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>a65vk</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-a85vk"></span>character(len=85)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>a85vk</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-avc%7E6"></span>complex</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>avc</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-avd%7E8"></span>double precision</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>avd</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-avs%7E8"></span>real</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>avs</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-b4d"></span>double precision,</td>
+  
+  
+  <td>dimension(1:2,1:1,1:2,1:2)</td><td>::</td>
+  <td><strong>b4d</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-bvc%7E4"></span>complex</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>bvc</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-c151k"></span>character(len=15),</td>
+  
+  
+  <td>dimension(1:7)</td><td>::</td>
+  <td><strong>c151k</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-c251k"></span>character(len=25),</td>
+  
+  
+  <td>dimension(1:6)</td><td>::</td>
+  <td><strong>c251k</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-cvc%7E4"></span>complex</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>cvc</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i01%7E24"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>i01</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i02%7E24"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>i02</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ia1i"></span>integer,</td>
+  
+  
+  <td>dimension(1:8)</td><td>::</td>
+  <td><strong>ia1i</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iczero%7E24"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>iczero</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-irvi%7E3"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>irvi</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivdele%7E24"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivdele</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivfail%7E24"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivfail</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivi%7E5"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivi</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivinsp%7E16"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivinsp</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivpass%7E24"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivpass</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivtnum%7E24"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivtnum</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivtotl%7E16"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivtotl</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ivtotn%7E16"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ivtotn</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-j1i"></span>integer,</td>
+  
+  
+  <td>dimension(1:6)</td><td>::</td>
+  <td><strong>j1i</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-jvi%7E5"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>jvi</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-nuvi%7E15"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>nuvi</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-remrks%7E16"></span>character(len=31)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>remrks</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zcompl%7E16"></span>character(len=20)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zcompl</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zdate%7E16"></span>character(len=17)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zdate</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zname%7E16"></span>character(len=20)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zname</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zprog%7E16"></span>character(len=5)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zprog</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zproj%7E16"></span>character(len=13)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zproj</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ztape%7E16"></span>character(len=10)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ztape</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ztaped%7E16"></span>character(len=13)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ztaped</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zvers%7E16"></span>character(len=13)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zvers</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-zversd%7E16"></span>character(len=17)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>zversd</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    
+    
+    
+    <section>
+    <h2 id="src">Source Code</h2>
+    <div class="highlight"><pre><span></span>      <span class="k">program </span><span class="n">fm903</span>
+<span class="c">! ***********************************************************************</span>
+<span class="c">! *****  FORTRAN 77                                                      </span>
+<span class="c">! *****   FM903               IOFMTF - (354)                             </span>
+<span class="c">! *****   THIS PROGRAM CALLS SUBROUTINE SN904                            </span>
+<span class="c">! ***********************************************************************</span>
+<span class="c">! *****  GENERAL PURPOSE                                        ANS REFS </span>
+<span class="c">! *****    TO TEST ADDITIONAL FEATURES OF READ AND WRITE        12.8     </span>
+<span class="c">! *****    STATEMENTS, FORMATTED RECORDS AND FORMAT STATEMENTS  12.1.1   </span>
+<span class="c">! *****    DOUBLE PRECISION AND COMPLEX DATA TYPES.                      </span>
+<span class="c">! *****    TO TEST ALL FORMS OF CHARACTER EXPRESSIONS AS        13.1.2   </span>
+<span class="c">! *****    FORMAT SPECIFIERS.                                            </span>
+<span class="c">! *****  RESTRICTIONS OBSERVED                                           </span>
+<span class="c">! *****  *  H AND X DESCRIPTORS ARE NEVER REPEATED              13.2.1   </span>
+<span class="c">! *****  *  FOR W.D DESCRIPTORS, D IS ALWAYS SPECIFIED AND               </span>
+<span class="c">! *****     W IS EQUAL TO OR GREATER THAN D                              </span>
+<span class="c">! *****  *  FIELD WIDTH IS NEVER ZERO                                    </span>
+<span class="c">! *****  *  IF AN I/O LIST SPECIFIES AT LEAST ONE ITEM          13.3     </span>
+<span class="c">! *****     AT LEAST ONE REPEATABLE EDIT DESCRIPTOR MUST EXIST           </span>
+<span class="c">! *****     IN THE FORMAT SPECIFICATION                                  </span>
+<span class="c">! *****  *  ITEMS IN I/O LIST CORRESPOND TO EDIT DESCRIPTORS             </span>
+<span class="c">! *****  *  NEGATIVE OUTPUT VALUES ARE SIGNED                   13.5.9   </span>
+<span class="c">! *****  *  AN H EDIT DESCRIPTOR IS NEVER USED ON INPUT         13.5.2   </span>
+<span class="c">! *****  *  IN THE INPUT FIELD, FOR THE IW EDIT DESCRIPTOR      13.5.9.1 </span>
+<span class="c">! *****     THE CHARACTER STRING MUST BE AN OPTIONALLY SIGNED            </span>
+<span class="c">! *****     INTEGER CONSTANT                                             </span>
+<span class="c">! *****  GENERAL COMMENTS                                                </span>
+<span class="c">! *****     PLUS SIGNS FOR INPUT FIELDS ARE USUALLY OMITTED     13.5.9   </span>
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****     CALL SUBROUTINE SN904 (SEGMENT 790)                          </span>
+<span class="c">! *****                                                                  </span>
+<span class="c">! BB** ********************** BBCCOMNT **********************************</span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! ****            1978 FORTRAN COMPILER VALIDATION SYSTEM                </span>
+<span class="c">! ****                          VERSION 2.1                              </span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! ****           SUGGESTIONS AND COMMENTS SHOULD BE FORWARDED TO         </span>
+<span class="c">! ****          NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY           </span>
+<span class="c">! ****               SOFTWARE STANDARDS VALIDATION GROUP                 </span>
+<span class="c">! ****                      BUILDING 225  RM A266                        </span>
+<span class="c">! ****                     GAITHERSBURG, MD  20899                       </span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! BE** ********************** BBCCOMNT **********************************</span>
+<span class="c">! *****                                                                  </span>
+<span class="c">!   INPUT DATA TO THIS SEGMENT CONSISTS OF 14 CARD IMAGES IN COL. 1 - 56 </span>
+<span class="c">! OL.      1-----------------------------------------------------56      </span>
+<span class="c">! ARD  1   333144446666225555                                            </span>
+<span class="c">! ARD  2   1234567890                                                    </span>
+<span class="c">! ARD  3   1234567890                                                    </span>
+<span class="c">! ARD  4   1234567890                                                    </span>
+<span class="c">! ARD  5   1234567890                                                    </span>
+<span class="c">! ARD  6    12345                                                        </span>
+<span class="c">! ARD  7    12345123.5123.45D-01 12345D+01                               </span>
+<span class="c">! ARD  8   12 345 678                                                    </span>
+<span class="c">! ARD  9       5-1111 3333-5555 7777-9999                                </span>
+<span class="c">! ARD 10   12345678901234567890123456781234567890123456789012345678      </span>
+<span class="c">! ARD 11   12345678901234123456789012341234567890123412345678901234      </span>
+<span class="c">! ARD 12   12345678901234123456789012341234567890123456789012345678      </span>
+<span class="c">! ARD 13   12345678901234567890123456781234567890123456789012345678      </span>
+<span class="c">! ARD 14   12345678901234123456789012341234567890123412345678901234      </span>
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****  S P E C I F I C A T I O N S  SEGMENT 354                        </span>
+<span class="c">! *****                                                                  </span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivpass</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivfail</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivdele</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivinsp</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivtotl</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivtotn</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">iczero</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i01</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i02</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">irvi</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">nuvi</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivtnum</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">ivi</span>
+      <span class="kt">integer</span> <span class="kd">::</span> <span class="n">jvi</span>
+      <span class="kt">real</span> <span class="kd">::</span> <span class="n">avs</span>
+        <span class="kt">integer</span><span class="p">,</span> <span class="k">dimension</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">6</span><span class="p">)</span> <span class="kd">::</span> <span class="n">j1i</span>
+        <span class="kt">integer</span><span class="p">,</span> <span class="k">dimension</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">8</span><span class="p">)</span> <span class="kd">::</span> <span class="n">ia1i</span>
+        <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span> <span class="kd">::</span> <span class="n">a11vk</span>
+        <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">15</span><span class="p">),</span> <span class="k">dimension</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">7</span><span class="p">)</span> <span class="kd">::</span> <span class="n">c151k</span>
+        <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">19</span><span class="p">)</span> <span class="kd">::</span> <span class="n">a19vk</span>
+        <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">25</span><span class="p">),</span> <span class="k">dimension</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">6</span><span class="p">)</span> <span class="kd">::</span> <span class="n">c251k</span>
+        <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span> <span class="kd">::</span> <span class="n">a32vk</span>
+        <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">52</span><span class="p">)</span> <span class="kd">::</span> <span class="n">a52vk</span>
+        <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">65</span><span class="p">)</span> <span class="kd">::</span> <span class="n">a65vk</span>
+        <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">85</span><span class="p">)</span> <span class="kd">::</span> <span class="n">a85vk</span>
+        <span class="kt">double precision</span> <span class="kd">::</span> <span class="n">avd</span>
+        <span class="kt">double precision</span><span class="p">,</span> <span class="k">dimension</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">)</span> <span class="kd">::</span> <span class="n">a1d</span>
+        <span class="kt">double precision</span><span class="p">,</span> <span class="k">dimension</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">)</span> <span class="kd">::</span> <span class="n">b4d</span>
+        <span class="kt">complex</span> <span class="kd">::</span> <span class="n">avc</span>
+        <span class="kt">complex</span> <span class="kd">::</span> <span class="n">bvc</span>
+        <span class="kt">complex</span> <span class="kd">::</span> <span class="n">cvc</span>
+        <span class="kt">complex</span><span class="p">,</span> <span class="k">dimension</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">)</span> <span class="kd">::</span> <span class="n">a2c</span>
+        <span class="k">external </span><span class="n">sn904</span>                                                  
+<span class="c">! *****                                                                  </span>
+<span class="c">! BB** ********************** BBCINITA **********************************</span>
+<span class="c">! **** SPECIFICATION STATEMENTS                                          </span>
+<span class="c">! ****                                                                   </span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zvers</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zversd</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zdate</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zprog</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zcompl</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zname</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> <span class="kd">::</span> <span class="n">ztape</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span> <span class="kd">::</span> <span class="n">zproj</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">31</span><span class="p">)</span> <span class="kd">::</span> <span class="n">remrks</span>
+      <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span> <span class="kd">::</span> <span class="n">ztaped</span>
+<span class="c">! **** INITIALIZE SECTION                                                </span>
+<span class="c">! BE** ********************** BBCINITA **********************************</span>
+<span class="c">! BB** ********************** BBCINITB **********************************</span>
+      <span class="k">data </span><span class="n">zvers</span><span class="p">,</span><span class="n">zversd</span><span class="p">,</span><span class="n">zdate</span> <span class="o">/</span> <span class="s1">&#39;VERSION 2.1  &#39;</span><span class="p">,</span><span class="s1">&#39;93/10/21*21.02.00&#39;</span><span class="p">,</span><span class="s1">&#39;*NO DATE*TIME&#39;</span> <span class="o">/</span> 
+      <span class="k">data </span><span class="n">zcompl</span><span class="p">,</span><span class="n">zname</span><span class="p">,</span><span class="n">ztape</span> <span class="o">/</span> <span class="s1">&#39;*NONE SPECIFIED*&#39;</span><span class="p">,</span><span class="s1">&#39;*NO COMPANY NAME*&#39;</span><span class="p">,</span><span class="s1">&#39;*NO TAPE*&#39;</span> <span class="o">/</span> 
+      <span class="k">data </span><span class="n">zproj</span><span class="p">,</span><span class="n">ztaped</span><span class="p">,</span><span class="n">zprog</span> <span class="o">/</span> <span class="s1">&#39;*NO PROJECT*&#39;</span><span class="p">,</span><span class="s1">&#39;*NO TAPE DATE&#39;</span><span class="p">,</span><span class="s1">&#39;XXXXX&#39;</span> <span class="o">/</span> 
+      <span class="k">data </span><span class="n">remrks</span> <span class="o">/</span> <span class="s1">&#39;                               &#39;</span> <span class="o">/</span> 
+<span class="c">! **** THE FOLLOWING 9 COMMENT LINES (CZ01, CZ02, ...) CAN BE REPLACED   </span>
+<span class="c">! **** FOR IDENTIFYING THE TEST ENVIRONMENT                              </span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! Z01  ZVERS  = &#39;VERSION OF THE COMPILER VALIDATION SYSTEM&#39;              </span>
+<span class="c">! Z02  ZVERSD = &#39;CREATION DATE/TIME OF THE COMPILER VALIDATION SYSTEM&#39;   </span>
+<span class="c">! Z03  ZPROG  = &#39;PROGRAM NAME&#39;                                           </span>
+<span class="c">! Z04  ZDATE  = &#39;DATE OF TEST&#39;                                           </span>
+<span class="c">! Z05  ZCOMPL = &#39;COMPILER IDENTIFICATION&#39;                                </span>
+<span class="c">! Z06  ZPROJ  = &#39;PROJECT NUMBER/IDENTIFICATION&#39;                          </span>
+<span class="c">! Z07  ZNAME  = &#39;NAME OF USER&#39;                                           </span>
+<span class="c">! Z08  ZTAPE  = &#39;TAPE OWNER/ID&#39;                                          </span>
+<span class="c">! Z09  ZTAPED = &#39;DATE TAPE COPIED&#39;                                       </span>
+<span class="c">!                                                                        </span>
+      <span class="n">ivpass</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivfail</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivdele</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivinsp</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivtotl</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">ivtotn</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+      <span class="n">iczero</span> <span class="o">=</span> <span class="mi">0</span>                                                        
+<span class="c">!                                                                        </span>
+<span class="c">!      I01 CONTAINS THE LOGICAL UNIT NUMBER FOR THE CARD READER.         </span>
+      <span class="n">i01</span> <span class="o">=</span> <span class="mi">05</span>                                                          
+<span class="c">!      I02 CONTAINS THE LOGICAL UNIT NUMBER FOR THE PRINTER.             </span>
+      <span class="n">i02</span> <span class="o">=</span> <span class="mi">06</span>                                                          
+<span class="c">!                                                                        </span>
+<span class="c">! X010   REPLACED BY FEXEC X-010 CONTROL CARD (CARD-READER UNIT NUMBER). </span>
+<span class="c">!      THE CX010 CARD IS FOR OVERRIDING THE PROGRAM DEFAULT I01 = 5      </span>
+<span class="c">! X011   REPLACED BY FEXEC X-011 CONTROL CARD.  CX011 IS FOR SYSTEMS     </span>
+<span class="c">!      REQUIRING ADDITIONAL STATEMENTS FOR FILES ASSOCIATED WITH CX010.  </span>
+<span class="c">!                                                                        </span>
+<span class="c">! X020   REPLACED BY FEXEC X-020 CONTROL CARD (PRINTER UNIT NUMBER).     </span>
+<span class="c">!      THE CX020 CARD IS FOR OVERRIDING THE PROGRAM DEFAULT I02= 6       </span>
+<span class="c">! X021   REPLACED BY FEXEC X-021 CONTROL CARD.  CX021 IS FOR SYSTEMS     </span>
+<span class="c">!      REQUIRING ADDITIONAL STATEMENTS FOR FILES ASSOCIATED WITH CX020.  </span>
+<span class="c">!                                                                        </span>
+<span class="c">! BE** ********************** BBCINITB **********************************</span>
+      <span class="n">irvi</span> <span class="o">=</span> <span class="n">i01</span>                                                        
+      <span class="n">nuvi</span> <span class="o">=</span> <span class="n">i02</span>                                                        
+      <span class="n">ivtotl</span> <span class="o">=</span> <span class="mi">13</span>                                                       
+      <span class="n">zprog</span> <span class="o">=</span> <span class="s1">&#39;FM903&#39;</span>                                                   
+<span class="c">! BB** ********************** BBCHED0A **********************************</span>
+<span class="c">! ****                                                                   </span>
+<span class="c">! **** WRITE REPORT TITLE                                                </span>
+<span class="c">! ****                                                                   </span>
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90002</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90006</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90007</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90008</span><span class="p">)</span>  <span class="n">zvers</span><span class="p">,</span> <span class="n">zversd</span>                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90009</span><span class="p">)</span>  <span class="n">zprog</span><span class="p">,</span> <span class="n">zprog</span>                                  
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90010</span><span class="p">)</span>  <span class="n">zdate</span><span class="p">,</span> <span class="n">zcompl</span>                                 
+<span class="c">! BE** ********************** BBCHED0A **********************************</span>
+<span class="c">! *****    HEADER FORMAT STATEMENT                                       </span>
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">35400</span><span class="p">)</span>                                              
+<span class="mi">35400</span> <span class="k">format</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="o">/</span> <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;IOFMTF - (354) ADDITIONAL FORMATTED&quot;</span> <span class="o">//</span><span class="mi">1</span><span class="n">x</span><span class="p">,</span>             <span class="s2">&quot;DATA TRANSFERS&quot;</span> <span class="p">,</span><span class="o">//</span><span class="mi">1</span><span class="n">x</span><span class="p">,</span>                                           <span class="s2">&quot;ANS REF. - 12.9.5.2  13.1  13.5&quot;</span> <span class="p">)</span>                      
+<span class="c">! BB** ********************** BBCHED0B **********************************</span>
+<span class="c">! **** WRITE DETAIL REPORT HEADERS                                       </span>
+<span class="c">! ****                                                                   </span>
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90004</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90013</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90014</span><span class="p">)</span>                                                 
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90015</span><span class="p">)</span> <span class="n">ivtotl</span>                                          
+<span class="c">! BE** ********************** BBCHED0B **********************************</span>
+<span class="c">! *****    TEST THAT A FORMAT MAY BE A CHARACTER VARIABLE,     12.4.2(3) </span>
+<span class="c">! *****    A CHARACTER EXPRESSION, A CHARACTER ARRAY, OR A     12.4.2(4) </span>
+<span class="c">! *****    CHARACTER ARRAY ELEMENT.                            13.1.2    </span>
+<span class="c">! *****    NOTE THAT  THE LENGTH OF THE FORMAT MAY EXCEED THE            </span>
+<span class="c">! *****    LENGTH OF AN ARRAY ELEMENT IF THE FORMAT SPECIFIER            </span>
+<span class="c">! *****    IS AN ARRAY, BUT NOT IF THE SPECIFIER IS AN ARRAY ELEMENT.    </span>
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">35401</span><span class="p">)</span>                                              
+<span class="mi">35401</span> <span class="k">format</span><span class="p">(</span><span class="o">/</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;CHARACTER EXPRESSION AS FORMAT&quot;</span> <span class="o">/</span><span class="p">)</span>                 
+        <span class="n">a19vk</span> <span class="o">=</span> <span class="s1">&#39;(I3,I1,I4,I4,I2,I4)&#39;</span>                                   
+<span class="c">! *****    CARD 1                                                        </span>
+        <span class="k">read</span><span class="p">(</span><span class="n">irvi</span><span class="p">,</span> <span class="n">a19vk</span><span class="p">)</span> <span class="n">j1i</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="n">j1i</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">j1i</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="n">j1i</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span> <span class="n">j1i</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">j1i</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="c">! T001*  TEST 1 - CHARACTER EXPRESSION AS FORMAT                         </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">1</span>                                                   
+           <span class="n">remrks</span> <span class="o">=</span> <span class="s1">&#39;LEADING PLUS SIGN OPTIONAL&#39;</span>                        
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">remrks</span>                           
+        <span class="n">a65vk</span> <span class="o">=</span> <span class="s1">&#39;16X, &quot;COMPUTED: &quot;/26X,I1, 1X, I2, 1X, I3, 1X, I4, 1X,  I5, 1X, I6&#39;</span>                                                       
+        <span class="n">a85vk</span> <span class="o">=</span> <span class="s1">&#39;16X, &quot;CORRECT:  &quot;,22X, &quot;2 CORRECT ANSWERS POSSIBLE&quot;/26X, &quot;1 22 333 4444  5555   6666&quot;&#39;</span>                                   
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="s1">&#39;(/1X,&#39;</span> <span class="o">//</span> <span class="n">a65vk</span> <span class="o">//</span> <span class="s1">&#39;/1X,&#39;</span> <span class="o">//</span> <span class="n">a85vk</span> <span class="o">//</span> <span class="s1">&#39;)&#39;</span><span class="p">)</span> <span class="n">j1i</span>     
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70010</span><span class="p">)</span>                                          
+<span class="mi">70010</span> <span class="k">format</span> <span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;1 22 333 4444 +5555  +6666&quot;</span> <span class="p">)</span>                   
+<span class="c">! T002*  TEST 2 - CHARACTER ARRAY AS FORMAT                              </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">2</span>                                                   
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">remrks</span>                           
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80020</span><span class="p">)</span>                                          
+        <span class="n">c251k</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;(26X, I6, 1X, I5, 1X, I4,&#39;</span>                          
+        <span class="n">c251k</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39; 1X, I3, 1X, I2, 1X, I1 /&#39;</span>                          
+        <span class="n">c251k</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;17X,&quot;CORRECT: &quot;,22X, &quot;2 C&#39;</span>                          
+        <span class="n">c251k</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;ORRECT ANSWERS POSSIBLE&quot;/&#39;</span>                          
+        <span class="n">c251k</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;26X,  &quot;  6666  5555 4444 &#39;</span>                          
+        <span class="n">c251k</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;333 22 1&quot;)&#39;</span>                                         
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="n">c251k</span><span class="p">)</span> <span class="p">(</span><span class="n">j1i</span><span class="p">(</span><span class="mi">7</span><span class="o">-</span><span class="n">ivi</span><span class="p">),</span> <span class="n">ivi</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>                        
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70020</span><span class="p">)</span>                                          
+<span class="mi">70020</span> <span class="k">format</span> <span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; +6666 +5555 4444 333 22 1&quot;</span> <span class="p">)</span>                   
+<span class="c">! T003*  TEST 3 - CHARACTER ARRAY ELEMENT AS FORMAT                      </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">3</span>                                                   
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">remrks</span>                           
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80020</span><span class="p">)</span>                                          
+<span class="c">! *****                                                                  </span>
+        <span class="n">c151k</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;(I1,2X,I2)&#39;</span>                                         
+        <span class="n">c151k</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;(2X,I3,1X,I4)&#39;</span>                                      
+        <span class="n">c151k</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;(I5,T1,I1)&#39;</span>                                         
+        <span class="n">c151k</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;(TR4,I2,TL2,I3)&#39;</span>                                    
+<span class="c">! *****    CARDS 2-5                                                     </span>
+        <span class="k">do </span><span class="n">ivi</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span>                                           
+        <span class="k">read</span><span class="p">(</span><span class="n">irvi</span><span class="p">,</span> <span class="n">c151k</span><span class="p">(</span><span class="n">ivi</span><span class="p">))</span> <span class="n">ia1i</span><span class="p">(</span><span class="n">ivi</span><span class="p">),</span> <span class="n">ia1i</span><span class="p">(</span><span class="n">ivi</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>                   
+  <span class="k">end do</span>
+<span class="k">        write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70030</span><span class="p">)</span> <span class="n">ia1i</span>                                         
+<span class="mi">70030</span> <span class="k">format</span> <span class="p">(</span><span class="mi">25</span><span class="n">x</span><span class="p">,</span> <span class="mi">8</span><span class="p">(</span><span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="n">i5</span><span class="p">))</span>                                         
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70031</span><span class="p">)</span>                                          
+<span class="mi">70031</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT:  &quot;</span> <span class="p">,</span><span class="mi">22</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;2 CORRECT ANSWERS POSSIBLE&quot;</span> <span class="p">)</span>
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70032</span><span class="p">)</span>                                          
+<span class="mi">70032</span> <span class="k">format</span><span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;    1    45   345  7890 12345     1    56   567&#39;</span><span class="o">/</span>           <span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;   +1   +45  +345 +7890 12345    +1   +56  +567&#39;</span><span class="p">)</span>  
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">35404</span><span class="p">)</span>                                              
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****    TEST ADDITIONAL INTEGER EDITING FEATURES.                     </span>
+<span class="c">! *****      - IW.M EDITING DESCRIPTOR                          13.5.9.1 </span>
+<span class="c">! *****    NOTE THAT IF M IS ZERO AND THE VALUE OF THE INTERNAL          </span>
+<span class="c">! *****    DATUM IS ZERO, THE OUTPUT FIELD CONSISTS OF ONLY BLANK        </span>
+<span class="c">! *****    CHARACTERS REGARDLESS OF THE SIGN CONTROL IN EFFECT.          </span>
+<span class="mi">35404</span> <span class="k">format</span><span class="p">(</span><span class="o">/</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;INTEGER EDITING AND OUT OF RANGE&quot;</span> <span class="o">/</span><span class="p">)</span>               
+<span class="c">! *****    CARD 6                                                        </span>
+        <span class="k">read</span><span class="p">(</span><span class="n">irvi</span><span class="p">,</span> <span class="mi">35405</span><span class="p">)</span> <span class="p">(</span><span class="n">ia1i</span><span class="p">(</span><span class="n">ivi</span><span class="p">),</span> <span class="n">ivi</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>                          
+<span class="mi">35405</span> <span class="k">format</span><span class="p">(</span><span class="n">i6</span><span class="p">.</span><span class="mi">6</span><span class="p">,</span> <span class="n">t1</span><span class="p">,</span> <span class="n">i6</span><span class="p">.</span><span class="mi">4</span><span class="p">,</span> <span class="n">tl6</span><span class="p">,</span> <span class="n">i6</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="n">tl9</span><span class="p">,</span> <span class="n">i6</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span>                    
+<span class="c">! T004*  TEST 4 - INTEGER EDITING                                        </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">4</span>                                                   
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span><span class="n">remrks</span>                            
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80020</span><span class="p">)</span>                                          
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70040</span><span class="p">)</span> <span class="p">(</span><span class="n">ia1i</span><span class="p">(</span><span class="n">ivi</span><span class="p">),</span> <span class="n">ivi</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>                         
+<span class="mi">70040</span> <span class="k">format</span><span class="p">(</span><span class="mi">25</span><span class="n">x</span><span class="p">,</span> <span class="mi">4</span><span class="p">(</span><span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="n">i6</span><span class="p">))</span>                                          
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70031</span><span class="p">)</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70041</span><span class="p">)</span>                                          
+<span class="mi">70041</span> <span class="k">format</span><span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot; 12345  12345  12345  12345&quot;</span> <span class="o">/</span>                              <span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;+12345 +12345 +12345 +12345&quot;</span> <span class="p">)</span>                     
+<span class="c">! T005*  TEST 5 - OUT OF RANGE                                           </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">5</span>                                                   
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80020</span><span class="p">)</span>                                          
+        <span class="n">jvi</span> <span class="o">=</span> <span class="mi">0</span>                                                         
+        <span class="n">ivi</span> <span class="o">=</span> <span class="mi">12</span>                                                        
+        <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70050</span><span class="p">)</span> <span class="o">-</span><span class="n">ivi</span><span class="p">,</span> <span class="n">ivi</span><span class="p">,</span> <span class="n">ivi</span><span class="p">,</span> <span class="n">ivi</span><span class="p">,</span> <span class="n">ivi</span><span class="p">,</span> <span class="n">jvi</span><span class="p">,</span> <span class="n">jvi</span><span class="p">,</span> <span class="n">jvi</span>     
+<span class="mi">70050</span> <span class="k">format</span> <span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="n">ss</span><span class="p">,</span> <span class="n">i5</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="n">i5</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span> <span class="n">ss</span><span class="p">,</span> <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="n">i5</span><span class="p">.</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="n">i5</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span>               <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="n">i5</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;(&quot;</span><span class="p">,</span> <span class="n">i5</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;)&quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;(&quot;</span><span class="p">,</span> <span class="n">i5</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;)&quot;</span><span class="p">,</span>              <span class="n">sp</span><span class="p">,</span> <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;(&quot;</span><span class="p">,</span> <span class="n">i5</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;)&quot;</span><span class="p">)</span>                                 
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80022</span><span class="p">)</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70051</span><span class="p">)</span>                                          
+<span class="mi">70051</span> <span class="k">format</span> <span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;***** 00012   012    12    12 (     ) (     )&quot;</span> <span class="p">,</span>            <span class="s2">&quot; (     )&quot;</span><span class="p">)</span>                                             
+<span class="c">!   ADVANCE TO TOP-OF PAGE AND WRITE HEADERS                             </span>
+        <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">90002</span><span class="p">)</span>                                             
+        <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">90013</span><span class="p">)</span>                                             
+        <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">90014</span><span class="p">)</span>                                             
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****    TEST ADDITIONAL DOUBLE PRECISION EDITING FEATURES. 13.5.9.2   </span>
+<span class="c">! *****      - D.P. MAY BE READ, WRITTEN WITH F AND E         13.5.9.2.1 </span>
+<span class="c">! *****        EDIT DESCRIPTOR.                               13.5.9.2.2 </span>
+<span class="c">! *****        (D AND G FORMATS ARE TEST IN INTERNAL FILE SEGMENTS       </span>
+<span class="c">! *****        392 AND 393.)                                             </span>
+<span class="c">! *****      - FIELD WIDTH TOO SMALL ON F                     13.5.9(4)  </span>
+<span class="c">! *****      - EXPONENT WIDTH TOO SMALL ON EW.DE(E)           13.5.9(4)  </span>
+<span class="c">! *****      - IF SP AND FIELD TOO SMALL, THE PLUS IS NOT     13.5.9(5)  </span>
+<span class="c">! *****        OPTIONAL                                                  </span>
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">35408</span><span class="p">)</span>                                              
+<span class="mi">35408</span> <span class="k">format</span><span class="p">(</span><span class="o">/</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;DOUBLE PRECISION EDITING AND OUT OF RANGE&quot;</span> <span class="o">/</span><span class="p">)</span>       
+<span class="c">! *****    CARD 7                                                        </span>
+        <span class="k">read</span><span class="p">(</span><span class="n">irvi</span><span class="p">,</span> <span class="mi">35409</span><span class="p">)</span> <span class="n">b4d</span>                                           
+<span class="mi">35409</span> <span class="k">format</span><span class="p">(</span><span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="n">f5</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="n">f10</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="n">f10</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span> <span class="n">tl40</span><span class="p">,</span> <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="err">2</span><span class="n">e5</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="n">e10</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="n">e10</span><span class="p">.</span><span class="err">5</span><span class="n">e5</span><span class="p">)</span>
+<span class="c">! T006*  TEST 6 - DOUBLE PRECISION EDITING AND OUT OF RANGE              </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">6</span>                                                   
+           <span class="n">remrks</span> <span class="o">=</span> <span class="s1">&#39;2 COMPUTED LINES EXPECTED&#39;</span>                         
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span><span class="n">remrks</span>                            
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80020</span><span class="p">)</span>                                          
+        <span class="n">b4d</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">b4d</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span> <span class="o">**</span> <span class="mi">12</span>                        
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70060</span><span class="p">)</span> <span class="n">b4d</span>                                          
+<span class="mi">70060</span> <span class="k">format</span><span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="n">sp</span><span class="p">,</span> <span class="n">f6</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="n">ss</span><span class="p">,</span> <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="n">f5</span><span class="p">.</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="n">f6</span><span class="p">.</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="n">f6</span><span class="p">.</span><span class="mi">4</span><span class="p">,</span>               <span class="o">/</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span><span class="mi">2</span><span class="n">p</span><span class="p">,</span><span class="n">e6</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="n">p</span><span class="p">,</span><span class="mi">2</span><span class="p">(</span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="n">e10</span><span class="p">.</span><span class="mi">5</span><span class="p">),</span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="n">e9</span><span class="p">.</span><span class="err">5</span><span class="n">e1</span><span class="p">)</span>                       
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70061</span><span class="p">)</span>                                          
+<span class="mi">70061</span> <span class="k">format</span><span class="p">(</span><span class="o">/</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT:  &quot;</span> <span class="p">,</span><span class="mi">22</span><span class="n">x</span><span class="p">,</span>  <span class="s2">&quot;CORRESPONDING LINES MUST MATCH &quot;</span>    <span class="p">,</span><span class="o">/</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;EITHER OF THE FOLLOWING TWO    &quot;</span>  <span class="p">,</span>                    <span class="o">/</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT ANSWERS                &quot;</span>  <span class="p">)</span>         
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70062</span><span class="p">)</span>                                          
+<span class="mi">70062</span> <span class="k">format</span><span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;****** ***** 12.345 1.2345&quot;</span> <span class="o">/</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span>                            <span class="s2">&quot;******     .12350E+03     .12345E+02     *********&quot;</span> <span class="o">/</span>           <span class="o">/</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;****** ***** 12.345 1.2345&quot;</span> <span class="o">/</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span>                            <span class="s2">&quot;******     .12350+003     .12345+002     *********&quot;</span> <span class="p">)</span>
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">35411</span><span class="p">)</span>                                              
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****    TEST ADDITIONAL COMPLEX EDITING FEATURES.          13.5.9.2.4 </span>
+<span class="c">! *****      - FIELD WIDTH TOO SMALL ON F                     13.5.9(4)  </span>
+<span class="c">! *****      - EXPONENT WIDTH TOO SMALL ON EW.DE(E)           13.5.9(4)  </span>
+<span class="mi">35411</span> <span class="k">format</span><span class="p">(</span><span class="o">/</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;COMPLEX EDITING AND OUT OF RANGE&quot;</span> <span class="o">/</span><span class="p">)</span>               
+<span class="c">! T007*  TEST 7 - COMPLEX EDITING AND OUT OF RANGE                       </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">7</span>                                                   
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">remrks</span>                           
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80020</span><span class="p">)</span>                                          
+        <span class="n">avc</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="mf">5.25</span><span class="p">,</span> <span class="mi">7</span><span class="mf">5.75</span><span class="p">)</span>                                            
+        <span class="n">bvc</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.25e+10</span><span class="p">,</span> <span class="mf">0.75e+10</span><span class="p">)</span>                                      
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70070</span><span class="p">)</span> <span class="n">avc</span><span class="p">,</span> <span class="n">avc</span><span class="p">,</span> <span class="n">bvc</span><span class="p">,</span> <span class="n">bvc</span>                           
+<span class="mi">70070</span> <span class="k">format</span> <span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="n">f7</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="n">x</span><span class="p">,</span> <span class="n">f6</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="n">x</span><span class="p">,</span> <span class="n">f5</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="n">x</span><span class="p">,</span> <span class="n">f4</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span>                          <span class="o">/</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="n">e8</span><span class="p">.</span><span class="err">2</span><span class="n">e3</span><span class="p">,</span> <span class="mi">3</span><span class="n">x</span><span class="p">,</span> <span class="n">e7</span><span class="p">.</span><span class="err">2</span><span class="n">e2</span><span class="p">,</span> <span class="mi">2</span><span class="p">(</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span> <span class="n">e6</span><span class="p">.</span><span class="err">2</span><span class="n">e1</span><span class="p">))</span>                
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70061</span><span class="p">)</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70071</span><span class="p">)</span>                                          
+<span class="mi">70071</span> <span class="k">format</span> <span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;  25.25    75.75   25.25   ****&quot;</span> <span class="o">/</span>                          <span class="mi">25</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot; .25E+010   .75E+10    ******    ******&quot;</span> <span class="o">//</span>                 <span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot; +25.25   +75.75   25.25   ****&quot;</span> <span class="o">/</span>                          <span class="mi">25</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot; .25E+010   .75E+10    ******    ******&quot;</span> <span class="p">)</span>     
+<span class="c">! *****    -  TEST T, TL, TR EDIT DESCRIPTORS                   13.5.3.1 </span>
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****    -  TEST BZ, BN EDIT DESCRIPTORS                      13.5.8   </span>
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">35414</span><span class="p">)</span>                                              
+<span class="mi">35414</span> <span class="k">format</span><span class="p">(</span><span class="o">/</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;BZ, BN, T, TL AND TR EDIT DESCRIPTOR&quot;</span> <span class="o">/</span><span class="p">)</span>            
+<span class="c">! T008*  TEST 8 - BZ, BN, T, TL, AND TR EDIT DESCRIPTOR                  </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">8</span>                                                   
+           <span class="n">remrks</span> <span class="o">=</span> <span class="s1">&#39;LEADING PLUS SIGN OPTIONAL&#39;</span>                        
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span><span class="n">remrks</span>                            
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80020</span><span class="p">)</span>                                          
+<span class="c">! *****    CARD 8                                                        </span>
+        <span class="k">read</span><span class="p">(</span><span class="n">irvi</span><span class="p">,</span> <span class="mi">70080</span><span class="p">)</span> <span class="n">avd</span><span class="p">,</span> <span class="n">b4d</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">a2c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">avc</span>              
+<span class="mi">70080</span> <span class="k">format</span><span class="p">(</span><span class="n">bn</span><span class="p">,</span> <span class="n">d5</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="n">bz</span><span class="p">,</span> <span class="n">d5</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="n">tl40</span><span class="p">,</span> <span class="mi">2</span><span class="n">f5</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="n">t1</span><span class="p">,</span> <span class="n">tr1</span><span class="p">,</span> <span class="n">tl1</span><span class="p">,</span> <span class="n">bn</span><span class="p">,</span> <span class="mi">2</span><span class="n">f5</span><span class="p">.</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70081</span><span class="p">)</span> <span class="n">avd</span><span class="p">,</span> <span class="n">b4d</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">a2c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">avc</span>             
+<span class="mi">70081</span> <span class="k">format</span> <span class="p">(</span><span class="mi">25</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="n">f6</span><span class="p">.</span><span class="mi">2</span><span class="p">,</span> <span class="p">(((</span><span class="mi">4</span><span class="p">(</span><span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="n">f6</span><span class="p">.</span><span class="mi">2</span><span class="p">)))))</span>                          
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70031</span><span class="p">)</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70082</span><span class="p">)</span>                                          
+<span class="mi">70082</span> <span class="k">format</span><span class="p">(</span><span class="mi">25</span><span class="n">x</span><span class="p">,</span> <span class="n">tr26</span><span class="p">,</span> <span class="s2">&quot; 123.40 567.80&quot;</span> <span class="p">,</span> <span class="n">t25</span><span class="p">,</span> <span class="s2">&quot;  12.34506.78&quot;</span> <span class="p">,</span>              <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;120.34 506.78&quot;</span> <span class="o">//</span>                                            <span class="mi">25</span><span class="n">x</span><span class="p">,</span> <span class="n">tr26</span><span class="p">,</span> <span class="s2">&quot; 123.40 567.80&quot;</span> <span class="p">,</span> <span class="n">t25</span><span class="p">,</span> <span class="s2">&quot; +12.34506.78&quot;</span> <span class="p">,</span>              <span class="mi">1</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;120.34 506.78&quot;</span> <span class="p">)</span>                                 
+<span class="c">! *****    SPECIFIER TO A SUBROUTINE.                                    </span>
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****    PASS A CHARACTER CONSTANT, WHICH IS A LEGITIMATE FORMAT       </span>
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">35417</span><span class="p">)</span>                                              
+<span class="mi">35417</span> <span class="k">format</span><span class="p">(</span><span class="o">/</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;SUBROUTINE CALL&quot;</span> <span class="o">/</span><span class="p">)</span>                                 
+<span class="c">! T009*  TEST 9 - SUBROUTINE CALL                                        </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">9</span>                                                   
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span><span class="n">remrks</span>                            
+<span class="c">! *****    CARD 9                                                        </span>
+        <span class="n">a11vk</span> <span class="o">=</span> <span class="s1">&#39;(I5, 6(I5))&#39;</span>                                           
+        <span class="k">call </span><span class="n">sn904</span><span class="p">(</span><span class="n">a11vk</span><span class="p">,</span><span class="n">irvi</span><span class="p">,</span><span class="n">nuvi</span><span class="p">)</span>
+
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+<span class="c">! *****                                                                  </span>
+<span class="c">!   ADVANCE TO TOP-OF PAGE AND WRITE HEADERS                             </span>
+        <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">90002</span><span class="p">)</span>                                             
+        <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">90013</span><span class="p">)</span>                                             
+        <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">90014</span><span class="p">)</span>                                             
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****    -  TEST SS AND SP EDIT DESCRIPTORS.                    13.5.6 </span>
+<span class="c">! *****    -  TEST ALSO THAT A FORMAT SPECIFICATION MAY BE        13.1.2 </span>
+<span class="c">! *****       ALTERED BY A CHARACTER SUBSTRING SUBSTITUTION.       5.7   </span>
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">35419</span><span class="p">)</span>                                              
+<span class="mi">35419</span> <span class="k">format</span><span class="p">(</span><span class="o">/</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;SS AND SP EDIT DESCRIPTOR&quot;</span> <span class="o">/</span><span class="p">)</span>                       
+<span class="c">! T010*  TEST 10 - SS AND SP EDIT DESCRIPTORS                            </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">10</span>                                                  
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">remrks</span>                           
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80020</span><span class="p">)</span>                                          
+        <span class="n">ivi</span> <span class="o">=</span> <span class="mi">12345</span>                                                     
+        <span class="n">avs</span> <span class="o">=</span> <span class="mi">2</span><span class="mf">5.25</span>                                                     
+        <span class="n">a1d</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="mf">5.5d0</span>                                                  
+        <span class="n">a2c</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">)</span>                                           
+        <span class="n">a52vk</span> <span class="o">=</span> <span class="s1">&#39;(26X,SP,F5.1,SS,2X,F4.1,SP,(T40,I6,2X,F6.2,SS,F6.1))&#39;</span>  
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="n">a52vk</span><span class="p">)</span> <span class="n">a2c</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">ivi</span><span class="p">,</span> <span class="n">avs</span><span class="p">,</span> <span class="n">a1d</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">ivi</span><span class="p">,</span> <span class="n">avs</span><span class="p">,</span> <span class="n">a1d</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> 
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70101</span><span class="p">)</span>                                          
+<span class="mi">70101</span> <span class="k">format</span><span class="p">(</span><span class="o">/</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT:  &quot;</span> <span class="p">,</span><span class="mi">22</span><span class="n">x</span><span class="p">,</span>  <span class="s2">&quot;CORRESPONDING LINES MUST MATCH &quot;</span>    <span class="p">)</span>                                                     
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70102</span><span class="p">)</span>                                          
+<span class="mi">70102</span> <span class="k">format</span><span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span><span class="s1">&#39; +3.0   4.0  +12345  +25.25   5.5&#39;</span>                           <span class="o">/</span><span class="n">t40</span><span class="p">,</span><span class="s1">&#39; 12345   25.25   5.5&#39;</span><span class="p">)</span>                          
+<span class="c">! T011*  TEST 11 - FORMAT ALTERED BY CHARACTER SUBSTRING SUBSTITUTION    </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">11</span>                                                  
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">remrks</span>                           
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80020</span><span class="p">)</span>                                          
+        <span class="n">a52vk</span><span class="p">(</span><span class="mi">7</span><span class="p">:</span><span class="mi">7</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;S&#39;</span>                                                
+        <span class="n">a52vk</span><span class="p">(</span><span class="mi">14</span><span class="p">:</span><span class="mi">15</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;SP&#39;</span>                                             
+        <span class="n">a52vk</span><span class="p">(</span><span class="mi">26</span><span class="p">:</span><span class="mi">26</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;S&#39;</span>                                              
+        <span class="n">a52vk</span><span class="p">(</span><span class="mi">45</span><span class="p">:</span><span class="mi">45</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;P&#39;</span>                                              
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="n">a52vk</span><span class="p">)</span> <span class="n">a2c</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">ivi</span><span class="p">,</span> <span class="n">avs</span><span class="p">,</span> <span class="n">a1d</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">ivi</span><span class="p">,</span> <span class="n">avs</span><span class="p">,</span> <span class="n">a1d</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> 
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70101</span><span class="p">)</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70111</span><span class="p">)</span>                                          
+<span class="mi">70111</span> <span class="k">format</span> <span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span><span class="s1">&#39;  3.0  +4.0   12345   25.25  +5.5&#39;</span>                           <span class="o">/</span><span class="n">t40</span><span class="p">,</span><span class="s1">&#39;+12345  +25.25  +5.5&#39;</span><span class="p">)</span>                         
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">35422</span><span class="p">)</span>                                              
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****    TEST A COLON EDIT DESCRIPTOR FOLLOWED BY A H-EDIT      13.5.5 </span>
+<span class="c">! *****    DESCRIPTOR TO SHOW THAT THE COLON EDIT DESCRIPTOR             </span>
+<span class="c">! *****    TERMINATED IF THERE ARE NO MORE ITEMS IN THE INPUT/OUTPUT LIST</span>
+<span class="mi">35422</span> <span class="k">format</span><span class="p">(</span><span class="o">/</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s1">&#39;COLON EDIT DESCRIPTOR&#39;</span><span class="o">/</span><span class="p">)</span>                            
+<span class="c">! T012*  TEST 12                                                         </span>
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">12</span>                                                  
+           <span class="n">remrks</span> <span class="o">=</span> <span class="s1">&#39;2 COMPUTED LINES EXPECTED&#39;</span>                         
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80004</span><span class="p">)</span> <span class="n">ivtnum</span><span class="p">,</span> <span class="n">remrks</span>                           
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">80020</span><span class="p">)</span>                                          
+        <span class="n">a32vk</span> <span class="o">=</span> <span class="s1">&#39;AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHH&#39;</span>                      
+        <span class="k">write</span><span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70120</span><span class="p">)</span> <span class="n">a32vk</span><span class="p">,</span> <span class="n">a32vk</span>                                 
+<span class="mi">70120</span> <span class="k">format</span><span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="n">a32</span><span class="p">,</span> <span class="p">:,</span> <span class="s1">&#39;IIIIJJJJ&#39;</span><span class="p">)</span>                                 
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70101</span><span class="p">)</span>                                          
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70121</span><span class="p">)</span>                                          
+<span class="mi">70121</span> <span class="k">format</span><span class="p">(</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJ&#39;</span><span class="p">,</span>                  <span class="o">/</span><span class="mi">26</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHH&#39;</span><span class="p">)</span>             
+           <span class="n">ivtnum</span> <span class="o">=</span> <span class="mi">13</span>                                                  
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****    TEST THAT FW.D, EW.DE(E) AND GW.DE(E) MAY HAVE MORE DIGITS ON </span>
+<span class="c">! *****    INPUT THAN THE PROCESSOR CAN HANDLE FOR D.P. AND COMPLEX      </span>
+<span class="c">! T013*  TEST 13 - LARGE FORMAT SIZE FOR D.P. AND COMPLEX                </span>
+           <span class="k">write</span> <span class="p">(</span><span class="n">nuvi</span><span class="p">,</span> <span class="mi">70131</span><span class="p">)</span> <span class="n">ivtnum</span>                                   
+<span class="mi">70131</span> <span class="k">format</span> <span class="p">(</span><span class="o">/</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;INSPECT&quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">x</span><span class="p">,</span>                                      <span class="s1">&#39;TEST SUCCESSFUL IF PROCESSOR IS &#39;</span><span class="o">/</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">x</span><span class="p">,</span>                       <span class="s1">&#39;ABLE TO READ INPUT CARDS 10-14  &#39;</span><span class="o">/</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">x</span><span class="p">,</span>                       <span class="s1">&#39;UNDER F, E, AND G FORMATS WHICH &#39;</span><span class="o">/</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">x</span><span class="p">,</span>                       <span class="s1">&#39;HAVE  MORE  DIGITS  THAN  THE   &#39;</span><span class="o">/</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">x</span><span class="p">,</span>                       <span class="s1">&#39;PROCESSOR CAN HANDLE FOR D. P.  &#39;</span><span class="o">/</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">x</span><span class="p">,</span>                       <span class="s1">&#39;AND COMPLEX&#39;</span><span class="p">)</span>                                       
+           <span class="n">ivinsp</span> <span class="o">=</span> <span class="n">ivinsp</span> <span class="o">+</span> <span class="mi">1</span>                                          
+<span class="c">! *****    CARDS 10-14                                                   </span>
+        <span class="k">read</span><span class="p">(</span><span class="n">irvi</span><span class="p">,</span> <span class="mi">70130</span><span class="p">)</span> <span class="n">b4d</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">avd</span><span class="p">,</span> <span class="n">avc</span><span class="p">,</span> <span class="n">a2c</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">bvc</span><span class="p">,</span>               <span class="p">(</span><span class="n">b4d</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">ivi</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">ivi</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">a1d</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">a2c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">cvc</span>            
+<span class="mi">70130</span> <span class="k">format</span><span class="p">(</span><span class="mi">2</span><span class="n">f28</span><span class="p">.</span><span class="mi">14</span><span class="p">,</span> <span class="o">/</span><span class="mi">2</span><span class="p">(</span><span class="n">e14</span><span class="p">.</span><span class="err">7</span><span class="n">e2</span><span class="p">,</span> <span class="n">g14</span><span class="p">.</span><span class="mi">1</span><span class="err">4</span><span class="n">e1</span><span class="p">),</span> <span class="o">/</span><span class="n">g14</span><span class="p">.</span><span class="err">0</span><span class="n">e3</span><span class="p">,</span> <span class="n">e14</span><span class="p">.</span><span class="mi">1</span><span class="err">4</span><span class="n">e3</span><span class="p">,</span>               <span class="n">e28</span><span class="p">.</span><span class="err">0</span><span class="n">e1</span><span class="p">,</span> <span class="o">/</span><span class="mi">2</span><span class="n">g28</span><span class="p">.</span><span class="mi">1</span><span class="err">4</span><span class="n">e2</span><span class="p">,</span> <span class="o">/</span><span class="mi">2</span><span class="p">(</span><span class="n">f14</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">f14</span><span class="p">.</span><span class="mi">14</span><span class="p">)</span> <span class="p">)</span>                 
+      <span class="n">ivtotn</span> <span class="o">=</span> <span class="n">ivpass</span> <span class="o">+</span> <span class="n">ivfail</span> <span class="o">+</span> <span class="n">ivdele</span> <span class="o">+</span> <span class="n">ivinsp</span>                        
+<span class="c">! *****                                                                  </span>
+<span class="c">! BB** ********************** BBCSUM0  **********************************</span>
+<span class="c">! **** WRITE OUT TEST SUMMARY                                            </span>
+<span class="c">! ****                                                                   </span>
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90004</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90014</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90004</span><span class="p">)</span>                                                
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90020</span><span class="p">)</span> <span class="n">ivpass</span>                                         
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90022</span><span class="p">)</span> <span class="n">ivfail</span>                                         
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90024</span><span class="p">)</span> <span class="n">ivdele</span>                                         
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90026</span><span class="p">)</span> <span class="n">ivinsp</span>                                         
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span> <span class="mi">90028</span><span class="p">)</span> <span class="n">ivtotn</span><span class="p">,</span> <span class="n">ivtotl</span>                                 
+<span class="c">! BE** ********************** BBCSUM0  **********************************</span>
+<span class="c">! BB** ********************** BBCFOOT0 **********************************</span>
+<span class="c">! **** WRITE OUT REPORT FOOTINGS                                         </span>
+<span class="c">! ****                                                                   </span>
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90016</span><span class="p">)</span> <span class="n">zprog</span><span class="p">,</span> <span class="n">zprog</span>                                    
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90018</span><span class="p">)</span> <span class="n">zproj</span><span class="p">,</span> <span class="n">zname</span><span class="p">,</span> <span class="n">ztape</span><span class="p">,</span> <span class="n">ztaped</span>                     
+      <span class="k">write</span> <span class="p">(</span><span class="n">i02</span><span class="p">,</span><span class="mi">90019</span><span class="p">)</span>                                                 
+<span class="c">! BE** ********************** BBCFOOT0 **********************************</span>
+<span class="c">! BB** ********************** BBCFMT0A **********************************</span>
+<span class="c">! **** FORMATS FOR TEST DETAIL LINES                                     </span>
+<span class="c">! ****                                                                   </span>
+<span class="mi">80000</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;DELETED&quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                           
+<span class="mi">80002</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; PASS  &quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                           
+<span class="mi">80004</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;INSPECT&quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                           
+<span class="mi">80008</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="mi">32</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                           
+<span class="mi">80010</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">15</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="n">i6</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">15</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">i6</span><span class="p">)</span>                                    
+<span class="mi">80012</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">)</span>                              
+<span class="mi">80018</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="n">a21</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">a21</span><span class="p">)</span>                                  
+<span class="mi">80020</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="n">a21</span><span class="p">,</span><span class="mi">1</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                         
+<span class="mi">80022</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">a21</span><span class="p">,</span><span class="mi">1</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                         
+<span class="mi">80024</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="n">i6</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                         
+<span class="mi">80026</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">i6</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                         
+<span class="mi">80028</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                      
+<span class="mi">80030</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                      
+<span class="mi">80050</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                                              
+<span class="c">! BE** ********************** BBCFMT0A **********************************</span>
+<span class="c">! BB** ********************** BBCFMAT1 **********************************</span>
+<span class="c">! **** FORMATS FOR TEST DETAIL LINES - FULL LANGUAGE                     </span>
+<span class="c">! ****                                                                   </span>
+<span class="mi">80031</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="n">d17</span><span class="p">.</span><span class="mi">10</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">d17</span><span class="p">.</span><span class="mi">10</span><span class="p">)</span>                            
+<span class="mi">80033</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="n">d17</span><span class="p">.</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                     
+<span class="mi">80035</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="n">d17</span><span class="p">.</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>                     
+<span class="mi">80037</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">,</span><span class="mi">6</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>    
+<span class="mi">80039</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">e12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">,</span><span class="mi">6</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>    
+<span class="mi">80041</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">,</span><span class="mi">6</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>    
+<span class="mi">80043</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span><span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">,</span><span class="mi">6</span><span class="n">x</span><span class="p">,</span><span class="n">a31</span><span class="p">)</span>    
+<span class="mi">80045</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="mi">4</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot; FAIL  &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COMPUTED= &quot;</span> <span class="p">,</span>           <span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">16</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;CORRECT=  &quot;</span> <span class="p">,</span>                  <span class="s2">&quot;(&quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="n">f12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;)&quot;</span><span class="p">)</span>                                         
+<span class="c">! BE** ********************** BBCFMAT1 **********************************</span>
+<span class="c">! BB** ********************** BBCFMT0B **********************************</span>
+<span class="c">! **** FORMAT STATEMENTS FOR PAGE HEADERS                                </span>
+<span class="c">! ****                                                                   </span>
+<span class="mi">90002</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>                                                      
+<span class="mi">90004</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>                                                      
+<span class="mi">90006</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">20</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY&quot;</span> <span class="p">)</span>
+<span class="mi">90007</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">19</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;FORTRAN COMPILER VALIDATION SYSTEM&quot;</span> <span class="p">)</span>            
+<span class="mi">90008</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="n">a13</span><span class="p">,</span><span class="n">a17</span><span class="p">)</span>                                          
+<span class="mi">90009</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; *&quot;</span><span class="p">,</span><span class="n">a5</span><span class="p">,</span><span class="s2">&quot;BEGIN*&quot;</span><span class="p">,</span><span class="mi">12</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;TEST RESULTS - &quot;</span> <span class="p">,</span><span class="n">a5</span><span class="p">,</span><span class="o">/</span><span class="p">)</span>       
+<span class="mi">90010</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">8</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;TEST DATE*TIME= &quot;</span> <span class="p">,</span><span class="n">a17</span><span class="p">,</span><span class="s2">&quot;  -  COMPILER= &quot;</span> <span class="p">,</span><span class="n">a20</span><span class="p">)</span>    
+<span class="mi">90013</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot; TEST   &quot;</span><span class="p">,</span><span class="s2">&quot;PASS/FAIL &quot;</span> <span class="p">,</span><span class="mi">6</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;DISPLAYED RESULTS&quot;</span> <span class="p">,</span>            <span class="mi">7</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;REMARKS&quot;</span><span class="p">,</span><span class="mi">24</span><span class="n">x</span><span class="p">)</span>                                          
+<span class="mi">90014</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot;----------------------------------------------&quot;</span> <span class="p">,</span>            <span class="s2">&quot;---------------------------------&quot;</span> <span class="p">)</span>                     
+<span class="mi">90015</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">48</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;THIS PROGRAM HAS &quot;</span> <span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="s2">&quot; TESTS&quot;</span><span class="p">,</span><span class="o">/</span><span class="p">)</span>               
+<span class="c">! ****                                                                   </span>
+<span class="c">! **** FORMAT STATEMENTS FOR REPORT FOOTINGS                             </span>
+<span class="c">! ****                                                                   </span>
+<span class="mi">90016</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="s2">&quot; *&quot;</span><span class="p">,</span><span class="n">a5</span><span class="p">,</span><span class="s2">&quot;END*&quot;</span><span class="p">,</span><span class="mi">14</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;END OF TEST - &quot;</span> <span class="p">,</span><span class="n">a5</span><span class="p">,</span><span class="o">/</span><span class="p">)</span>          
+<span class="mi">90018</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="n">a13</span><span class="p">,</span><span class="mi">13</span><span class="n">x</span><span class="p">,</span><span class="n">a20</span><span class="p">,</span><span class="s2">&quot;   *   &quot;</span><span class="p">,</span><span class="n">a10</span><span class="p">,</span><span class="s2">&quot;/&quot;</span><span class="p">,</span>                                <span class="n">a13</span><span class="p">)</span>                                                      
+<span class="mi">90019</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot;FOR OFFICIAL USE ONLY     &quot;</span> <span class="p">,</span><span class="mi">35</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;COPYRIGHT  1982&quot;</span> <span class="p">)</span> 
+<span class="c">! ****                                                                   </span>
+<span class="c">! **** FORMAT STATEMENTS FOR RUN SUMMARY                                 </span>
+<span class="c">! ****                                                                   </span>
+<span class="mi">90020</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS PASSED&quot;</span> <span class="p">)</span>                              
+<span class="mi">90022</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS FAILED&quot;</span> <span class="p">)</span>                              
+<span class="mi">90024</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS DELETED&quot;</span> <span class="p">)</span>                             
+<span class="mi">90026</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; TESTS REQUIRE INSPECTION&quot;</span> <span class="p">)</span>                  
+<span class="mi">90028</span> <span class="k">format</span> <span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="mi">21</span><span class="n">x</span><span class="p">,</span><span class="n">i5</span><span class="p">,</span><span class="s2">&quot; OF &quot;</span><span class="p">,</span><span class="n">i3</span><span class="p">,</span><span class="s2">&quot; TESTS EXECUTED&quot;</span> <span class="p">)</span>                  
+<span class="c">! BE** ********************** BBCFMT0B **********************************</span>
+<span class="c">! *****                                                                  </span>
+<span class="c">! *****    END OF TEST SEGMENT 354                                       </span>
+        <span class="k">stop                                                            </span>
+<span class="k">        end program </span><span class="n">fm903</span>
+</pre></div>
+
+    </section>
+    
+    
+    </div>
+  </div>
+
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2018 
+                                          </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+            
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> Refactored NIST-Fortran78 was developed by NIST (refactored by RefactorF4Acc)</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>
